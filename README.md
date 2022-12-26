@@ -1,1 +1,1 @@
-![SingingBee logo](illustrations/logo.PNG "logo")
+![SingingBee logo](./illustrations/logo.PNG "logo")
