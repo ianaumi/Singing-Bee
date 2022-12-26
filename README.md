@@ -1,2 +1,1 @@
-# TITLE HERE
-fixing this readme file soon.
+![SingingBee logo](D:\Programming\pythonCodes\School\Firstyear\Finals\TheSingingBee\Illustraions\logo.png "logo")
