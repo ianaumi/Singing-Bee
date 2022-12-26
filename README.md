@@ -1,1 +1,1 @@
-![SingingBee logo](https://raw.githubusercontent.com/ianaumi/TheSingingBee/development/illustrations/logo.PNG) "logo")
+![SingingBee logo](illustrations/logo.PNG "logo")
