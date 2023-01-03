@@ -84,6 +84,12 @@
             "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
             "choices": "[A] Cool [B] Cruel [C] Tool [D] Fool",
             "answer": "D"
+        },
+
+    "Kiss Me - Sixpence None The Richer": {
+            "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
+            "choices": "[A] Darling [B] Sparkling [C] Dazzling [D] Starling ",
+            "answer": "B"
         }
   }
 }
