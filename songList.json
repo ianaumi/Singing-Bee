@@ -12,7 +12,7 @@
       "choices": "choices",
       "answer": "answer"
     }
-  }
+  },
 
   // 70's
 
@@ -36,5 +36,12 @@
    }
 
   // 2020's
+  "2020's": {
+     "Linger - The Cranberries": {
 
+            "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
+            "choices": "[A] Cool [B] Cruel [C] Tool [D] Fool",
+            "answer": "D"
+        }
+  }
 }

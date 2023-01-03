@@ -11,10 +11,14 @@ print("hello")
 
 
 # WELCOME SCREEN
+<<<<<<< Updated upstream
 #ako si umi
 # haist
 
 # changes here
+=======
+print("hello world")
+>>>>>>> Stashed changes
 
 
 
