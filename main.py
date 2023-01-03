@@ -1,7 +1,12 @@
 # Welcome !
 # Use this comments as guide to our project
+<<<<<<< Updated upstream
 # make sure you're on a development branch!
 
+=======
+
+print("hello")
+>>>>>>> Stashed changes
 # START
 
 
