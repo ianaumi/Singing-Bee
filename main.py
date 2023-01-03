@@ -6,10 +6,14 @@
 
 print("Hi! I'm Irish, Nice to meet you")
 # WELCOME SCREEN
+<<<<<<< Updated upstream
 #ako si umi
 # haist
 
 # changes here
+=======
+print("hello world")
+>>>>>>> Stashed changes
 
 
 
