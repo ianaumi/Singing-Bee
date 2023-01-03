@@ -33,7 +33,13 @@
 
 
   // 2010's
-
+   "2010s": {
+     "Shake It Off - Taylor Swift": {
+       "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
+       "choices": "[A] Heat [B] Feet [C] Cheat [D] Beat",
+       "answer": "D"
+     }
+   }
 
   // 2020's
   "2020's": {
