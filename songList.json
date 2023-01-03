@@ -21,6 +21,12 @@
 
 
   // 90's
+   "Iris - Goo Goo Dolls": {
+
+            "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
+            "choices": "[A] Alone [B] Home [C] Down [D] Roam",
+            "answer": "B"
+        }
 
 
   // 2000's

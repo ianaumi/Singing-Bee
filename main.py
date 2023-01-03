@@ -4,7 +4,7 @@
 
 # START
 
-
+print("Hi! I'm Irish, Nice to meet you")
 # WELCOME SCREEN
 #ako si umi
 # haist
