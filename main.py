@@ -2,16 +2,31 @@
 # Use this comments as guide to our project
 # make sure you're on a development branch!
 
+# modules
+import os
+import json
+
+
+# clears the terminal using os command
+def clearScreen():
+    os.system('cls')
+
+# reading from the song list json file
+with open('songList.json') as f:
+    songList = json.load(f)
+
+print(songList)
+
 
 # START
-# testing for video
+
+
 
 # WELCOME SCREEN
 
 
 
 
-# AFTER LOADING IS DONE
 # ASK USER NAME
 
 
@@ -19,9 +34,7 @@
 
 
 
-
 # GAME MENU
-
 
 
 

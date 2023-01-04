@@ -1,12 +1,5 @@
 {
 
-  // 70's
-
-
-  // 80's
-
-
-  // 90's
   "90's": {
          "Iris - Goo Goo Dolls": {
 
@@ -51,10 +44,6 @@
         }
   },
 
-  // 2000's
-
-
-  // 2010's
    "2010s": {
      "Shake It Off - Taylor Swift": {
        "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
@@ -63,7 +52,6 @@
      }
    },
 
-  // 2020's
   "2020's": {
      "About you - 1975": {
       "lyrics": "There was something 'bout you that now I can't remember\nIt's the same damn thing that made my heart surrender\nAnd I miss you on a _______, I miss you in the morning\nI never know what to think about",
@@ -74,31 +62,31 @@
     "All I Really Want Is You - The Marias": {
       "lyrics": "All I really want is you\nWhat would you do?\nLaying in the rain with you\nMiddle of June\nAll I really want is you\nWhat would you do?\n____ outside, the moon\nTripping with you",
       "choices": "[A] Seeping [B] Sleeping [C] Creeping [D] Leaping",
-      "answer": "B",
+      "answer": "B"
     },
 
     "Anti-Hero - Taylor Swift": {
       "lyrics": "It's me\nHi\nI'm the problem, it's me\nAt teatime\nEverybody agrees\nI'll stare directly at the sun, but never in the mirror\nIt must be _____ always rooting for the anti-hero",
       "choices": "[A] Exhausting [B] Frosting [C] Faulting [D] Salting",
-      "answer": "A",
+      "answer": "A"
     },
 
     "August - Taylor Swift": {
       "lyrics": "But I can see us lost in the memory\nAugust slipped away into a moment in time\n'Cause it was never mine\nAnd I can see us twisted in bedsheets\nAugust _______ away like a bottle of wine\n'Cause you were never mine",
       "choices": "[A] Gone [B] Slipped [C] Went [D] Sipped",
-      "answer": "D",
+      "answer": "D"
     },
 
     "Bad Habit - Steve Lacy": {
       "lyrics": "I bite my tongue, it's a bad habit\nKinda mad that I didn't take a _______ at it\nThought you were too good for me, my dear\nNever gave me time of day, my dear\nIt's okay, things happen for\nReasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [C] Stab [D] Grab",
-      "answer": "C",
+      "answer": "C"
     },
 
     "Cardigan - Taylor Swift": {
       "lyrics": "But I knew you\nPlaying hide-and-seek and\nGiving me your weekends, I\nI knew you\nYour heartbeat on the ______ Line\nOnce in 20 lifetimes, I",
       "choices": "[A] High [B] Thigh [C] Sky[D] Nigh",
-      "answer": "A",
+      "answer": "A"
     }
   }
 }
