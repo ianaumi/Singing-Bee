@@ -60,21 +60,14 @@ def display_list(list):
     for n, items in choice.items():
         print(f"[{n}] {items}")
 
-
-print(" == YEAR == ")
-display_list(songList)
-
-print(" == SONG ==")
-choice.clear()
-display_list(songList[year_choice[0]])
-
-
-
-
-
-
-
 # SONG SELECTION
+def song_selection:
+    print(" == YEAR == ")
+    display_list(songList)
+
+    print(" == SONG ==")
+    choice.clear()
+    display_list(songList[year_choice[0]])
 
 
 
@@ -97,3 +90,5 @@ display_list(songList[year_choice[0]])
 
 
 # EXIT HERE
+
+# call main
