@@ -8,7 +8,7 @@ import json
 
 
 # clears the terminal using os command
-def clearScreen():
+def clear_screen():
     os.system('cls')
 
 # reading from the song list json file
