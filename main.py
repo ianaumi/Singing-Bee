@@ -15,7 +15,7 @@ def clear_screen():
 with open('songList.json') as f:
     songList = json.load(f)
 
-year_choice = []
+year_choice = ["2020's"]
 song_choice = []
 choice = {}
 
@@ -60,14 +60,39 @@ def display_list(list):
     for n, items in choice.items():
         print(f"[{n}] {items}")
 
-# SONG SELECTION
-def song_selection:
-    print(" == YEAR == ")
-    display_list(songList)
+def remove_last(list):
+    return list.pop()
 
-    print(" == SONG ==")
-    choice.clear()
-    display_list(songList[year_choice[0]])
+
+
+# SONG SELECTION
+def song_selection():
+    while True:
+        print(" == YEAR == ")
+        display_list(songList)
+
+
+
+        print(" == SONG ==")
+        choice.clear()
+        display_list(songList[year_choice[0]])
+        print("[B] To go back.")
+
+        player_choice = input("choice>> ")
+
+        if player_choice.upper() == 'B':
+            remove_last(year_choice)
+            continue
+
+        if player_choice in choice:
+            song_choice.insert(0, choice[player_choice])
+            print(song_choice)
+        else:
+            print("invalid option")
+
+
+song_selection()
+
 
 
 
