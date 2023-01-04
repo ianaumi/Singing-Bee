@@ -52,34 +52,7 @@
   },
 
   // 2000's
-  "2000's": {
-         "Helena - My Chemical Romance": {
-
-            "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
-            "choices": "[A] Worst [B] Best [C] Thing [D] Most",
-            "answer": "A"
-        },
-        "Lose Yourself - Eminem": {
-
-            "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
-            "choices": "[A] Row [B] Go [C] Blow [D] Know",
-            "answer": "C"
-        },
-        "Seven Nation Army - The White Stripes": {
-
-            "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
-            "choices": "[A] Guards [B] Hounds [C] Dogs [D] Demons",
-            "answer": "B"
-        },
-        "Toxic - Britney Spears": {
-
-            "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
-            "choices": "[A] Love [B] Heart [C] Kiss [D] Lips",
-            "answer": "D"
-        },
-        
-  },
-
+ 
   // 2010's
    "2010s": {
      "Shake It Off - Taylor Swift": {
