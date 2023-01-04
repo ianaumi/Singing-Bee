@@ -74,8 +74,8 @@ def remove_last(list):
 def song_selection():
     while True:
         print(" == YEAR == ")
-        print("SONG CART: ", str(len(songChoice)), "\n")
-        choices.clear()
+        print("SONG CART: ", str(len(song_choice)), "\n")
+        choice.clear()
         display_list(songList)
         print("\nPress [D] if you're done choosing")
         player_choice = input("Select a Year: ")
@@ -94,8 +94,8 @@ def song_selection():
             if player_choice.upper() == 'B':
                 continue
             else:
-                songChoice.reverse()
-                yearChoice.reverse()
+                song_choice.reverse()
+                year_choice.reverse()
                 break
 
         if player_choice in choice:
