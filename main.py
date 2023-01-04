@@ -15,8 +15,12 @@ def clearScreen():
 with open('songList.json') as f:
     songList = json.load(f)
 
-print(songList)
-
+yearChoice = []
+songChoice = []
+choice = {}
+player_name = None
+player_choice = None
+player_points = 0
 
 # START
 
