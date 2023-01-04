@@ -6,7 +6,6 @@
 import os
 import json
 
-
 # clears the terminal using os command
 def clear_screen():
     os.system('cls')
@@ -15,28 +14,26 @@ def clear_screen():
 with open('songList.json') as f:
     songList = json.load(f)
 
-
 year_choice = []
-song_choice = ["song1", "song2", "song3"]
-
-year_choice = ["2020's"]
 song_choice = []
 choice = {}
-
 player_name = None
 player_choice = None
 player_points = 0
 
-# START
 def options(list):
     option = list
     return option
 
+# START
 
 
 
 
 # WELCOME SCREEN
+
+
+
 
 
 # ASK USER NAME
@@ -52,45 +49,50 @@ def options(list):
 
 
 
-
+# SONG SELECTION
 def song_info(value):
     return songList[year_choice[0]][song_choice[0]][value]
 
 
-def display_list(list):
-    for num, key in enumerate(list, start=1):
+def display_list(songList):
+    # enumerates to the list
+    for num, key in enumerate(songList, start=1):
         choice[str(num)] = key
 
+    # prints the choices with numbering
     for n, items in choice.items():
         print(f"[{n}] {items}")
 
 
-def remove_last(list):
-    return list.pop()
-
-
-
 # SONG SELECTION
 def song_selection():
+    global year_choice
+    global song_choice
+
     while True:
         print(" == YEAR == ")
+        # counts how many player chose
         print("SONG CART: ", str(len(songChoice)), "\n")
+        # clears the choices from songs
         choices.clear()
+
         display_list(songList)
         print("\nPress [D] if you're done choosing")
         player_choice = input("Select a Year: ")
 
+        # checks if player is done choosing
         if player_choice.upper() == 'D':
             print("==YOUR SONGS==")
             print("Press any key to start the game")
-            print("[B] Back")
 
-            # prints all of the songs player choise
+            # prints all of the songs player chose
             for song in song_choice:
                 print(song)
+            print("[B] Back")
 
             player_choice = input("Choice: ")
 
+            # allows the player to go back
             if player_choice.upper() == 'B':
                 continue
             else:
@@ -99,23 +101,28 @@ def song_selection():
                 break
 
         if player_choice in choice:
+            # inserts the year choice of user in the year choice list
             year_choice.insert(0, choice[player_choice])
         else:
             print("Invalid")
             continue
 
         print(" == SONG ==")
-        choice.clear()
+        choice.clear() # clears the year choices
+
+        # displays the song list selection
         display_list(songList[year_choice[0]])
         print("[B] To go back.")
 
         player_choice = input("choice>> ")
 
+        # checks if user wants to go back on year selection
         if player_choice.upper() == 'B':
-            remove_last(year_choice)
+            year_choice.pop()
             continue
 
         if player_choice in choice:
+            # inserts the year choice of user in the year choice list
             song_choice.insert(0, choice[player_choice])
 
         else:
