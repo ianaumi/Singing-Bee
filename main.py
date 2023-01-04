@@ -16,7 +16,7 @@ with open('songList.json') as f:
     songList = json.load(f)
 
 year_choice = []
-song_choice = []
+song_choice = ["song1", "song2", "song3"]
 choice = {}
 
 player_name = None
@@ -61,15 +61,35 @@ def display_list(list):
         print(f"[{n}] {items}")
 
 # SONG SELECTION
-def song_selection:
-    print(" == YEAR == ")
-    display_list(songList)
+def song_selection():
+    while True:
+        print(" == YEAR == ")
+        display_list(songList)
+        print("[D] Done")
 
-    print(" == SONG ==")
-    choice.clear()
-    display_list(songList[year_choice[0]])
+        player_choice = input("Select a Year: ")
 
+        if player_choice.upper() == 'D':
+            for song in song_choice:
+                print(song)
+            print("[B] Back")
+            print("Press any key to start the game")
+            player_choice = input("Choice: ")
+            if player_choice.upper() == 'B':
+                continue
+            else:
+                break
 
+        if player_choice in choice:
+            year_choice.insert(0, choice[player_choice])
+        else:
+            print("Invalid")
+
+        print(" == SONG ==")
+        choice.clear()
+        display_list(songList[year_choice[0]])
+
+song_selection()
 
 
 
