@@ -74,32 +74,35 @@ def remove_last(list):
 def song_selection():
     while True:
         print(" == YEAR == ")
+        print("SONG CART: ", str(len(songChoice)), "\n")
+        choices.clear()
         display_list(songList)
-        print("[D] Done")
-
+        print("\nPress [D] if you're done choosing")
         player_choice = input("Select a Year: ")
 
         if player_choice.upper() == 'D':
-            for song in song_choice:
-                print(song)
+            print("==YOUR SONGS==")
             print("[B] Back")
             print("Press any key to start the game")
+
+            # prints all of the songs player choise
+            for song in song_choice:
+                print(song)
+
             player_choice = input("Choice: ")
+
             if player_choice.upper() == 'B':
                 continue
             else:
+                songChoice.reverse()
+                yearChoice.reverse()
                 break
 
         if player_choice in choice:
             year_choice.insert(0, choice[player_choice])
         else:
             print("Invalid")
-
-        print(" == SONG ==")
-        choice.clear()
-        display_list(songList[year_choice[0]])
-
-song_selection()
+            continue
 
         print(" == SONG ==")
         choice.clear()
@@ -114,10 +117,9 @@ song_selection()
 
         if player_choice in choice:
             song_choice.insert(0, choice[player_choice])
-            print(song_choice)
+
         else:
             print("invalid option")
-
 
 song_selection()
 
