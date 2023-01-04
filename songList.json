@@ -72,13 +72,49 @@
         
   },
 
-   "2010s": {
-     "Shake It Off - Taylor Swift": {
-       "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
-       "choices": "[A] Heat [B] Feet [C] Cheat [D] Beat",
-       "answer": "D"
-     }
-   },
+    "2010s": {
+        "Shake It Off - Taylor Swift": {
+
+            "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
+            "choices": "[A] Heat [B] Feet [C] Cheat [D] Beat",
+            "answer": "D"
+        },
+
+        "Counting Stars - One Republic": {
+
+            "lyrics": "I feel your love, and I feel it burn\nDown this river, every turn\n_______ is our four-letter word\nMake that money, watch it burn",
+            "choices": "[A] Hope [B] Nope [C] Cope [D] Rope",
+            "answer": "A"
+        },
+
+        "Shut Up And Dance - Walk The Moon": {
+
+            "lyrics": "A backless dress and some beat up sneaks\nMy _______ Juliet teenage dream\nI felt it in my chest as she looked at me\nI knew we were bound to be together",
+            "choices": "[A] Nickelback [B] Massachusetts [C] Discotheque [D] Ricochet",
+            "answer": "C"
+        },
+
+        "Mundo - IV Of Spades": {
+
+            "lyrics": "Sa'n darating ang mga salita\nNa nanggagaling sa aming dalawa\nKung lumisan ka wag naman sana\nIka'y _______ na nang di makawala",
+            "choices": "[A] Sumapit [B] Kumapit [C] Lumapit [D] Sumabit",
+            "answer": "B"
+        },
+
+        "Buwan - Juan Karlos": {
+
+            "lyrics": "Ang iyong ganda'y umaabot sa buwan\nAng tibok ng puso'y rinig sa _______\nAt bumabalik dito sa akin\nIkaw ang mahal, ikaw lang ang mamahalin",
+            "choices": "[A] Kalangitan [B] Kapalaran [C] Kalawakan [D] Kalayaan",
+            "answer": "C"
+        },
+
+        "Leaves - Ben&Ben": {
+
+            "lyrics": "I never thought I would see the day\nThat I decide if I should leave or stay\nBut in the end, what's really worth the _______\nThat no matter what happens we try to make it right",
+            "choices": "[A] Tries [B] Fights [C] Nights [D] Heights",
+            "answer": "B"
+        }
+  },
 
   "2020's": {
      "About you - 1975": {
