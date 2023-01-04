@@ -82,8 +82,8 @@ def song_selection():
 
         if player_choice.upper() == 'D':
             print("==YOUR SONGS==")
-            print("[B] Back")
             print("Press any key to start the game")
+            print("[B] Back")
 
             # prints all of the songs player choise
             for song in song_choice:
