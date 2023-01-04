@@ -46,21 +46,27 @@ def options(list):
 
 
 
+
+
+
 def song_info(value):
     return songList[year_choice[0]][song_choice[0]][value]
-def displayList(list):
+
+
+def display_list(list):
     for num, key in enumerate(list, start=1):
         choice[str(num)] = key
 
     for n, items in choice.items():
         print(f"[{n}] {items}")
 
+
 print(" == YEAR == ")
-displayList(songList)
+display_list(songList)
 
 print(" == SONG ==")
 choice.clear()
-displayList(songList[year_choice[0]])
+display_list(songList[year_choice[0]])
 
 
 
