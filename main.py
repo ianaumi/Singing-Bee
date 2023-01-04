@@ -60,6 +60,7 @@ def display_list(list):
     for n, items in choice.items():
         print(f"[{n}] {items}")
 
+
 def remove_last(list):
     return list.pop()
 
@@ -92,11 +93,6 @@ def song_selection():
 
 
 song_selection()
-
-
-
-
-
 
 
 # TOTAL SONGLIST PLAYER CHOSE
