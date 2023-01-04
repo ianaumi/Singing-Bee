@@ -61,13 +61,14 @@ def display_list(list):
         print(f"[{n}] {items}")
 
 # SONG SELECTION
-def song_selection:
+def song_selection():
     print(" == YEAR == ")
     display_list(songList)
 
     print(" == SONG ==")
     choice.clear()
     display_list(songList[year_choice[0]])
+
 
 
 
