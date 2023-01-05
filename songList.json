@@ -1,4 +1,38 @@
 {
+  "60s": {
+
+    "Stand by Me - Ben E. King": {
+      "lyrics": "when the night has come\nAnd the land is dark\nAnd the _______ is the only light\nwe'll see",
+      "choices": "[A] Moon [B] Sun [C] Stars [D] Night",
+      "answer": "A"
+    },
+    "Ain't No Mountain High Enough - Marvin Gaye & Tammi Terrell": {
+      "lyrics": "Ain't no mountain high enough\nAin't no valley low enough\nAin't no river wide enough\nTo keep me from _______ to you, babe",
+      "choices": "[A] Running [B] Walking [C] Coming [D] Getting",
+      "answer": "D"
+    },
+    "Hey Jude - The Beatles": {
+      "lyrics": "Hey, Jude, don't make it bad\nTake a sad song and make it better\nRemember to let her into your _______\nThen you can start to make it better",
+      "choices": "[A] Life [B] Heart [C] Home [D] Self",
+      "answer": "B"
+    },
+    "Fortunate Son - Creedence Clearwater Revival": {
+      "lyrics": "It ain't me, it ain't me\nI ain't no senator's son son\nIt ain't me, it ain't me\nI ain't no _______ one, no",
+      "choices": "[A] Unfortunate [B] Exfoliate [C] Fortunate [D] Concatenate",
+      "answer": "C"
+    },
+    "Brown Eyed Girl - Van Morrison": {
+      "lyrics": "Skipping and a jumping\nIn the misty morning fog with\nOur hearts a thumpin' and you\nMy _______ girl",
+      "choices": "[A] Brown-eyed [B] Blue-eyed [C] Black-eyed [D] Red-eyed",
+      "answer": "A"
+    },
+    "The House of the Rising Sun - The Animals": {
+      "lyrics": "Well, there is a house in _______\nThey call the Rising Sun\nAnd it's been the ruin of many a poor boy\nAnd God, I know I'm one",
+      "choices": "[A] New York [B] New Jersey [C] New Portland [D] New Orleans",
+      "answer": "D"
+    }
+  },
+
   "70s": {
 
     "No Sugar Tonight / New Mother Nature - The Guess Who": {
@@ -73,7 +107,7 @@
     }
   },
 
- "90's": {
+  "90's": {
 
     "Iris - Goo Goo Dolls": {
       "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
@@ -113,32 +147,32 @@
       "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
       "choices": "[A] Worst [B] Best [C] Thing [D] Most",
       "answer": "A"
-        },
+    },
     "Lose Yourself - Eminem": {
       "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
       "choices": "[A] Row [B] Go [C] Blow [D] Know",
       "answer": "C"
-        },
+    },
     "Seven Nation Army - The White Stripes": {
       "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
       "choices": "[A] Guards [B] Hounds [C] Dogs [D] Demons",
       "answer": "B"
-        },
+    },
     "With a Smile - Eraserheads": {
       "lyrics": "Girl, I'll stay through the bad times \nEven if I have to _____ you everyday \nWe'll get by with a smile \nYou can never be too happy in this life.",
       "choices": "[A] Fetch [B] Kiss [C] Love [D] Miss",
       "answer": "A"
-        },
+    },
     "Toxic - Britney Spears": {
       "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
       "choices": "[A] Love [B] Heart [C] Kiss [D] Lips",
       "answer": "D"
-        },
+    },
     "When I Come Around - Green Day": {
       "lyrics": "Well, don't get lonely now, and dry your whining eyes \nI'm just _______ for the moment \nSleazin' my back yard so don't get \nSo uptight you been thinking about ditching me",
       "choices": "[A] Crying [B] Lacking [C] Whining [D] Weeping",
       "answer": "C"
-        }
+    }
   },
 
   "2010s": {
