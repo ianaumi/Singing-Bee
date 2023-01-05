@@ -75,8 +75,6 @@ def song_selection():
         print("SONG CART: ", str(len(song_choice)), "\n")
         # clears the choices from songs
         choice.clear()
-        print("SONG CART: ", str(len(song_choice)), "\n")
-        choice.clear()
         display_list(song_list)
         print("\nPress [D] if you're done choosing")
         player_choice = input("Select a Year: ")
