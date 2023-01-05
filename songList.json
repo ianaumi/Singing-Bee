@@ -1,41 +1,35 @@
 {
   "70s": {
-        "No Sugar Tonight / New Mother Nature - The Guess Who": {
-
-            "lyrics": "No sugar tonight in my coffee\nNo sugar tonight in my tea\nNo sugar to _____ beside me\nNo sugar to run with me",
-            "choices": "[A] Band [B] Stand [C] Brand [D] Land",
-            "answer": "B"
-        },
-        "Raindrops Keep Fallin' on My Head - B. J. Thomas": {
-
-            "lyrics": "But there's one thing I know\nThe blues they send to meet me\nWon't defeat me, it won't be ____\nTill happiness steps up to greet me",
-            "choices": "[A] Song [B] Long [C] Belong [D] Strong",
-            "answer": "B"
-        },
-        "War - Edwin Starr": {
-
-            "lyrics": "War, huh (God y'all)\nWhat is it ____ for? You tell me (nothing)\nSay it, say it, say it, say it",
-            "choices": "[A] Good [B] Should [C] Stood [D] Could",
-            "answer": "A"
-        },
-        "Let It Be - Let It Be": {
-
-            "lyrics": "Let it be, let it be, let it be, let it be\n______ words of wisdom, let it be",
-            "choices": "[A] Lisper [B] Wisper [C] Dispur [D] Whisper",
-            "answer": "D"
-        },
-        "Make It with You -  Bread": {
-
-            "lyrics": "Hey, have you ever tried\nReally reaching out for the other ____?\nI may be climbing on rainbows\nBut baby, here goes",
-            "choices": "[A] Cried [B] Bride [C] Side [D] Aside",
-            "answer": "C"
-        },
-        "Leaves - Ben&Ben": {
-
-            "lyrics": "I'm taking the _____ out of the sun\nWhatever made me think that I was number one",
-            "choices": "[A] Shade [B] Glade [C] Weighed, [D] Heights",
-            "answer": "A"
-        }
+    "No Sugar Tonight / New Mother Nature - The Guess Who": {
+      "lyrics": "No sugar tonight in my coffee\nNo sugar tonight in my tea\nNo sugar to _____ beside me\nNo sugar to run with me".
+      "choices": "[A] Band [B] Stand [C] Brand [D] Land",
+      "answer": "B"
+    },
+    "Raindrops Keep Fallin' on My Head - B. J. Thomas": {
+      "lyrics": "But there's one thing I know\nThe blues they send to meet me\nWon't defeat me, it won't be ____\nTill happiness steps up to greet me",
+      "choices": "[A] Song [B] Long [C] Belong [D] Strong",
+      "answer": "B"
+    },
+    "War - Edwin Starr": {
+      "lyrics": "War, huh (God y'all)\nWhat is it ____ for? You tell me (nothing)\nSay it, say it, say it, say it",
+      "choices": "[A] Good [B] Should [C] Stood [D] Could",
+      "answer": "A"
+    },
+    "Let It Be - The Beatles": {
+      "lyrics": "Let it be, let it be, let it be, let it be\n______ words of wisdom, let it be",
+      "choices": "[A] Lisper [B] Wisper [C] Dispur [D] Whisper",
+      "answer": "D"
+    },
+    "Make It with You -  Bread": {
+      "lyrics": "Hey, have you ever tried\nReally reaching out for the other ____?\nI may be climbing on rainbows\nBut baby, here goes",
+      "choices": "[A] Cried [B] Bride [C] Side [D] Aside",
+      "answer": "C"
+    },
+    "Easy Come, Easy Go - Bobby Sherman": {
+      "lyrics": "I'm taking the _____ out of the sun\nWhatever made me think that I was number one",
+      "choices": "[A] Shade [B] Glade [C] Weighed, [D] Heights",
+      "answer": "A"
+    }
   },
 
 
