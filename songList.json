@@ -1,5 +1,6 @@
 {
   "70s": {
+
     "No Sugar Tonight / New Mother Nature - The Guess Who": {
       "lyrics": "No sugar tonight in my coffee\nNo sugar tonight in my tea\nNo sugar to _____ beside me\nNo sugar to run with me",
       "choices": "[A] Band [B] Stand [C] Brand [D] Land",
@@ -32,8 +33,8 @@
     }
   },
 
-
   "80s": {
+
     "Wake Me Up Before You Go-Go - Wham!": {
       "lyric": "Wake me up before you go-go \nDon't leave me hanging on like a yo-yo \nWake me up before you go-go \nI don't wanna ____ it when you hit that high",
       "choices": "[A] miss [B] hear [H] Hint [C] see [D] find",
@@ -72,88 +73,7 @@
     }
   },
 
-  "90's": {
- 
-         "Iris - Goo Goo Dolls": {
-
-            "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
-            "choices": "[A] Alone [B] Home [C] Down [D] Roam",
-            "answer": "B"
-        },
-
-        "Always be my Baby - Mariah Carey": {
-
-            "lyrics": "You'll always be apart of me \nI'm part of you indefinitely \nBoy don't you know you can't _____ me \nOh darlin' 'cause you'll always be my baby",
-            "choices": "[A] Tape [B] Shape [C] Scrape [D] Escape",
-            "answer": "D"
-        },
-
-        "Linger - The Cranberries": {
-
-            "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
-            "choices": "[A] Cool [B] Cruel [C] Tool [D] Fool",
-            "answer": "D"
-        },
-
-        "My Heart will go on - Celine Dion": {
-
-            "lyrics": "Near, far, wherever you are \nI believe that the heart does go on \nOnce more, you open the ____",
-            "choices": "[A] Door [B] Shore [C] Core [D] Floor",
-            "answer": "A"
-        },
-
-         "Weak - SWV": {
-
-            "lyrics": "I get so weak in the knees \nI can hardly ____ (I do) \nI lose all control (control) \nAnd something takes over me (takes over me)",
-            "choices": "[A] Seek [B] Squeak [C] Speak [D] Peak",
-            "answer": "C"
-        },
-
-          "Kiss Me - Sixpence None The Richer": {
-
-            "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
-            "choices": "[A] Darling [B] Sparkling [C] Dazzling [D] Starling ",
-            "answer": "B"
-        }
-  },
-  
- "2000's": {
-        "Helena - My Chemical Romance": {
-
-            "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
-            "choices": "[A] Worst [B] Best [C] Thing [D] Most",
-            "answer": "A"
-        },
-        "Lose Yourself - Eminem": {
-
-            "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
-            "choices": "[A] Row [B] Go [C] Blow [D] Know",
-            "answer": "C"
-        },
-        "Seven Nation Army - The White Stripes": {
-
-            "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
-            "choices": "[A] Guards [B] Hounds [C] Dogs [D] Demons",
-            "answer": "B"
-        },
-        "With a Smile - Eraserheads": {
-
-            "lyrics": "Girl, I'll stay through the bad times \nEven if I have to _____ you everyday \nWe'll get by with a smile \nYou can never be too happy in this life.",
-            "choices": "[A] Fetch [B] Kiss [C] Love [D] Miss",
-            "answer": "A"
-        },
-        "Toxic - Britney Spears": {
-
-            "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
-            "choices": "[A] Love [B] Heart [C] Kiss [D] Lips",
-            "answer": "D"
-        },
-        "When I Come Around - Green Day": {
-
-            "lyrics": "Well, don't get lonely now, and dry your whining eyes \nI'm just _______ for the moment \nSleazin' my back yard so don't get \nSo uptight you been thinking about ditching me",
-            "choices": "[A] Crying [B] Lacking [C] Whining [D] Weeping",
-            "answer": "C"
-        },
+ "90's": {
 
     "Iris - Goo Goo Dolls": {
       "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
@@ -184,34 +104,45 @@
       "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
       "choices": "[A] Darling [B] Sparkling [C] Dazzling [D] Starling ",
       "answer": "B"
-    }
- 
+    } 
   },
 
   "2000's": {
+
     "Helena - My Chemical Romance": {
       "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
       "choices": "[A] Worst [B] Best [C] Thing [D] Most",
       "answer": "A"
-    },
+        },
     "Lose Yourself - Eminem": {
       "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
       "choices": "[A] Row [B] Go [C] Blow [D] Know",
       "answer": "C"
-    },
+        },
     "Seven Nation Army - The White Stripes": {
       "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
       "choices": "[A] Guards [B] Hounds [C] Dogs [D] Demons",
       "answer": "B"
-    },
+        },
+    "With a Smile - Eraserheads": {
+      "lyrics": "Girl, I'll stay through the bad times \nEven if I have to _____ you everyday \nWe'll get by with a smile \nYou can never be too happy in this life.",
+      "choices": "[A] Fetch [B] Kiss [C] Love [D] Miss",
+      "answer": "A"
+        },
     "Toxic - Britney Spears": {
       "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
       "choices": "[A] Love [B] Heart [C] Kiss [D] Lips",
       "answer": "D"
-    }
+        },
+    "When I Come Around - Green Day": {
+      "lyrics": "Well, don't get lonely now, and dry your whining eyes \nI'm just _______ for the moment \nSleazin' my back yard so don't get \nSo uptight you been thinking about ditching me",
+      "choices": "[A] Crying [B] Lacking [C] Whining [D] Weeping",
+      "answer": "C"
+        }
   },
 
   "2010s": {
+
     "Shake It Off - Taylor Swift": {
       "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
       "choices": "[A] Heat [B] Feet [C] Cheat [D] Beat",
@@ -245,6 +176,7 @@
   },
 
   "2020's": {
+    
     "About you - 1975": {
       "lyrics": "There was something 'bout you that now I can't remember\nIt's the same damn thing that made my heart surrender\nAnd I miss you on a _______, I miss you in the morning\nI never know what to think about",
       "choices": "[A] Spain [B] Plane [C] Train [D] Rain",
@@ -271,7 +203,7 @@
       "answer": "C"
     },
     "Cardigan - Taylor Swift": {
-      "lyrics": "But I knew you\nPlaying hide-and-seek and\nGiving me your weekends, I\nI knew you\nYour heartbeat on the ______ Line\nOnce in 20 lifetimes, I",
+      "lyrics": "But I knew you, playing hide-and-seek and \nGiving me your weekends, I- I knew you\nYour heartbeat on the ______ Line. Once in 20 lifetimes, I",
       "choices": "[A] High [B] Thigh [C] Sky[D] Nigh",
       "answer": "A"
     }
