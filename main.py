@@ -12,7 +12,7 @@ def clear_screen():
 
 # reading from the song list json file
 with open('songList.json') as f:
-    songList = json.load(f)
+    song_list = json.load(f)
 
 year_choice = []
 song_choice = []
@@ -51,12 +51,12 @@ def options(list):
 
 # SONG SELECTION
 def song_info(value):
-    return songList[year_choice[0]][song_choice[0]][value]
+    return song_list[year_choice[0]][song_choice[0]][value]
 
 
-def display_list(songList):
+def display_list(song_list):
     # enumerates to the list
-    for num, key in enumerate(songList, start=1):
+    for num, key in enumerate(song_list, start=1):
         choice[str(num)] = key
 
     # prints the choices with numbering
@@ -72,12 +72,10 @@ def song_selection():
     while True:
         print(" == YEAR == ")
         # counts how many player chose
-        print("SONG CART: ", str(len(songChoice)), "\n")
-        # clears the choices from songs
-        choices.clear()
         print("SONG CART: ", str(len(song_choice)), "\n")
+        # clears the choices from songs
         choice.clear()
-        display_list(songList)
+        display_list(song_list)
         print("\nPress [D] if you're done choosing")
         player_choice = input("Select a Year: ")
 
@@ -112,7 +110,7 @@ def song_selection():
         choice.clear() # clears the year choices
 
         # displays the song list selection
-        display_list(songList[year_choice[0]])
+        display_list(song_list[year_choice[0]])
         print("[B] To go back.")
 
         player_choice = input("choice>> ")
