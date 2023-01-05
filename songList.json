@@ -1,160 +1,158 @@
 {
+  "80s": {
+    "Wake Me Up Before You Go-Go - Wham!": {
+      "lyric": "Wake me up before you go-go \nDon't leave me hanging on like a yo-yo \nWake me up before you go-go \nI don't wanna ____ it when you hit that high",
+      "choices": "[A] miss [B] hear [H] Hint [C] see [D] find",
+      "hint": "[A] miss [D] find",
+      "ans": "A"
+    },
+    "Total Eclipse of the Heart - Bonnie Tyler": {
+      "lyric": "And I need you now tonight \nAnd I need you more than ever \nAnd if you only hold me tight \nWe'll be holding on ____",
+      "choices": "[A] evermore [B] whenever [H] Hint [C] always. [D] forever",
+      "hint": "[B] whenever [C] forever",
+      "ans": "C"
+    },
+    "Eye of the Tiger - Survivor": {
+      "lyric": "It's the eye of the tiger \nIt's the thrill of the fight \n____ up to the challenge of our rival \nAnd the last known survivor",
+      "choices": "[A] fighting [B] rising [H] Hint [C] facing. [D] beaten",
+      "hint": "[A] fighting [B] rising",
+      "ans": "B"
+    },
+    "I Wanna Dance with Somebody - Whitney Houston": {
+      "lyric": "Oh, I wanna dance with somebody \nI wanna feel the ____ with somebody \nYeah, I wanna dance with somebody \nWith somebody who loves me",
+      "choices": "[A] warm [B] touch [H] Hint [C] love. [D] heat",
+      "hint": "[C] love [D] heat",
+      "ans": "D"
+    },
+    "Never Gonna Give You Up - Rick Astley": {
+      "lyric": "Never gonna give you up \nNever gonna let you down \nNever gonna ____ around and desert you",
+      "choices": "[A] roam [B] run [H] Hint [C] fool. [D] turn",
+      "hint": "[B] run [D] turn",
+      "ans": "B"
+    },
+    "Every Breath You Take - The Police": {
+      "lyric": "Every move you make \nAnd every vow you break \nEvery ____ you fake \nEvery claim you stake \nI'll be watching you",
+      "choices": "[A] tears [B] face [H] Hint [C] smile. [D] truth",
+      "hint": "[A] tears [C] smile",
+      "ans": "C"
+    }
+  },
 
   "90's": {
-         "Iris - Goo Goo Dolls": {
-
-            "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
-            "choices": "[A] Alone [B] Home [C] Down [D] Roam",
-            "answer": "B"
-        },
-
-        "Always be my Baby - Mariah Carey": {
-
-            "lyrics": "You'll always be apart of me \nI'm part of you indefinitely \nBoy don't you know you can't _____ me \nOh darlin' 'cause you'll always be my baby",
-            "choices": "[A] Tape [B] Shape [C] Scrape [D] Escape",
-            "answer": "D"
-        },
-
-        "Linger - The Cranberries": {
-
-            "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
-            "choices": "[A] Cool [B] Cruel [C] Tool [D] Fool",
-            "answer": "D"
-        },
-
-        "My Heart will go on - Celine Dion": {
-
-            "lyrics": "Near, far, wherever you are \nI believe that the heart does go on \nOnce more, you open the ____",
-            "choices": "[A] Door [B] Shore [C] Core [D] Floor",
-            "answer": "A"
-        },
-
-         "Weak - SWV": {
-
-            "lyrics": "I get so weak in the knees \nI can hardly ____ (I do) \nI lose all control (control) \nAnd something takes over me (takes over me)",
-            "choices": "[A] Seek [B] Squeak [C] Speak [D] Peak",
-            "answer": "C"
-        },
-
-          "Kiss Me - Sixpence None The Richer": {
-
-            "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
-            "choices": "[A] Darling [B] Sparkling [C] Dazzling [D] Starling ",
-            "answer": "B"
-        }
-  },
-  
- "2000's": {
-         "Helena - My Chemical Romance": {
-
-            "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
-            "choices": "[A] Worst [B] Best [C] Thing [D] Most",
-            "answer": "A"
-        },
-        "Lose Yourself - Eminem": {
-
-            "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
-            "choices": "[A] Row [B] Go [C] Blow [D] Know",
-            "answer": "C"
-        },
-        "Seven Nation Army - The White Stripes": {
-
-            "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
-            "choices": "[A] Guards [B] Hounds [C] Dogs [D] Demons",
-            "answer": "B"
-        },
-        "Toxic - Britney Spears": {
-
-            "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
-            "choices": "[A] Love [B] Heart [C] Kiss [D] Lips",
-            "answer": "D"
-        }
-        
+    "Iris - Goo Goo Dolls": {
+      "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
+      "choices": "[A] Alone [B] Home [C] Down [D] Roam",
+      "answer": "B"
+    },
+    "Always be my Baby - Mariah Carey": {
+      "lyrics": "You'll always be apart of me \nI'm part of you indefinitely \nBoy don't you know you can't _____ me \nOh darlin' 'cause you'll always be my baby",
+      "choices": "[A] Tape [B] Shape [C] Scrape [D] Escape",
+      "answer": "D"
+    },
+    "Linger - The Cranberries": {
+      "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
+      "choices": "[A] Cool [B] Cruel [C] Tool [D] Fool",
+      "answer": "D"
+    },
+    "My Heart will go on - Celine Dion": {
+      "lyrics": "Near, far, wherever you are \nI believe that the heart does go on \nOnce more, you open the ____",
+      "choices": "[A] Door [B] Shore [C] Core [D] Floor",
+      "answer": "A"
+    },
+    "Weak - SWV": {
+      "lyrics": "I get so weak in the knees \nI can hardly ____ (I do) \nI lose all control (control) \nAnd something takes over me (takes over me)",
+      "choices": "[A] Seek [B] Squeak [C] Speak [D] Peak",
+      "answer": "C"
+    },
+    "Kiss Me - Sixpence None The Richer": {
+      "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
+      "choices": "[A] Darling [B] Sparkling [C] Dazzling [D] Starling ",
+      "answer": "B"
+    }
   },
 
-    "2010s": {
-        "Shake It Off - Taylor Swift": {
-
-            "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
-            "choices": "[A] Heat [B] Feet [C] Cheat [D] Beat",
-            "answer": "D"
-        },
-
-        "Counting Stars - One Republic": {
-
-            "lyrics": "I feel your love, and I feel it burn\nDown this river, every turn\n_______ is our four-letter word\nMake that money, watch it burn",
-            "choices": "[A] Hope [B] Nope [C] Cope [D] Rope",
-            "answer": "A"
-        },
-
-        "Shut Up And Dance - Walk The Moon": {
-
-            "lyrics": "A backless dress and some beat up sneaks\nMy _______ Juliet teenage dream\nI felt it in my chest as she looked at me\nI knew we were bound to be together",
-            "choices": "[A] Nickelback [B] Massachusetts [C] Discotheque [D] Ricochet",
-            "answer": "C"
-        },
-
-        "Mundo - IV Of Spades": {
-
-            "lyrics": "Sa'n darating ang mga salita\nNa nanggagaling sa aming dalawa\nKung lumisan ka wag naman sana\nIka'y _______ na nang di makawala",
-            "choices": "[A] Sumapit [B] Kumapit [C] Lumapit [D] Sumabit",
-            "answer": "B"
-        },
-
-        "Buwan - Juan Karlos": {
-
-            "lyrics": "Ang iyong ganda'y umaabot sa buwan\nAng tibok ng puso'y rinig sa _______\nAt bumabalik dito sa akin\nIkaw ang mahal, ikaw lang ang mamahalin",
-            "choices": "[A] Kalangitan [B] Kapalaran [C] Kalawakan [D] Kalayaan",
-            "answer": "C"
-        },
-
-        "Leaves - Ben&Ben": {
-
-            "lyrics": "I never thought I would see the day\nThat I decide if I should leave or stay\nBut in the end, what's really worth the _______\nThat no matter what happens we try to make it right",
-            "choices": "[A] Tries [B] Fights [C] Nights [D] Heights",
-            "answer": "B"
-        }
+  "2000's": {
+    "Helena - My Chemical Romance": {
+      "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
+      "choices": "[A] Worst [B] Best [C] Thing [D] Most",
+      "answer": "A"
+    },
+    "Lose Yourself - Eminem": {
+      "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
+      "choices": "[A] Row [B] Go [C] Blow [D] Know",
+      "answer": "C"
+    },
+    "Seven Nation Army - The White Stripes": {
+      "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
+      "choices": "[A] Guards [B] Hounds [C] Dogs [D] Demons",
+      "answer": "B"
+    },
+    "Toxic - Britney Spears": {
+      "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
+      "choices": "[A] Love [B] Heart [C] Kiss [D] Lips",
+      "answer": "D"
+    }
   },
 
-   "2010s": {
-     "Shake It Off - Taylor Swift": {
-       "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
-       "choices": "[A] Heat [B] Feet [C] Cheat [D] Beat",
-       "answer": "D"
-     }
-   },
+  "2010s": {
+    "Shake It Off - Taylor Swift": {
+      "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
+      "choices": "[A] Heat [B] Feet [C] Cheat [D] Beat",
+      "answer": "D"
+    },
+    "Counting Stars - One Republic": {
+      "lyrics": "I feel your love, and I feel it burn\nDown this river, every turn\n_______ is our four-letter word\nMake that money, watch it burn",
+      "choices": "[A] Hope [B] Nope [C] Cope [D] Rope",
+      "answer": "A"
+    },
+    "Shut Up And Dance - Walk The Moon": {
+      "lyrics": "A backless dress and some beat up sneaks\nMy _______ Juliet teenage dream\nI felt it in my chest as she looked at me\nI knew we were bound to be together",
+      "choices": "[A] Nickelback [B] Massachusetts [C] Discotheque [D] Ricochet",
+      "answer": "C"
+    },
+    "Mundo - IV Of Spades": {
+      "lyrics": "Sa'n darating ang mga salita\nNa nanggagaling sa aming dalawa\nKung lumisan ka wag naman sana\nIka'y _______ na nang di makawala",
+      "choices": "[A] Sumapit [B] Kumapit [C] Lumapit [D] Sumabit",
+      "answer": "B"
+    },
+    "Buwan - Juan Karlos": {
+      "lyrics": "Ang iyong ganda'y umaabot sa buwan\nAng tibok ng puso'y rinig sa _______\nAt bumabalik dito sa akin\nIkaw ang mahal, ikaw lang ang mamahalin",
+      "choices": "[A] Kalangitan [B] Kapalaran [C] Kalawakan [D] Kalayaan",
+      "answer": "C"
+    },
+    "Leaves - Ben&Ben": {
+      "lyrics": "I never thought I would see the day\nThat I decide if I should leave or stay\nBut in the end, what's really worth the _______\nThat no matter what happens we try to make it right",
+      "choices": "[A] Tries [B] Fights [C] Nights [D] Heights",
+      "answer": "B"
+    }
+  },
 
   "2020's": {
-     "About you - 1975": {
+    "About you - 1975": {
       "lyrics": "There was something 'bout you that now I can't remember\nIt's the same damn thing that made my heart surrender\nAnd I miss you on a _______, I miss you in the morning\nI never know what to think about",
       "choices": "[A] Spain [B] Plane [C] Train [D] Rain",
       "answer": "C"
     },
-
     "All I Really Want Is You - The Marias": {
       "lyrics": "All I really want is you\nWhat would you do?\nLaying in the rain with you\nMiddle of June\nAll I really want is you\nWhat would you do?\n____ outside, the moon\nTripping with you",
       "choices": "[A] Seeping [B] Sleeping [C] Creeping [D] Leaping",
       "answer": "B"
     },
-
     "Anti-Hero - Taylor Swift": {
       "lyrics": "It's me\nHi\nI'm the problem, it's me\nAt teatime\nEverybody agrees\nI'll stare directly at the sun, but never in the mirror\nIt must be _____ always rooting for the anti-hero",
       "choices": "[A] Exhausting [B] Frosting [C] Faulting [D] Salting",
       "answer": "A"
     },
-
     "August - Taylor Swift": {
       "lyrics": "But I can see us lost in the memory\nAugust slipped away into a moment in time\n'Cause it was never mine\nAnd I can see us twisted in bedsheets\nAugust _______ away like a bottle of wine\n'Cause you were never mine",
       "choices": "[A] Gone [B] Slipped [C] Went [D] Sipped",
       "answer": "D"
     },
-
     "Bad Habit - Steve Lacy": {
       "lyrics": "I bite my tongue, it's a bad habit\nKinda mad that I didn't take a _______ at it\nThought you were too good for me, my dear\nNever gave me time of day, my dear\nIt's okay, things happen for\nReasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [C] Stab [D] Grab",
       "answer": "C"
     },
-
     "Cardigan - Taylor Swift": {
       "lyrics": "But I knew you\nPlaying hide-and-seek and\nGiving me your weekends, I\nI knew you\nYour heartbeat on the ______ Line\nOnce in 20 lifetimes, I",
       "choices": "[A] High [B] Thigh [C] Sky[D] Nigh",
