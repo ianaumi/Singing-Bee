@@ -45,7 +45,7 @@
   },
   
  "2000's": {
-         "Helena - My Chemical Romance": {
+        "Helena - My Chemical Romance": {
 
             "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
             "choices": "[A] Worst [B] Best [C] Thing [D] Most",
@@ -63,13 +63,24 @@
             "choices": "[A] Guards [B] Hounds [C] Dogs [D] Demons",
             "answer": "B"
         },
+        "With a Smile - Eraserheads": {
+
+            "lyrics": "Girl, I'll stay through the bad times \nEven if I have to _____ you everyday \nWe'll get by with a smile \nYou can never be too happy in this life.",
+            "choices": "[A] Fetch [B] Kiss [C] Love [D] Miss",
+            "answer": "A"
+        },
         "Toxic - Britney Spears": {
 
             "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
             "choices": "[A] Love [B] Heart [C] Kiss [D] Lips",
             "answer": "D"
         },
-        
+        "When I Come Around - Green Day": {
+
+            "lyrics": "Well, don't get lonely now, and dry your whining eyes \nI'm just _______ for the moment \nSleazin' my back yard so don't get \nSo uptight you been thinking about ditching me",
+            "choices": "[A] Crying [B] Lacking [C] Whining [D] Weeping",
+            "answer": "C"
+        },
   },
 
    "2010s": {
