@@ -13,44 +13,62 @@ player_choice = None  # stores the every action of the player.
 
 
 # input validator for some options
-def options(list):
-    option = list
+def options(keys):
+    option = keys
     return option
 
-#TODO
-# WELCOME SCREEN
-print("Welcome to Who Wants To Be A Singing Bee!")
-
-#TODO
-# ASK USER NAME
-input("Enter your name: ")
 
 #TODO
 # GAME MENU
-while True:
-    print("\n== MENU == ")
-    print("[S] Start\n[A] About\n[H] Help\n[Q] Quit\n")
-    player_choice = input("Choice: ")
 
-    match player_choice.upper():
-        case "A":
-            print("\n== ABOUT GAME == ")
-            print("Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs. Fill in the missing lyrics and sing along to your most treasured tunes from the 60s up to the 2020s!")
-            input("\nEnter any key to go back to the Menu ")
+def display_about():
+    print("\n== ABOUT GAME == ")
+    print("Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs."
+          + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!")
+    input("\nEnter any key to go back to the Menu ")
 
-        case "H":
-            print("\n== HELP == ")
-            print(" ")
-            input("\nEnter any key to go back to the Menu ")
+def display_help():
+    print("\n== HELP == ")
+    print("•Player can choose any songs based on the songlist."
+          +"\n•Then the player should guess the missing word/s on the lyrics of the song."
+          +"\n•The choices will be: A,B,C,D and H for a hint that may use in the round."
+          +"\n•Correct answer without hint will be 1000 points."
+          +"\n•While correct answer using hint will be 500 points"
+          +"\n•And if you answer is wrong with or without hint, you get 0 point."
+          +"\n•May you gather the most points in the game. Enjoy!")
+    input("\nEnter any key to go back to the Menu ")
 
-        case "Q":
-            print("\nGoodbye. Come back soon!")
-            quit()
-
-        case "S":
-            print("\n== SONG SELECTION == ")
+def display_quit():
+    print("\nGoodbye. Come back soon!")
+    quit()
 
 
+def game_menu():
+    # TODO
+    # WELCOME SCREEN
+    print("Welcome to Who Wants To Be A Singing Bee!")
+
+    # TODO
+    # ASK USER NAME
+    input("Enter your name: ")
+    while True:
+        print("\n== GAME MENU == ")
+        print("[P] Play\n[A] About\n[H] Help\n[Q] Quit\n")
+        player_choice = input("Choice: ")
+        if player_choice.upper() in options(["P", "A", "H", "Q"]):
+            if player_choice.upper() == "A":
+                display_about()
+
+            elif player_choice.upper() == "H":
+                display_help()
+
+            elif player_choice.upper() == "Q":
+                display_quit()
+
+            elif player_choice.upper() == "P":
+                print("\n== SONG SELECTION == ")
+        else:
+            print("Invalid Options")
 
 
 # calls the key from a specific song
@@ -142,8 +160,8 @@ def song_selection():
 
 
 def main():
-    pass
-
+    game_menu()
+    song_selection()
 
 if __name__ == "__main__":
     main()
