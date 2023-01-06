@@ -112,31 +112,37 @@
     "Iris - Goo Goo Dolls": {
       "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
       "choices": "[A] Alone [B] Home [C] Down [D] Roam",
+      "hint": "[A] Alone [B] Home",
       "answer": "B"
     },
     "Always be my Baby - Mariah Carey": {
       "lyrics": "You'll always be apart of me \nI'm part of you indefinitely \nBoy don't you know you can't _____ me \nOh darlin' 'cause you'll always be my baby",
       "choices": "[A] Tape [B] Shape [C] Scrape [D] Escape",
+      "hint": "[B] Shape [D] Escape",
       "answer": "D"
     },
     "Linger - The Cranberries": {
       "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
       "choices": "[A] Cool [B] Cruel [C] Tool [D] Fool",
+      "hint": "[C] Tool [D] Fool",
       "answer": "D"
     },
     "My Heart will go on - Celine Dion": {
       "lyrics": "Near, far, wherever you are \nI believe that the heart does go on \nOnce more, you open the ____",
       "choices": "[A] Door [B] Shore [C] Core [D] Floor",
+      "hint": "[A] Door [C] Core",
       "answer": "A"
     },
     "Weak - SWV": {
       "lyrics": "I get so weak in the knees \nI can hardly ____ (I do) \nI lose all control (control) \nAnd something takes over me (takes over me)",
       "choices": "[A] Seek [B] Squeak [C] Speak [D] Peak",
+      "hint": "[B] Squeak [C] Speak",
       "answer": "C"
     },
     "Kiss Me - Sixpence None The Richer": {
       "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
-      "choices": "[A] Darling [B] Sparkling [C] Dazzling [D] Starling ",
+      "choices": "[A] Darling [B] Sparkling [C] Dazzling [D] Starling",
+      "hint": "[B] Sparkling [D] Starling",
       "answer": "B"
     } 
   },
