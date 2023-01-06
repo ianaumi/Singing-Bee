@@ -14,13 +14,15 @@ def clear_screen():
 with open('songList.json') as f:
     song_list = json.load(f)
 
-year_choice = []
-song_choice = []
-choice = {}
-player_name = None
-player_choice = None
-player_points = 0
+year_choice = []  # stores the year choice of player
+song_choice = []  # stores the song choice of player
+choice = {}  # stores the keys player can press and use it to call the key from the song list json file
+player_name = None  # stores the player's name
+player_choice = None  # stores the every action of the player.
+# player_points = 0  # stores the points of the user once the round started
 
+
+# input validator for some options
 def options(list):
     option = list
     return option
@@ -29,34 +31,35 @@ def options(list):
 
 
 
-
+#TODO
 # WELCOME SCREEN
 
 
 
 
-
+#TODO
 # ASK USER NAME
 
 
 
 
 
-
+#TODO
 # GAME MENU
 
 
 
 
 
-# SONG SELECTION
+# calls the key from a specific song
 def song_info(value):
     return song_list[year_choice[0]][song_choice[0]][value]
 
 
-def display_list(song_list):
+# displays the enumeration list of year or song
+def display_list(item):
     # enumerates to the list
-    for num, key in enumerate(song_list, start=1):
+    for num, key in enumerate(item, start=1):
         choice[str(num)] = key
 
     # prints the choices with numbering
@@ -84,7 +87,7 @@ def song_selection():
             print("==YOUR SONGS==")
             print("Press any key to start the game")
 
-            # prints all of the songs player chose
+            # displays all the songs player chose
             for song in song_choice:
                 print(song)
             print("[B] Back")
@@ -100,14 +103,13 @@ def song_selection():
                 break
 
         if player_choice in choice:
-            # inserts the year choice of user in the year choice list
+            # inserts the year choice of user from the year category
             year_choice.insert(0, choice[player_choice])
         else:
             print("Invalid")
             continue
 
         print(" == SONG ==")
-        choice.clear() # clears the year choices
 
         # displays the song list selection
         display_list(song_list[year_choice[0]])
@@ -121,7 +123,7 @@ def song_selection():
             continue
 
         if player_choice in choice:
-            # inserts the year choice of user in the year choice list
+            # inserts the song choice of user from the song category
             song_choice.insert(0, choice[player_choice])
 
         else:
@@ -130,16 +132,13 @@ def song_selection():
 song_selection()
 
 
-# TOTAL SONGLIST PLAYER CHOSE
 
-
-
-
+#TODO
 # START OF ROUND
 
 
 
-
+#TODO
 # SONGLIST IS EMPTY = GAME OVER
 
 
@@ -147,4 +146,10 @@ song_selection()
 
 # EXIT HERE
 
-# call main
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()

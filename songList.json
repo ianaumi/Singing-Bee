@@ -216,7 +216,7 @@
   },
 
   "2020's": {
-    
+
     "About you - 1975": {
       "lyrics": "There was something 'bout you that now I can't remember\nIt's the same damn thing that made my heart surrender\nAnd I miss you on a _______, I miss you in the morning\nI never know what to think about",
       "choices": "[A] Spain [B] Plane [C] Train [D] Rain",
@@ -227,24 +227,24 @@
       "choices": "[A] Seeping [B] Sleeping [C] Creeping [D] Leaping",
       "answer": "B"
     },
-    "Anti-Hero - Taylor Swift": {
-      "lyrics": "It's me\nHi\nI'm the problem, it's me\nAt teatime\nEverybody agrees\nI'll stare directly at the sun, but never in the mirror\nIt must be _____ always rooting for the anti-hero",
-      "choices": "[A] Exhausting [B] Frosting [C] Faulting [D] Salting",
-      "answer": "A"
-    },
-    "August - Taylor Swift": {
-      "lyrics": "But I can see us lost in the memory\nAugust slipped away into a moment in time\n'Cause it was never mine\nAnd I can see us twisted in bedsheets\nAugust _______ away like a bottle of wine\n'Cause you were never mine",
-      "choices": "[A] Gone [B] Slipped [C] Went [D] Sipped",
-      "answer": "D"
-    },
     "Bad Habit - Steve Lacy": {
       "lyrics": "I bite my tongue, it's a bad habit\nKinda mad that I didn't take a _______ at it\nThought you were too good for me, my dear\nNever gave me time of day, my dear\nIt's okay, things happen for\nReasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [C] Stab [D] Grab",
       "answer": "C"
     },
-    "Cardigan - Taylor Swift": {
-      "lyrics": "But I knew you, playing hide-and-seek and \nGiving me your weekends, I- I knew you\nYour heartbeat on the ______ Line. Once in 20 lifetimes, I",
-      "choices": "[A] High [B] Thigh [C] Sky[D] Nigh",
+    "Cruel Summer - Taylor Swift": {
+      "lyrics": "I'm drunk in the back of the car\nAnd I cried like a baby coming home from the bar (oh)\nSaid, \"I'm fine, \" but it wasn't true\nI don't wanna keep secrets just to keep you\nAnd I ___ in through the garden gate\nEvery night that summer just to seal my fate (oh)\nAnd I screamed for whatever it's worth I love you ain't that the worst thing you've ever heard?",
+      "choices": "[A] Walked [B] Ran [C] Went [D] Snuck",
+      "answer": "D"
+    },
+     "Drivers License - Olivia Rodrigo": {
+      "lyrics": "I guess you didn't mean what you wrote in that song about me\n'Cause you said _____, now I drive alone past your street",
+      "choices": "[A] Whatever [B] Forever [C] Together [D] Forget her",
+      "answer": "B"
+    },
+     "Fallen - Lola Amour": {
+      "lyrics": "What if I told you that I've fallen\nAnd I like the way you say my name?\nMy heart skips a beat when I hear you ____\nAnd I like that it won't go away",
+      "choices": "[A] Calling [B] Breathing [C] Heart beating [D] Talking",
       "answer": "A"
     }
   }
