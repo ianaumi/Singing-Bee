@@ -5,6 +5,7 @@
 # modules
 import os
 import json
+from pygame import mixer
 
 # clears the terminal using os command
 def clear_screen():

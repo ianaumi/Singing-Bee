@@ -178,24 +178,26 @@
       "choices": "[A] Seeping [B] Sleeping [C] Creeping [D] Leaping",
       "answer": "B"
     },
-    "Anti-Hero - Taylor Swift": {
-      "lyrics": "It's me\nHi\nI'm the problem, it's me\nAt teatime\nEverybody agrees\nI'll stare directly at the sun, but never in the mirror\nIt must be _____ always rooting for the anti-hero",
-      "choices": "[A] Exhausting [B] Frosting [C] Faulting [D] Salting",
-      "answer": "A"
+    "Comfort Crowd - Conan Gray": {
+      "lyrics": "I just needed company now\nYeah, I just needed someone around\nYeah, I don't care what song that we play\nOr ______ that we make\nJust company now\nComfort crowd",
+      "choices": "[A] Anything [B] Any [C] Mess [D] What",
+      "answer": "C"
     },
-    "August - Taylor Swift": {
-      "lyrics": "But I can see us lost in the memory\nAugust slipped away into a moment in time\n'Cause it was never mine\nAnd I can see us twisted in bedsheets\nAugust _______ away like a bottle of wine\n'Cause you were never mine",
-      "choices": "[A] Gone [B] Slipped [C] Went [D] Sipped",
-      "answer": "D"
+
+     "Drivers License - Olivia Rodrigo": {
+      "lyrics": "I guess you didn't mean what you wrote in that song about me\n'Cause you said _____, now I drive alone past your street",
+      "choices": "[A] Whatever [B] Forever [C] Together [D] Forget her",
+      "answer": "B"
     },
+
     "Bad Habit - Steve Lacy": {
-      "lyrics": "I bite my tongue, it's a bad habit\nKinda mad that I didn't take a _______ at it\nThought you were too good for me, my dear\nNever gave me time of day, my dear\nIt's okay, things happen for\nReasons that I think are sure, yeah",
+      "lyrics": "I bite my tongue, it's a bad habit\nKinda mad that I didn't take a _____ at it\nThought you were too good for me, my dear\nNever gave me time of day, my dear\nIt's okay, things happen for\nReasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [C] Stab [D] Grab",
       "answer": "C"
     },
     "Cardigan - Taylor Swift": {
       "lyrics": "But I knew you\nPlaying hide-and-seek and\nGiving me your weekends, I\nI knew you\nYour heartbeat on the ______ Line\nOnce in 20 lifetimes, I",
-      "choices": "[A] High [B] Thigh [C] Sky[D] Nigh",
+      "choices": "[A] High [B] Front [C] Sky [D] Middle of the",
       "answer": "A"
     }
   }
