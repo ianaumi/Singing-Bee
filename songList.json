@@ -274,7 +274,7 @@
     "Fallen - Lola Amour": {
       "lyrics": "What if I told you that I've fallen\nAnd I like the way you say my name?\nMy heart skips a beat when I hear you ____\nAnd I like that it won't go away",
       "choices": "[A] Calling [B] Breathing [H] Hint [C] Heart beating [D] Talking",
-       "hint": "[A] Calling [B] Breathing",
+      "hint": "[A] Calling [B] Breathing",
       "answer": "A"
     }
   }

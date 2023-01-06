@@ -33,20 +33,36 @@ def options(list):
 
 #TODO
 # WELCOME SCREEN
-
-
-
+print("Welcome to Who Wants To Be A Singing Bee!")
 
 #TODO
 # ASK USER NAME
-
-
-
-
+input("Enter your name: ")
 
 #TODO
 # GAME MENU
+while True:
+    print("\n== MENU == ")
+    print("[S] Start\n[A] About\n[H] Help\n[Q] Quit\n")
+    player_choice = input("Choice: ")
 
+    match player_choice.upper():
+        case "A":
+            print("\n== ABOUT GAME == ")
+            print("Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs. Fill in the missing lyrics and sing along to your most treasured tunes from the 60s up to the 2020s!")
+            input("\nEnter any key to go back to the Menu ")
+
+        case "H":
+            print("== HELP == ")
+            print(" ")
+            input("\nEnter any key to go back to the Menu ")
+
+        case "Q":
+            print("Goodbye. Come back soon!")
+            quit()
+
+        case "S":
+            print("== SONG SELECTION == ")
 
 
 
