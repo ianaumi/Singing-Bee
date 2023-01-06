@@ -39,16 +39,16 @@ while True:
             input("\nEnter any key to go back to the Menu ")
 
         case "H":
-            print("== HELP == ")
+            print("\n== HELP == ")
             print(" ")
             input("\nEnter any key to go back to the Menu ")
 
         case "Q":
-            print("Goodbye. Come back soon!")
+            print("\nGoodbye. Come back soon!")
             quit()
 
         case "S":
-            print("== SONG SELECTION == ")
+            print("\n== SONG SELECTION == ")
 
 
 
