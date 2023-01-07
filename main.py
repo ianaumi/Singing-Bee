@@ -1,4 +1,5 @@
 import json
+import os
 
 # reading from the song list json file
 with open('songList.json') as f:
@@ -13,6 +14,8 @@ player_choice = None  # stores the every action of the player.
 
 # player_points = 0  # stores the points of the user once the round started
 
+def clear_screen():
+    os.system('cls')
 
 # input validator for some options
 def options(keys):
@@ -22,11 +25,10 @@ def options(keys):
 
 # TODO
 # GAME MENU
-
 def display_about():
     print("\n== ABOUT GAME == ")
     print("🐝----Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs🎙️"
-          + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
+        + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
     input("\n😉Enter any key to go back to the Menu ")
 
 
@@ -185,6 +187,9 @@ def round_start():
         else:
             print("wrong")  # testrun
 
+        #TODO
+        # must add hint checker if user has enough hint before using one
+
 
         song_choice.pop(0)
         year_choice.pop(0)
@@ -194,17 +199,8 @@ def round_start():
             if player_choice.upper() == "y":
                 return game_menu()
 
-
-
-
-#TODO
-# SONGLIST IS EMPTY = GAME OVER
-
-
-# EXIT HERE
-
-
 def main():
+    clear_screen()
     game_menu()
     user_name()
     song_selection()
