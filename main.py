@@ -160,8 +160,8 @@ def song_selection():
     display_quit()
 
 
-def is_empty(asd):
-    if not asd:
+def is_empty(empty):
+    if not empty:
         return True
     else:
         return False
@@ -189,10 +189,10 @@ def round_start():
         song_choice.pop(0)
         year_choice.pop(0)
 
-        if is_empty(year_choice.pop(0)):
-            return quit()
-        else:
-            return print("do you want to play? ")
+        if is_empty(year_choice[0]):
+            player_choice = input("Do you want to play again? Y/N")
+            if player_choice.upper() == "y":
+                return game_menu()
 
 
 
