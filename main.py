@@ -23,37 +23,39 @@ def options(keys):
 
 def display_about():
     print("\n== ABOUT GAME == ")
-    print("Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs."
-          + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!")
-    input("\nEnter any key to go back to the Menu ")
+    print("🐝----Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs🎙️"
+          + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
+    input("\n😉Enter any key to go back to the Menu ")
 
 def display_help():
     print("\n== HELP == ")
-    print("•Player can choose any songs based on the songlist."
-          +"\n•Then the player should guess the missing word/s on the lyrics of the song."
-          +"\n•The choices will be: A,B,C,D and H for a hint that may use in the round."
-          +"\n•Correct answer without hint will be 1000 points."
-          +"\n•While correct answer using hint will be 500 points"
-          +"\n•And if you answer is wrong with or without hint, you get 0 point."
-          +"\n•May you gather the most points in the game. Enjoy!")
-    input("\nEnter any key to go back to the Menu ")
+    print("🎙•••Player can choose any songs based on the songlist."
+          +"\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
+          +"\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
+          +"\n🐝•••Correct answer without hint will be 1000 points."
+          +"\n🎙️•••While correct answer using hint will be 500 points"
+          +"\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
+          +"\n🎙•••May you gather the most points in the game. Enjoy!")
+    input("\n😉Enter any key to go back to the Menu")
 
 def display_quit():
-    print("\nGoodbye. Come back soon!")
+    print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
     quit()
-
 
 def game_menu():
     # TODO
     # WELCOME SCREEN
-    print("Welcome to Who Wants To Be A Singing Bee!")
+    print("🐝---Welcome to Who Wants To Be A Singing Bee!---🎙")
 
     # TODO
     # ASK USER NAME
-    input("Enter your name: ")
+def user_name():
+    global player_name
+    player_name = input("Enter your name: ")
+
     while True:
         print("\n== GAME MENU == ")
-        print("[P] Play\n[A] About\n[H] Help\n[Q] Quit\n")
+        print("[P]--Play🎙️\n[A]--About🐝\n[H]--Help🤔\n[Q]--Quit👋\n")
         player_choice = input("Choice: ")
         if player_choice.upper() in options(["P", "A", "H", "Q"]):
             if player_choice.upper() == "A":
@@ -67,8 +69,9 @@ def game_menu():
 
             elif player_choice.upper() == "P":
                 print("\n== SONG SELECTION == ")
+                song_selection()
         else:
-            print("Invalid Options")
+            print("❌Invalid Option❌")
 
 
 # calls the key from a specific song
@@ -92,26 +95,26 @@ def song_selection():
     global player_choice
 
     while True:
+        print("🛒SONG CART: ", str(len(song_choice)), "\n🐝-------")
         print(" == YEAR == ")
-        print("SONG CART: ", str(len(song_choice)), "\n")
         # clears the choices from songs
         choice.clear()
 
         display_list(song_list)
-        print("\n[D] Done")
+        print("🐝-------\n[D] Done")
         player_choice = input("Select a Year: ")
 
         # checks if player is done choosing
         if player_choice.upper() == 'D':
-            print("==YOUR SONGS==")
-            print("Press any key to start the game")
+            print("\n== YOUR SONGS ==")
 
             for song in song_choice:
                 print(song)
 
             # allows player to go back to year category
-            print("[B] Back")
-            player_choice = input("Choice: ")
+            print("🐝-------\n[B] Back")
+            print("😉Press any key to start the game")
+            player_choice = input("Choice:")
 
             if player_choice.upper() == 'B':
                 continue
@@ -124,15 +127,15 @@ def song_selection():
             # inserts the year choice of user from the year category
             year_choice.insert(0, choice[player_choice])
         else:
-            print("Invalid")
+            print("❌Invalid Option❌")
             continue
 
-        print(" == SONG ==")
+        print(" == SONGS ==")
         # displays the song list selection
         display_list(song_list[year_choice[0]])
         print("[B] To go back.")
 
-        player_choice = input("choice>> ")
+        player_choice = input("🎶Choice>> ")
         if player_choice.upper() == 'B':
             year_choice.pop()
             continue
@@ -142,7 +145,7 @@ def song_selection():
             song_choice.insert(0, choice[player_choice])
 
         else:
-            print("invalid option")
+            print("❌Invalid Option❌")
 
 
 #TODO
@@ -161,6 +164,7 @@ def song_selection():
 
 def main():
     game_menu()
+    user_name()
     song_selection()
 
 if __name__ == "__main__":
