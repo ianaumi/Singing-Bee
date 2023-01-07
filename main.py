@@ -119,8 +119,8 @@ def song_selection():
             if player_choice.upper() == 'B':
                 continue
             else:
-                song_choice.reverse()
-                year_choice.reverse()
+                for song in song_choice:
+                    round_start()
                 break
 
         if player_choice in choice:
@@ -151,8 +151,18 @@ def song_selection():
 
 #TODO
 # START OF ROUND
+def round_start():
+    print(song_choice[0])
+    print(song_info("lyrics"))
+    print(song_info("choices"))
 
-
+    player_choice = input("What is your choice: ")
+    if player_choice.upper() == (song_info("answer")):
+        print("correct")
+    elif player_choice.upper() == ("H"):
+        print(song_info("hint"))
+    else:
+        print("wrong") #testrun
 
 #TODO
 # SONGLIST IS EMPTY = GAME OVER
