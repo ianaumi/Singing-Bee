@@ -1,18 +1,22 @@
 import json
+import time
 import os
-
-# reading from the song list json file
-with open('songList.json') as f:
-    song_list = json.load(f)
+from pygame import mixer
 
 year_choice = []  # stores the year choice of player
 song_choice = []  # stores the song choice of player
 choice = {}  # stores the keys player can press and use it to call the key from the song list json file
 player_name = None  # stores the player's name
 player_choice = None  # stores the every action of the player.
-
-
 # player_points = 0  # stores the points of the user once the round started
+
+# reading from the song list json file
+with open('songList.json') as f:
+    song_list = json.load(f)
+# plays the sound from the dictionary
+def play_sound(path):
+    mixer.music.load(path)
+    mixer.music.play()
 
 def clear_screen():
     os.system('cls')
@@ -69,18 +73,24 @@ def user_name():
         if player_choice.upper() in options(["P", "A", "H", "Q"]):
             if player_choice.upper() == "A":
                 display_about()
+                clear_screen()
 
             elif player_choice.upper() == "H":
+                clear_screen()
                 display_help()
 
             elif player_choice.upper() == "Q":
                 display_quit()
+                clear_screen()
 
             elif player_choice.upper() == "P":
-                print("\n== SONG SELECTION == ")
-                song_selection()
+                clear_screen()
+                break
         else:
             print("❌Invalid Option❌")
+            time.sleep(2)
+            clear_screen()
+
 
 
 # calls the key from a specific song
@@ -104,9 +114,10 @@ def song_selection():
     global player_choice
 
     while True:
+        clear_screen()
         print("🛒SONG CART: ", str(len(song_choice)), "\n🐝-------")
         print(" == YEAR == ")
-        # clears the choices from songs
+        # clears the key choices from songs
         choice.clear()
 
         display_list(song_list)
@@ -115,6 +126,7 @@ def song_selection():
 
         # checks if player is done choosing
         if player_choice.upper() == 'D':
+            clear_screen()
             print("🐝-------\n== YOUR SONGS ==")
 
             for song in song_choice:
@@ -126,40 +138,47 @@ def song_selection():
             player_choice = input("Choice:")
 
             if player_choice.upper() == 'B':
+                clear_screen()
                 continue
             else:
-
-                round_start()
+                year_choice.reverse()
+                song_choice.reverse()
+                clear_screen()
                 break
 
         if player_choice in choice:
             # inserts the year choice of user from the year category
             year_choice.insert(0, choice[player_choice])
+            clear_screen()
         else:
             print("❌Invalid Option❌")
+            clear_screen()
             continue
 
         print("🐝-------\n == SONGS ==")
+        # clears the key choices from year
         choice.clear()
-        # displays the song list selection
         display_list(song_list[year_choice[0]])
         print("🐝-------\n[B] To go back.")
 
         player_choice = input("🎶Choice>> ")
         if player_choice.upper() == 'B':
             year_choice.pop()
+            clear_screen()
             continue
 
         if player_choice in choice:
             # inserts the song choice of user from the song category
             song_choice.insert(0, choice[player_choice])
+            clear_screen()
 
         else:
             print("❌Invalid Option❌")
+            clear_screen()
 
-
-#Quit Game
-    display_quit()
+#FIXME
+# #Quit Game
+# display_quit()
 
 
 def is_empty(empty):
@@ -200,11 +219,10 @@ def round_start():
                 return game_menu()
 
 def main():
-    clear_screen()
+    mixer.init()
     game_menu()
-    user_name()
     song_selection()
-
+    round_start()
 
 if __name__ == "__main__":
     main()
