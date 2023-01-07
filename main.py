@@ -106,7 +106,7 @@ def song_selection():
 
         # checks if player is done choosing
         if player_choice.upper() == 'D':
-            print("\n== YOUR SONGS ==")
+            print("🐝-------\n== YOUR SONGS ==")
 
             for song in song_choice:
                 print(song)
@@ -130,10 +130,11 @@ def song_selection():
             print("❌Invalid Option❌")
             continue
 
-        print(" == SONGS ==")
+        print("🐝-------\n == SONGS ==")
+        choice.clear()
         # displays the song list selection
         display_list(song_list[year_choice[0]])
-        print("[B] To go back.")
+        print("🐝-------\n[B] To go back.")
 
         player_choice = input("🎶Choice>> ")
         if player_choice.upper() == 'B':
