@@ -156,6 +156,10 @@ def song_selection():
             print("❌Invalid Option❌")
 
 
+#Quit Game
+    display_quit()
+
+
 def is_empty(asd):
     if not asd:
         return True
@@ -185,6 +189,10 @@ def round_start():
         song_choice.pop(0)
         year_choice.pop(0)
 
+        if is_empty(year_choice.pop(0)):
+            return quit()
+        else:
+            return print("do you want to play? ")
 
 
 
