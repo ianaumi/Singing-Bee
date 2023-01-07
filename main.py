@@ -9,6 +9,8 @@ song_choice = []  # stores the song choice of player
 choice = {}  # stores the keys player can press and use it to call the key from the song list json file
 player_name = None  # stores the player's name
 player_choice = None  # stores the every action of the player.
+
+
 # player_points = 0  # stores the points of the user once the round started
 
 
@@ -18,7 +20,7 @@ def options(keys):
     return option
 
 
-#TODO
+# TODO
 # GAME MENU
 
 def display_about():
@@ -27,20 +29,23 @@ def display_about():
           + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
     input("\n😉Enter any key to go back to the Menu ")
 
+
 def display_help():
     print("\n== HELP == ")
     print("🎙•••Player can choose any songs based on the songlist."
-          +"\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
-          +"\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
-          +"\n🐝•••Correct answer without hint will be 1000 points."
-          +"\n🎙️•••While correct answer using hint will be 500 points"
-          +"\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
-          +"\n🎙•••May you gather the most points in the game. Enjoy!")
+          + "\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
+          + "\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
+          + "\n🐝•••Correct answer without hint will be 1000 points."
+          + "\n🎙️•••While correct answer using hint will be 500 points"
+          + "\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
+          + "\n🎙•••May you gather the most points in the game. Enjoy!")
     input("\n😉Enter any key to go back to the Menu")
+
 
 def display_quit():
     print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
     quit()
+
 
 def game_menu():
     # TODO
@@ -49,6 +54,8 @@ def game_menu():
 
     # TODO
     # ASK USER NAME
+
+
 def user_name():
     global player_name
     player_name = input("Enter your name: ")
@@ -119,8 +126,8 @@ def song_selection():
             if player_choice.upper() == 'B':
                 continue
             else:
-                for song in song_choice:
-                    round_start()
+
+                round_start()
                 break
 
         if player_choice in choice:
@@ -149,25 +156,41 @@ def song_selection():
             print("❌Invalid Option❌")
 
 
-#TODO
+def is_empty(asd):
+    if not asd:
+        return True
+    else:
+        return False
+
+
+# TODO
 # START OF ROUND
 def round_start():
-    print(song_choice[0])
-    print(song_info("lyrics"))
-    print(song_info("choices"))
+    while True:
 
-    player_choice = input("What is your choice: ")
-    if player_choice.upper() == (song_info("answer")):
-        print("correct")
-    elif player_choice.upper() == ("H"):
-        print(song_info("hint"))
-    else:
-        print("wrong") #testrun
+        print(song_choice[0])
+        print(song_info("lyrics"))
+        print(song_info("choices"))
+
+        player_choice = input("What is your choice: ")
+
+        if player_choice.upper() == (song_info("answer")):
+            print("correct")
+        elif player_choice.upper() == ("H"):
+            print(song_info("hint"))
+        else:
+            print("wrong")  # testrun
+
+
+        song_choice.pop(0)
+        year_choice.pop(0)
+
+
+
+
 
 #TODO
 # SONGLIST IS EMPTY = GAME OVER
-
-
 
 
 # EXIT HERE
@@ -177,6 +200,7 @@ def main():
     game_menu()
     user_name()
     song_selection()
+
 
 if __name__ == "__main__":
     main()
