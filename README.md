@@ -8,7 +8,14 @@
   <img src="https://img.shields.io/badge/year level-First-5f7aab">
   <img src="https://img.shields.io/badge/subject-Algorithm%20%26%20Logic%20Formulation-5f7aab">
 </p>
-</br>
+
+<p align="center">
+  <a href="#about-the-game">About The Game</a> •
+  <a href="#how-to-play">How to play</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
 
 
 ## About The Game 
