@@ -16,11 +16,11 @@
 
   
 <p align="center">
-  <a href="#about-the-game"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/aboutt.png" width="100" height="40"></a>
-  <a href="#how-to-play"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/how-to-play.png" width="100" height="40"></a> 
-  <a href="#download"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/Download.png" width="100" height="40"></a> 
-  <a href="#credits"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/Credits.png" width="100" height="40"></a> 
-  <a href="#license"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/License.png" width="100" height="40"></a>
+  <a href="#about-the-game">About The Game</a>
+  <a href="#how-to-play">How to play</a> 
+  <a href="#download">Download</a> 
+  <a href="#credits">Credits</a> 
+  <a href="#license">License</a>
 </p>
 </br>
 
@@ -46,4 +46,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor leo vel
 <br>
 
 ## License
-<p>MIT</p>
+<p>MIT License
+
+Copyright (c) 2023 umi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
