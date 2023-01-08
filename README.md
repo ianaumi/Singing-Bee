@@ -2,7 +2,7 @@
   <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/logo.png" width="350" height="60">
 </h1>
 <p align="center">
-  <a href="about-the-game">About the game</a> •
+  <a href="#about-the-game">About the game</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
