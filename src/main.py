@@ -50,6 +50,9 @@ def display_help():
           + "\n🎙•••May you gather the most points in the game. Enjoy!")
     input("\n😉Enter any key to go back to the Menu")
 
+#FIXME
+# #Quit Game
+# display_quit()
 
 def display_quit_screen():
     print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
@@ -82,7 +85,7 @@ def game_menu():
                 display_help()
 
             elif player_choice.upper() == "Q":
-                display_quit()
+                display_quit_screen()
                 clear_screen()
 
             elif player_choice.upper() == "P":
@@ -178,10 +181,6 @@ def song_selection():
             print("❌Invalid Option❌")
             clear_screen()
 
-#FIXME
-# #Quit Game
-# display_quit()
-
 
 def is_empty(empty):
     if not empty:
@@ -231,7 +230,7 @@ def round_start():
             if player_choice.upper() == "Y":
                 return main()
             elif player_choice.upper() == "N":
-                return display_quit()
+                return display_quit_screen()
             else:
                 print("Invalid Option")
 
