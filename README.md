@@ -1,11 +1,17 @@
-<p align="center">
+<h1 align="center">
   <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/logo.png" width="350" height="60">
+</h1>
+<p align="center">
+  <a href="about-the-game">About the game</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
 </p>
-[https://www.youtube.com/results?search_query=making+a+readme+file+github](wew)
-<hr/>
 </br>
 
-<h2> What it's about </h2>
+## About the game 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel tristique sem, non auctor elit. Nullam commodo velit id velit ornare ullamcorper. Integer eros odio, ultricies at rutrum id, feugiat sed ligula. Sed efficitur sit amet nunc nec tempor. Sed ultricies pellentesque tortor, eu tincidunt lectus efficitur at. Fusce turpis diam, mattis quis massa at, pellentesque euismod felis. Proin sollicitudin tortor pharetra nisl congue vulputate. Quisque eget pulvinar lacus. Maecenas sed lectus et erat placerat lacinia et vel eros. </p>
 <br>
 
