@@ -4,17 +4,65 @@
 # remember to do research about how to make pseudocode or whats tackled in the module
 
 
+start
 
+set song_list = songlist.json
+set year_choice = []
+set song_choice = []
+set player_choice = None
 
 # game menu
 
 
 
 
-
-
 # song selection
+song_selection():
+    while true:
+        print "choose year"
+        for year in song_list:
+            print year
+        endfor
+        print "[D] if Done"
 
+        get player_choice
+        if player_choice = 'D':
+
+            print "your songs"
+            for song in song_choice:
+                print song
+            endfor
+
+            print "[B] to  go back"
+            get player_choice
+
+            if player_choice = 'B':
+                continue
+            else:
+                endwhile
+        else:
+            year_choice insert player_choice
+        endif
+
+        print "choose song"
+        for song in song_list[year_choice[0]]:
+            print song
+        endfor
+        print "[B] to go back"
+
+        get player_choice
+        if player_choice = 'B':
+            year_choice remove 0
+            continue
+        else:
+            song_choice insert player_choice
+        endif
+        
+
+
+
+
+    
 
 
 
