@@ -16,10 +16,10 @@
 
   
 <p align="center">
-  <a href="#about-the-game"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/about.png" width="100" height="40"></a>
-  <a href="#how-to-play"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/howtoplay.png" width="100" height="40"></a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
+  <a href="#about-the-game"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/aboutt.png" width="100" height="40"></a>
+  <a href="#how-to-play"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/howtoplay.png" width="100" height="40"></a> 
+  <a href="#download"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/Download.png" width="100" height="40"></a> 
+  <a href="#credits"><img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/Credits.png" width="100" height="40"></a> 
   <a href="#license">License</a>
 </p>
 </br>
