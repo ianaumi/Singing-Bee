@@ -53,8 +53,8 @@ def display_help():
 #FIXME
 # #Quit Game
 # display_quit()
-
 def display_quit_screen():
+    print(player_name, "'s total points is ", player_points)
     print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
     quit()
 
@@ -192,27 +192,33 @@ def is_empty(empty):
 # TODO
 # START OF ROUND
 def round_start():
+    global player_points
+    global hints
+
     while True:
 
         print(song_choice[0])
         print(song_info("lyrics"))
         print(song_info("choices"))
 
+        print("Total hints available: ", hints)
         player_choice = input("What is your choice: ")
         hint_used = False
 
-        if player_choice.upper() == (song_info("answer")):
-            print("correct")
-            if hint_used:
-                int(player_points) + 500
-            else:
-                int(player_points) + 1000
-        elif player_choice.upper() == "H":
+        if player_choice.upper() == "H":
             if hints > 0:
                 if not hint_used:
                     print(song_info("hint"))
                     hint_used = True
-                    int(hints) - 1
+                    hints = hints - 1
+                    player_choice = input("What is your choice: ")
+
+        if player_choice.upper() == (song_info("answer")):
+            print("correct")
+            if hint_used:
+                player_points = player_points + 500
+            else:
+                player_points = player_points + 1000
         else:
             print("wrong")
 
