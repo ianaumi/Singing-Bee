@@ -1,11 +1,20 @@
-<h1 align="center">
+<p align="center">
   <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/logo.png" width="350" height="60">
-  <br>
+</p>
+<h4 align="center">
+  A console game that tests your knowledge of the most iconic songs
+</h4>
+<hr/>
+
+
+<p align="center">
   <img src="https://img.shields.io/github/last-commit/ianaumi/TheSingingBee?color=5f7aab">
   <img src="https://img.shields.io/github/languages/code-size/ianaumi/TheSingingBee?color=5f7aab">
   <img src="https://img.shields.io/badge/YearLevel-First-5f7aab">
   <img src="https://img.shields.io/badge/Subject-Algorithm%20%26%20Logic%20Formulation-5f7aab">
-</h1>
+</p>
+
+  
 <p align="center">
   <a href="#about-the-game">About The Game</a> •
   <a href="#how-to-play">How To Play</a> •
