@@ -120,6 +120,7 @@ def song_selection():
         # clears the key choices from songs
         choice.clear()
 
+        # displays the year of the songlist file
         display_list(song_list)
         print("🐝-------\n[D] Done")
         player_choice = input("Select a Year: ")
