@@ -5,9 +5,6 @@
   <img src="https://img.shields.io/github/languages/code-size/ianaumi/TheSingingBee?color=5f7aab">
   <img src="https://img.shields.io/badge/YearLevel-First-5f7aab">
   <img src="https://img.shields.io/badge/Subject-Algorithm%20%26%20Logic%20Formulation-5f7aab">
- 
- 
-  
 </h1>
 <p align="center">
   <a href="#about-the-game">About The Game</a> •
@@ -17,6 +14,7 @@
   <a href="#license">License</a>
 </p>
 </br>
+
 
 ## About The Game 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel tristique sem, non auctor elit. Nullam commodo velit id velit ornare ullamcorper. Integer eros odio, ultricies at rutrum id, feugiat sed ligula. Sed efficitur sit amet nunc nec tempor. Sed ultricies pellentesque tortor, eu tincidunt lectus efficitur at. Fusce turpis diam, mattis quis massa at, pellentesque euismod felis. Proin sollicitudin tortor pharetra nisl congue vulputate. Quisque eget pulvinar lacus. Maecenas sed lectus et erat placerat lacinia et vel eros. </p>
