@@ -17,7 +17,7 @@
   
 <p align="center">
   <a href="#about-the-game">About The Game</a> •
-  <a href="#how-to-play">How to play</a> ••
+  <a href="#how-to-play">How to play</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a>
