@@ -48,12 +48,12 @@ def display_help():
     input("\n😉Enter any key to go back to the Menu")
 
 
-def display_quit():
+def display_quit_screen():
     print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
     quit()
 
 
-def game_menu():
+def display_welcome_screen():
     # TODO
     # WELCOME SCREEN
     print("🐝---Welcome to Who Wants To Be A Singing Bee!---🎙")
@@ -61,8 +61,7 @@ def game_menu():
     # TODO
     # ASK USER NAME
 
-
-def user_name():
+def game_menu():
     global player_name
     player_name = input("Enter your name: ")
 
