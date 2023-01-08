@@ -8,7 +8,8 @@ song_choice = []  # stores the song choice of player
 choice = {}  # stores the keys player can press and use it to call the key from the song list json file
 player_name = None  # stores the player's name
 player_choice = None  # stores the every action of the player.
-# player_points = 0  # stores the points of the user once the round started
+player_points = 0  # stores the points of the user once the round started
+hints = 3
 
 # reading from the song list json file
 with open('songList.json') as f:
@@ -18,8 +19,10 @@ def play_sound(path):
     mixer.music.load(path)
     mixer.music.play()
 
+
 def clear_screen():
     os.system('cls')
+
 
 # input validator for some options
 def options(keys):
@@ -90,7 +93,6 @@ def user_name():
             print("❌Invalid Option❌")
             time.sleep(2)
             clear_screen()
-
 
 
 # calls the key from a specific song
@@ -199,25 +201,41 @@ def round_start():
         print(song_info("choices"))
 
         player_choice = input("What is your choice: ")
+        hint_used = False
 
         if player_choice.upper() == (song_info("answer")):
             print("correct")
-        elif player_choice.upper() == ("H"):
-            print(song_info("hint"))
+            if hint_used:
+                int(player_points) + 500
+            else:
+                int(player_points) + 1000
+        elif player_choice.upper() == "H":
+            if hints > 0:
+                if not hint_used:
+                    print(song_info("hint"))
+                    hint_used = True
+                    int(hints) - 1
         else:
-            print("wrong")  # testrun
+            print("wrong")
 
         #TODO
         # must add hint checker if user has enough hint before using one
-
+        # Line 212
+        # Just need to add a define function for the hint
+        # -Zen
 
         song_choice.pop(0)
         year_choice.pop(0)
 
-        if is_empty(year_choice[0]):
+        if is_empty(year_choice):
             player_choice = input("Do you want to play again? Y/N")
-            if player_choice.upper() == "y":
-                return game_menu()
+            if player_choice.upper() == "Y":
+                return main()
+            elif player_choice.upper() == "N":
+                return display_quit()
+            else:
+                print("Invalid Option")
+
 
 def main():
     mixer.init()
