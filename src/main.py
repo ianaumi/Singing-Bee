@@ -194,7 +194,7 @@ def is_empty(empty):
 def round_start():
     global player_points
     global hints
-
+    global player_choice
     while True:
 
         print(song_choice[0])
@@ -202,38 +202,55 @@ def round_start():
         print(song_info("choices"))
 
         print("Total hints available: ", hints)
-        player_choice = input("What is your choice: ")
-        hint_used = False
+        while True:
+            player_choice = input("What is your choice: ")
+            if player_choice.upper() in options(["A", "B", "C", "D", "H"]):
 
-        if player_choice.upper() == "H":
-            if hints > 0:
-                if not hint_used:
-                    print(song_info("hint"))
-                    hint_used = True
-                    hints = hints - 1
-                    player_choice = input("What is your choice: ")
+                hint_used = False
 
-        if player_choice.upper() == (song_info("answer")):
-            print("correct")
-            if hint_used:
-                player_points = player_points + 500
+                if player_choice.upper() == "H":
+                    if hints > 0:
+                        if not hint_used:
+                            print(song_info("hint"))
+                            hint_used = True
+                            hints = hints - 1
+                            while True:
+                                player_choice = input("What is your choice: ")
+                                if player_choice.upper() in options(["A", "B", "C", "D"]):
+                                    break
+                                else:
+                                    print("Invalid Option")
+
+                            break
+
+                if player_choice.upper() == (song_info("answer")):
+                    print("correct")
+
+                    if hint_used:
+                        player_points = player_points + 500
+                        break
+
+                    else:
+                        player_points = player_points + 1000
+                        break
+
+                else:
+                    print("wrong")
+                    break
+
             else:
-                player_points = player_points + 1000
-        else:
-            print("wrong")
-
+                print("Invalid Option")
         song_choice.pop(0)
         year_choice.pop(0)
 
         if is_empty(year_choice):
-            player_choice = input("Do you want to play again? Y/N")
+            player_choice = input("Do you want to play again? Y/N : ")
             if player_choice.upper() == "Y":
                 return main()
             elif player_choice.upper() == "N":
                 return display_quit_screen()
             else:
                 print("Invalid Option")
-
 
 def main():
     mixer.init()
