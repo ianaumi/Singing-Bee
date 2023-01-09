@@ -72,17 +72,17 @@ def display_copyright_disclamer():
     clear_screen()
     md = Markdown(copyright)
     console.print(md)
-    print_position(5, 3, f"""We do not claim the {Fore.YELLOW}ownership{Fore.WHITE} of all of the {Fore.YELLOW}music/sounds{Fore.WHITE} you will hear.
+    print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
         All material is the copyright property of its respective owner(s).\n
-                     Under Section {Fore.YELLOW}107{Fore.WHITE} of the {Fore.YELLOW}Copyright Act 1976{Fore.WHITE},
-         allowance is made for {Fore.YELLOW}“fair use”{Fore.WHITE} for purposes such as criticism, 
+                     Under Section 107 of the Copyright Act 1976,
+         allowance is made for “fair use” for purposes such as criticism, 
           comment, news reporting, teaching, scholarship, and research.\n
-                  Fair use is a use permitted by {Fore.YELLOW}copyright statute{Fore.WHITE} 
+                  Fair use is a use permitted by copyright statute 
                         that might otherwise be infringing.\n
-                       Non-profit, {Fore.YELLOW}educational{Fore.WHITE} or personal use 
+                       Non-profit, educational or personal use 
                       tips the balance in favour of fair use.\n
-        {Fore.YELLOW}               WE DO NOT OWN THE RIGHTS OF ANY SONG. 
-                     No Copyright infringement intended here.
+                       WE DO NOT OWN THE RIGHTS OF ANY SONG. 
+                     No Copyright infringement intended here.{Fore.WHITE}
     """)
     display_press_any_key()
 
@@ -106,7 +106,7 @@ def display_loading_screen():
         count += 1
 
 def display_welcome_screen():
-    # display_loading_screen()
+    display_loading_screen()
     get_player_name()
     display_advice()
     display_copyright_disclamer()
@@ -122,17 +122,17 @@ def display_about():
     md = Markdown(about_header)
     console.print(md)
     print_position(3,30,f"""
-                      {Fore.YELLOW}Singing Bee{Fore.WHITE} is a {Fore.YELLOW}console game{Fore.WHITE} that 
-                tests your knowledge of the most {Fore.YELLOW}iconic songs{Fore.WHITE}.
-                   Fill in the missing lyrics and {Fore.YELLOW}sing along{Fore.WHITE} 
-          to your most treasured tunes from the {Fore.YELLOW}1960s{Fore.WHITE} up to the {Fore.YELLOW}2020s{Fore.WHITE}!\n\n
+                      {Fore.YELLOW}Singing Bee is a console game that 
+                tests your knowledge of the most iconic songs.
+                   Fill in the missing lyrics and sing along
+          to your most treasured tunes from the 1960s up to the 2020s!\n\n
         
-              {Fore.YELLOW}Singing Bee{Fore.WHITE} was based on a {Fore.YELLOW}Philippine TV show{Fore.WHITE} called 
+              Singing Beewas based on a Philippine TV show called 
                 "The Singing Bee". We combined this TV show with 
                "Who Wants to be a Millionaire". Both concepts of
                     the said shows results to this game.\n\n
                     
-                        {Fore.YELLOW}  Bees communicate by dancing!{Fore.WHITE}  
+                          Bees communicate by dancing!{Fore.WHITE}  
     """)
     display_press_any_key()
     clear_screen()
@@ -170,7 +170,7 @@ def display_game_menu_header():
     game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
     md = Markdown(game_menu_header)
     console.print(md)
-    
+
 def game_menu():
     global player_name
     global player_choice
@@ -351,7 +351,7 @@ def main():
     pass
     mixer.init()
     # play_sound("sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav")
-    # display_welcome_screen()
+    display_welcome_screen()
     game_menu()
     # player_choice = input("test")
     # print(player_choice)
