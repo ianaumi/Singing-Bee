@@ -15,6 +15,8 @@ hints = 3
 with open('songList.json') as f:
     song_list = json.load(f)
 # plays the sound from the dictionary
+
+
 def play_sound(path):
     mixer.music.load(path)
     mixer.music.play()
@@ -41,7 +43,7 @@ def display_about():
 
 def display_help():
     print("\n== HELP == ")
-    print("🎙•••Player can choose any songs based on the songlist."
+    print("🎙•••Player can choose any songs based on the song list."
           + "\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
           + "\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
           + "\n🐝•••Correct answer without hint will be 1000 points."
@@ -50,8 +52,9 @@ def display_help():
           + "\n🎙•••May you gather the most points in the game. Enjoy!")
     input("\n😉Enter any key to go back to the Menu")
 
+
 #FIXME
-# #Quit Game
+# Quit Game
 # display_quit()
 def display_quit_screen():
     print(player_name, "'s total points is ", player_points)
@@ -66,6 +69,7 @@ def display_welcome_screen():
 
     # TODO
     # ASK USER NAME
+
 
 def game_menu():
     global player_name
@@ -124,7 +128,7 @@ def song_selection():
         # clears the key choices from songs
         choice.clear()
 
-        # displays the year of the songlist file
+        # displays the year of the song list file
         display_list(song_list)
         print("🐝-------\n[D] Done")
         player_choice = input("Select a Year: ")
@@ -253,11 +257,13 @@ def round_start():
                 else:
                     print("Invalid Option")
 
+
 def main():
     mixer.init()
     game_menu()
     song_selection()
     round_start()
+
 
 if __name__ == "__main__":
     main()
