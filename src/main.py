@@ -1,7 +1,13 @@
 import json
 import time
-import os
+import colorama
+from colorama import Fore, Back, Style
+from os import system
 from pygame import mixer
+from rich.console import Console
+from rich.markdown import Markdown
+colorama.init(autoreset=True)
+
 
 year_choice = []  # stores the year choice of player
 song_choice = []  # stores the song choice of player
@@ -10,10 +16,25 @@ player_name = None  # stores the player's name
 player_choice = None  # stores the every action of the player.
 player_points = 0  # stores the points of the user once the round started
 hints = 3
+console = Console()
+warning = "# WARNING!"
+copyright = "# COPYRIGHT DISCLAMER NOTICE !"
+logo = """                                   
+                    _____ _         _            _           
+                   |   __|_|___ ___|_|___ ___   | |_ ___ ___ 
+                   |__   | |   | . | |   | . |  | . | -_| -_|
+                   |_____|_|_|_|_  |_|_|_|_  |  |___|___|___|
+                               |___|     |___|               
+"""
+game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
+
+# sets the size of the window of  terminal 100x40
+system('mode con: cols=80 lines=40')
 
 # reading from the song list json file
 with open('songList.json') as f:
     song_list = json.load(f)
+
 # plays the sound from the dictionary
 def play_sound(path):
     mixer.music.load(path)
@@ -21,7 +42,7 @@ def play_sound(path):
 
 
 def clear_screen():
-    os.system('cls')
+    system('cls')
 
 
 # input validator for some options
@@ -30,13 +51,14 @@ def options(keys):
     return option
 
 
-# TODO
-# GAME MENU
+def print_position(line,column,text):
+    print("\n" * line," " * column, text)
+
 def display_about():
     print("\n== ABOUT GAME == ")
     print("🐝----Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs🎙️"
         + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
-    input("\n😉Enter any key to go back to the Menu ")
+    input("\nEnter any key to go back to the Menu ")
 
 
 def display_help():
@@ -48,45 +70,105 @@ def display_help():
           + "\n🎙️•••While correct answer using hint will be 500 points"
           + "\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
           + "\n🎙•••May you gather the most points in the game. Enjoy!")
-    input("\n😉Enter any key to go back to the Menu")
+    input("\nEnter any key to go back to the Menu")
 
-#FIXME
-# #Quit Game
-# display_quit()
+def display_press_any_key():
+    print_position(2,24,f"{Style.BRIGHT}{Fore.YELLOW} Press any key to continue")
+    print("\n", " " * 37, end="")
+    input()
+
+def display_advice():
+    clear_screen()
+    md = Markdown(warning)
+    console.print(md)
+    print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
+    display_press_any_key()
+
+def display_copyright_disclamer():
+    clear_screen()
+    md = Markdown(copyright)
+    console.print(md)
+    print_position(5, 3, f"""We do not claim the {Fore.YELLOW}ownership{Fore.WHITE} of all of the {Fore.YELLOW}music/sounds{Fore.WHITE} you will hear.
+        All material is the copyright property of its respective owner(s).\n
+                     Under Section {Fore.YELLOW}107{Fore.WHITE} of the {Fore.YELLOW}Copyright Act 1976{Fore.WHITE},
+         allowance is made for {Fore.YELLOW}“fair use”{Fore.WHITE} for purposes such as criticism, 
+          comment, news reporting, teaching, scholarship, and research.\n
+                  Fair use is a use permitted by {Fore.YELLOW}copyright statute{Fore.WHITE} 
+                        that might otherwise be infringing.\n
+                       Non-profit, {Fore.YELLOW}educational{Fore.WHITE} or personal use 
+                      tips the balance in favour of fair use.\n
+        {Fore.YELLOW}               WE DO NOT OWN THE RIGHTS OF ANY SONG. 
+                     No Copyright infringement intended here.
+    """)
+    display_press_any_key()
+
+def get_player_name():
+    global player_name
+    clear_screen()
+    print_position(10, 20, logo)
+    print_position(2,24,f"{Fore.YELLOW}Welcome brood! your name is? : ")
+    player_choice = get_user_choice_in_position(1,27)
+    print()
+    return player_name
+
+
+def display_loading_screen():
+    count = 0
+    while count < 4:
+        clear_screen()
+        print_position(10, 20, logo)
+        print("\n", " " * 30, f"{Fore.YELLOW}Loading", "." * count)
+        time.sleep(1)
+        count += 1
+
+def display_welcome_screen():
+    # display_loading_screen()
+    get_player_name()
+    display_advice()
+    display_copyright_disclamer()
+    clear_screen()
+
+def display_line():
+    print("="*40)
 
 def display_quit_screen():
     print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
     quit()
 
+def get_user_choice_in_position(line, column):
+    print("\n"*line, " " * column, end="")
+    player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> ")
+    return player_choice
 
-def display_welcome_screen():
-    # TODO
-    # WELCOME SCREEN
-    print("🐝---Welcome to Who Wants To Be A Singing Bee!---🎙")
 
-    # TODO
-    # ASK USER NAME
+def display_game_menu_header():
+    game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
+    md = Markdown(game_menu_header)
+    console.print(md)
 
 def game_menu():
     global player_name
-    player_name = input("Enter your name: ")
-
+    global player_choice
     while True:
-        print("\n== GAME MENU == ")
-        print("[P]--Play🎙️\n[A]--About🐝\n[H]--Help🤔\n[Q]--Quit👋\n")
-        player_choice = input("Choice: ")
+        display_game_menu_header()
+        print_position(3, 32,f"{Fore.YELLOW}[P] Play")
+        print_position(1, 32,f"{Fore.YELLOW}[A] About")
+        print_position(1, 32,f"{Fore.YELLOW}[H] Help")
+        print_position(1, 32,f"{Fore.YELLOW}[Q] Quit")
+        player_choice = get_user_choice_in_position(1,31)
+
         if player_choice.upper() in options(["P", "A", "H", "Q"]):
             if player_choice.upper() == "A":
-                display_about()
                 clear_screen()
+                display_about()
 
             elif player_choice.upper() == "H":
                 clear_screen()
                 display_help()
 
             elif player_choice.upper() == "Q":
-                display_quit_screen()
                 clear_screen()
+                display_quit_screen()
 
             elif player_choice.upper() == "P":
                 clear_screen()
@@ -179,6 +261,7 @@ def song_selection():
 
         else:
             print("❌Invalid Option❌")
+            time.sleep(2)
             clear_screen()
 
 
@@ -235,11 +318,27 @@ def round_start():
                 print("Invalid Option")
 
 
+
+
+
+
 def main():
+    pass
     mixer.init()
+    # play_sound("sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav")
+    # display_welcome_screen()
     game_menu()
-    song_selection()
-    round_start()
+    # player_choice = input("test")
+    # print(player_choice)
+    # display_welcome_screen()
+    # get_player_name()
+    # game_menu()
+
+    # while True:
+    #     pass
+    # game_menu()
+    # song_selection()
+    # round_start()
 
 if __name__ == "__main__":
     main()
