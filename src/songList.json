@@ -246,42 +246,42 @@
       "choices": "[A] Spain [B] Plane [H] Hint [C] Train [D] Rain",
       "hint": "[C] Train [D] Rain",
       "answer": "C",
-      "sound": "Sounds\\Song musics\\2020's\\About you - 1975.wav"
+      "sound": "sounds\\Song musics\\2020's\\About you - 1975.wav"
     },
     "All I Really Want Is You - The Marias": {
       "lyrics": "All I really want is you\nWhat would you do?\nLaying in the rain with you\nMiddle of June\nAll I really want is you\nWhat would you do?\n____ outside, the moon\nTripping with you",
       "choices": "[A] Seeping [B] Sleeping [H] Hint [C] Creeping [D] Leaping",
       "hint": "[A] Seeping [B] Sleeping",
       "answer": "B",
-      "sound": "Sounds\\Song musics\\2020's\\All I Really Want Is You - The Marias.wav"
+      "sound": "sounds\\Song musics\\2020's\\All I Really Want Is You - The Marias.wav"
     },
     "Bad Habit - Steve Lacy": {
       "lyrics": "I bite my tongue, it's a bad habit\nKinda mad that I didn't take a _______ at it\nThought you were too good for me, my dear\nNever gave me time of day, my dear\nIt's okay, things happen for\nReasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [H] Hint [C] Stab [D] Grab",
       "hint": "[A] Cab [C] Stab",
       "answer": "C",
-      "sound": "Sounds\\Song musics\\2020's\\Bad Habit - Steve Lacy.wav"
+      "sound": "sounds\\Song musics\\2020's\\Bad Habit - Steve Lacy.wav"
     },
     "Cruel Summer - Taylor Swift": {
       "lyrics": "I'm drunk in the back of the car\nAnd I cried like a baby coming home from the bar (oh)\nSaid, \"I'm fine, \" but it wasn't true\nI don't wanna keep secrets just to keep you\nAnd I ___ in through the garden gate\nEvery night that summer just to seal my fate (oh)\nAnd I screamed for whatever it's worth I love you ain't that the worst thing you've ever heard?",
       "choices": "[A] Walked [B] Ran [H] Hint [C] Went [D] Snuck",
       "hint": "[C] Went [D] Snuck",
       "answer": "D",
-      "sound": "Sounds\\Song musics\\2020's\\Cruel Summer - Taylor Swift.wav"
+      "sound": "sounds\\Song musics\\2020's\\Cruel Summer - Taylor Swift.wav"
     },
     "Drivers License - Olivia Rodrigo": {
       "lyrics": "I guess you didn't mean what you wrote in that song about me\n'Cause you said _____, now I drive alone past your street",
       "choices": "[A] Whatever [B] Forever [H] Hint [C] Together [D] Forget her",
        "hint": "[B] Forever [D] Forget her",
       "answer": "B",
-      "sound": "Sounds\\Song musics\\2020's\\Drivers License - Olivia Rodrigo.wav"
+      "sound": "sounds\\Song musics\\2020's\\Drivers License - Olivia Rodrigo.wav"
     },
     "Fallen - Lola Amour": {
       "lyrics": "What if I told you that I've fallen\nAnd I like the way you say my name?\nMy heart skips a beat when I hear you ____\nAnd I like that it won't go away",
       "choices": "[A] Calling [B] Breathing [H] Hint [C] Heart beating [D] Talking",
       "hint": "[A] Calling [B] Breathing",
       "answer": "A",
-      "sound": "Sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav"
+      "sound": "sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav"
     }
   }
 }
