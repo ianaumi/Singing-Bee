@@ -37,7 +37,7 @@ def options(keys):
 def display_about():
     print("\n== ABOUT GAME == ")
     print("🐝----Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs🎙️"
-        + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
+          + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
     input("\n😉Enter any key to go back to the Menu ")
 
 
@@ -209,7 +209,6 @@ def round_start():
         while True:
             player_choice = input("What is your choice: ")
             if player_choice.upper() in options(["A", "B", "C", "D", "H"]):
-
                 hint_used = False
 
                 if player_choice.upper() == "H":
@@ -222,27 +221,27 @@ def round_start():
                                 player_choice = input("What is your choice: ")
                                 if player_choice.upper() in song_info("hint"):
                                     break
-
                                 else:
                                     print("Invalid Option")
 
                 if player_choice.upper() == (song_info("answer")):
-                    print("correct")
+                    print("Correct!")
 
                     if hint_used:
+                        print("You earned 500 honeys!")
                         player_points = player_points + 500
                         break
-
                     else:
+                        print("You earned 1000 honeys!")
                         player_points = player_points + 1000
                         break
-
                 else:
-                    print("wrong")
+                    print("Wrong")
+                    print("You earned 0 honeys")
                     break
-
             else:
                 print("Invalid Option")
+
         song_choice.pop(0)
         year_choice.pop(0)
 
