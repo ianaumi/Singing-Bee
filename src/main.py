@@ -216,12 +216,11 @@ def round_start():
                             hints = hints - 1
                             while True:
                                 player_choice = input("What is your choice: ")
-                                if player_choice.upper() in options(["A", "B", "C", "D"]):
+                                if player_choice.upper() in song_info("hint"):
                                     break
+
                                 else:
                                     print("Invalid Option")
-
-                            break
 
                 if player_choice.upper() == (song_info("answer")):
                     print("correct")
@@ -244,13 +243,15 @@ def round_start():
         year_choice.pop(0)
 
         if is_empty(year_choice):
-            player_choice = input("Do you want to play again? Y/N : ")
-            if player_choice.upper() == "Y":
-                return main()
-            elif player_choice.upper() == "N":
-                return display_quit_screen()
-            else:
-                print("Invalid Option")
+            while True:
+                player_choice = input("Do you want to play again? Y/N : ")
+                if player_choice.upper() in options(["Y", "N"]):
+                    if player_choice.upper() == "Y":
+                        return main()
+                    elif player_choice.upper() == "N":
+                        return display_quit_screen()
+                else:
+                    print("Invalid Option")
 
 def main():
     mixer.init()
