@@ -118,12 +118,6 @@ def get_user_choice_in_position(line, column):
     player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
     return player_choice
 
-
-def display_game_menu_header():
-    game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
-    md = Markdown(game_menu_header)
-    console.print(md)
-
 def display_about():
     md = Markdown(about_header)
     console.print(md)
@@ -164,9 +158,19 @@ def display_help():
 
 
 def display_quit_screen():
-    print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
-    quit()
+    print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
+        No matter where you are, the hive will be always a home for you.\n
+                              Sing-you soon!
+    """)
+    time.sleep(5)
+    clear_screen()
+    exit()
 
+def display_game_menu_header():
+    game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
+    md = Markdown(game_menu_header)
+    console.print(md)
+    
 def game_menu():
     global player_name
     global player_choice
