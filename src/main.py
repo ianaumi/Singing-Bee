@@ -222,12 +222,6 @@ def round_start():
         else:
             print("wrong")
 
-        #TODO
-        # must add hint checker if user has enough hint before using one
-        # Line 212
-        # Just need to add a define function for the hint
-        # -Zen
-
         song_choice.pop(0)
         year_choice.pop(0)
 
