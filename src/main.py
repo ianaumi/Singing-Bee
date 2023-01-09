@@ -196,9 +196,8 @@ def game_menu():
                 clear_screen()
                 break
         else:
-            print("❌Invalid Option❌")
-            time.sleep(2)
-            clear_screen()
+            print_position(0,30,"Invalid Option")
+            time.sleep(1)
 
 
 # calls the key from a specific song
