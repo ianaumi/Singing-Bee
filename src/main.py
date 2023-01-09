@@ -138,29 +138,29 @@ def display_about():
                "Who Wants to be a Millionaire". Both concepts of
                     the said shows results to this game.\n\n
                     
-              Did you know that The {Fore.YELLOW}hexagonal shape{Fore.WHITE} of the honeycomb 
-                   is the most efficient shape in our world?
-     The sum of the interior angles of a hexagon is {Fore.YELLOW}720°{Fore.WHITE} For a regular hexagon 
-      all the sides are of the same length and all {Fore.YELLOW}interior angles are equal{Fore.WHITE}. 
-                     So, each interior angle= {Fore.YELLOW}720/6{Fore.WHITE} = {Fore.YELLOW}120° {Fore.WHITE} 
-       So, the measure of the interior angle of a regular hexagon is {Fore.YELLOW}120°{Fore.WHITE}.\n\n
-       
-                    Did you know that? I bet you didn't!
+                        {Fore.YELLOW}  Bees communicate by dancing!{Fore.WHITE}  
     """)
     display_press_any_key()
     clear_screen()
 
 
 def display_help():
-    print("\n== HELP == ")
-    print("🎙•••Player can choose any songs based on the songlist."
-          + "\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
-          + "\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
-          + "\n🐝•••Correct answer without hint will be 1000 points."
-          + "\n🎙️•••While correct answer using hint will be 500 points"
-          + "\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
-          + "\n🎙•••May you gather the most points in the game. Enjoy!")
-    input("\nEnter any key to go back to the Menu")
+    md = Markdown(help_header)
+    console.print(md)
+    print_position(3, 0, f""" 
+    {Fore.YELLOW}•{Fore.WHITE} You can choose {Fore.YELLOW}any songs{Fore.WHITE} based on the songlist\n
+    {Fore.YELLOW}•{Fore.WHITE} You should guess the {Fore.YELLOW}missing word/s{Fore.WHITE} on the lyrics of the song.\n
+    {Fore.YELLOW}•{Fore.WHITE} Your choices will be: {Fore.YELLOW}A{Fore.WHITE},{Fore.YELLOW}B{Fore.WHITE},{Fore.YELLOW}C{Fore.WHITE},{Fore.YELLOW}D{Fore.WHITE} and {Fore.YELLOW}H{Fore.WHITE} for a {Fore.YELLOW}hint{Fore.WHITE} that may use in the round.\n
+    {Fore.YELLOW}•{Fore.WHITE} Correct answer without hint will be {Fore.YELLOW}1000 honeys{Fore.WHITE}.\n
+    {Fore.YELLOW}•{Fore.WHITE} While correct answer using hint will be {Fore.YELLOW}500 honey{Fore.WHITE}.\n
+    {Fore.YELLOW}•{Fore.WHITE} And if your answer is wrong with or without hint, you get {Fore.YELLOW}0 honey{Fore.WHITE}.\n
+    {Fore.YELLOW}•{Fore.WHITE} Check the song list here -> {Fore.YELLOW}tinyurl.com/DaBeeBook{Fore.WHITE}\n
+    {Fore.YELLOW}•{Fore.WHITE} May you gather the most honeys in the game. Enjoy!\n\n
+
+            {Fore.YELLOW}    Bees can fly up to 12 mph. On every foraging trip, 
+                a bee will visit 50-100 flowers to collect nectar!{Fore.WHITE}
+    """)
+    display_press_any_key()
 
 
 def display_quit_screen():
@@ -171,6 +171,7 @@ def game_menu():
     global player_name
     global player_choice
     while True:
+        clear_screen()
         display_game_menu_header()
         print_position(3, 32,f"{Fore.YELLOW}[P] Play")
         print_position(1, 32,f"{Fore.YELLOW}[A] About")
