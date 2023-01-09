@@ -27,6 +27,8 @@ logo = """
                                |___|     |___|               
 """
 game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
+about_header = "# ABOUT THE GAME"
+help_header = "# INSTRUCTIONS"
 
 # sets the size of the window of  terminal 100x40
 system('mode con: cols=80 lines=40')
@@ -53,24 +55,6 @@ def options(keys):
 
 def print_position(line,column,text):
     print("\n" * line," " * column, text)
-
-def display_about():
-    print("\n== ABOUT GAME == ")
-    print("🐝----Who Wants To Be A Singing Bee is a console game that tests your knowledge of the most iconic songs🎙️"
-        + "\nFill in the missing lyrics and sing along to your most treasured tunes from the 1960s up to the 2020s!🎵")
-    input("\nEnter any key to go back to the Menu ")
-
-
-def display_help():
-    print("\n== HELP == ")
-    print("🎙•••Player can choose any songs based on the songlist."
-          + "\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
-          + "\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
-          + "\n🐝•••Correct answer without hint will be 1000 points."
-          + "\n🎙️•••While correct answer using hint will be 500 points"
-          + "\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
-          + "\n🎙•••May you gather the most points in the game. Enjoy!")
-    input("\nEnter any key to go back to the Menu")
 
 def display_press_any_key():
     print_position(2,24,f"{Style.BRIGHT}{Fore.YELLOW} Press any key to continue")
@@ -128,16 +112,10 @@ def display_welcome_screen():
     display_copyright_disclamer()
     clear_screen()
 
-def display_line():
-    print("="*40)
-
-def display_quit_screen():
-    print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
-    quit()
 
 def get_user_choice_in_position(line, column):
     print("\n"*line, " " * column, end="")
-    player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> ")
+    player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
     return player_choice
 
 
@@ -145,6 +123,49 @@ def display_game_menu_header():
     game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
     md = Markdown(game_menu_header)
     console.print(md)
+
+def display_about():
+    md = Markdown(about_header)
+    console.print(md)
+    print_position(3,30,f"""
+                      {Fore.YELLOW}Singing Bee{Fore.WHITE} is a {Fore.YELLOW}console game{Fore.WHITE} that 
+                tests your knowledge of the most {Fore.YELLOW}iconic songs{Fore.WHITE}.
+                   Fill in the missing lyrics and {Fore.YELLOW}sing along{Fore.WHITE} 
+          to your most treasured tunes from the {Fore.YELLOW}1960s{Fore.WHITE} up to the {Fore.YELLOW}2020s{Fore.WHITE}!\n\n
+        
+              {Fore.YELLOW}Singing Bee{Fore.WHITE} was based on a {Fore.YELLOW}Philippine TV show{Fore.WHITE} called 
+                "The Singing Bee". We combined this TV show with 
+               "Who Wants to be a Millionaire". Both concepts of
+                    the said shows results to this game.\n\n
+                    
+              Did you know that The {Fore.YELLOW}hexagonal shape{Fore.WHITE} of the honeycomb 
+                   is the most efficient shape in our world?
+     The sum of the interior angles of a hexagon is {Fore.YELLOW}720°{Fore.WHITE} For a regular hexagon 
+      all the sides are of the same length and all {Fore.YELLOW}interior angles are equal{Fore.WHITE}. 
+                     So, each interior angle= {Fore.YELLOW}720/6{Fore.WHITE} = {Fore.YELLOW}120° {Fore.WHITE} 
+       So, the measure of the interior angle of a regular hexagon is {Fore.YELLOW}120°{Fore.WHITE}.\n\n
+       
+                    Did you know that? I bet you didn't!
+    """)
+    display_press_any_key()
+    clear_screen()
+
+
+def display_help():
+    print("\n== HELP == ")
+    print("🎙•••Player can choose any songs based on the songlist."
+          + "\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
+          + "\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
+          + "\n🐝•••Correct answer without hint will be 1000 points."
+          + "\n🎙️•••While correct answer using hint will be 500 points"
+          + "\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
+          + "\n🎙•••May you gather the most points in the game. Enjoy!")
+    input("\nEnter any key to go back to the Menu")
+
+
+def display_quit_screen():
+    print("\n🐝---Goodbye", player_name, "Sing-you soon!---🎙")
+    quit()
 
 def game_menu():
     global player_name
@@ -154,7 +175,7 @@ def game_menu():
         print_position(3, 32,f"{Fore.YELLOW}[P] Play")
         print_position(1, 32,f"{Fore.YELLOW}[A] About")
         print_position(1, 32,f"{Fore.YELLOW}[H] Help")
-        print_position(1, 32,f"{Fore.YELLOW}[Q] Quit")
+        print_position(1, 32,f"{Fore.YELLOW}[Q] Quit\n")
         player_choice = get_user_choice_in_position(1,31)
 
         if player_choice.upper() in options(["P", "A", "H", "Q"]):
