@@ -56,10 +56,12 @@ def options(keys):
 def print_position(line,column,text):
     print("\n" * line," " * column, text)
 
+
 def display_press_any_key():
     print_position(2,24,f"{Style.BRIGHT}{Fore.YELLOW} Press any key to continue")
     print("\n", " " * 37, end="")
     input()
+
 
 def display_advice():
     clear_screen()
@@ -67,6 +69,7 @@ def display_advice():
     console.print(md)
     print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
     display_press_any_key()
+
 
 def display_copyright_disclamer():
     clear_screen()
@@ -85,6 +88,7 @@ def display_copyright_disclamer():
                      No Copyright infringement intended here.{Fore.WHITE}
     """)
     display_press_any_key()
+
 
 def get_player_name():
     global player_name
@@ -105,6 +109,7 @@ def display_loading_screen():
         time.sleep(1)
         count += 1
 
+
 def display_welcome_screen():
     display_loading_screen()
     get_player_name()
@@ -117,6 +122,7 @@ def get_user_choice_in_position(line, column):
     print("\n"*line, " " * column, end="")
     player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
     return player_choice
+
 
 def display_about():
     md = Markdown(about_header)
@@ -174,6 +180,7 @@ def display_game_menu_header():
 def display_invalid_option(line, column):
     print_position(line, column, "Invalid Option")
     time.sleep(1)
+
 
 def game_menu():
     global player_name
@@ -245,6 +252,8 @@ def song_selection():
         clear_screen()
         display_year_header()
         print("\n" * 2)
+
+        # displays the year of the song list file
         display_list(song_list)
         print_position(1, 13, f"[{Fore.YELLOW}D{Fore.WHITE}] Done")
         player_choice = get_user_choice_in_position(2, 12)
@@ -322,47 +331,65 @@ def is_empty(empty):
 # TODO
 # START OF ROUND
 def round_start():
+    global player_points
+    global hints
+    global player_choice
     while True:
 
         print(song_choice[0])
         print(song_info("lyrics"))
         print(song_info("choices"))
 
-        player_choice = input("What is your choice: ")
-        hint_used = False
+        print("Total hints available: ", hints)
+        while True:
+            player_choice = input("What is your choice: ")
+            if player_choice.upper() in options(["A", "B", "C", "D", "H"]):
+                hint_used = False
 
-        if player_choice.upper() == (song_info("answer")):
-            print("correct")
-            if hint_used:
-                int(player_points) + 500
+                if player_choice.upper() == "H":
+                    if hints > 0:
+                        if not hint_used:
+                            print(song_info("hint"))
+                            hint_used = True
+                            hints = hints - 1
+                            while True:
+                                player_choice = input("What is your choice: ")
+                                if player_choice.upper() in song_info("hint"):
+                                    break
+                                else:
+                                    print("Invalid Option")
+
+                if player_choice.upper() == (song_info("answer")):
+                    print("Correct!")
+
+                    if hint_used:
+                        print("You earned 500 honeys!")
+                        player_points = player_points + 500
+                        break
+                    else:
+                        print("You earned 1000 honeys!")
+                        player_points = player_points + 1000
+                        break
+                else:
+                    print("Wrong")
+                    print("You earned 0 honeys")
+                    break
             else:
-                int(player_points) + 1000
-        elif player_choice.upper() == "H":
-            if hints > 0:
-                if not hint_used:
-                    print(song_info("hint"))
-                    hint_used = True
-                    int(hints) - 1
-        else:
-            print("wrong")
-
-        #TODO
-        # must add hint checker if user has enough hint before using one
-        # Line 212
-        # Just need to add a define function for the hint
-        # -Zen
+                print("Invalid Option")
 
         song_choice.pop(0)
         year_choice.pop(0)
 
         if is_empty(year_choice):
-            player_choice = input("Do you want to play again? Y/N")
-            if player_choice.upper() == "Y":
-                return main()
-            elif player_choice.upper() == "N":
-                return display_quit_screen()
-            else:
-                print("Invalid Option")
+            while True:
+                player_choice = input("Do you want to play again? Y/N : ")
+                if player_choice.upper() in options(["Y", "N"]):
+                    if player_choice.upper() == "Y":
+                        return main()
+                    elif player_choice.upper() == "N":
+                        return display_quit_screen()
+                else:
+                    print("Invalid Option")
 
 
 
@@ -372,21 +399,10 @@ def round_start():
 def main():
     pass
     mixer.init()
-    # play_sound("sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav")
-    # display_welcome_screen()
-    # game_menu()
-    song_selection()
-    # player_choice = input("test")
-    # print(player_choice)
-    # display_welcome_screen()
-    # get_player_name()
-    # game_menu()
 
-    # while True:
-    #     pass
-    # game_menu()
-    # song_selection()
-    # round_start()
+    song_selection()
+
+
 
 if __name__ == "__main__":
     main()
