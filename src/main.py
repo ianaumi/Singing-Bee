@@ -43,12 +43,12 @@ def display_about():
 
 def display_help():
     print("\n== HELP == ")
-    print("🎙•••Player can choose any songs based on the song list."
-          + "\n🐝•••Then the player should guess the missing word/s on the lyrics of the song."
-          + "\n🎙️•••The choices will be: A,B,C,D and H for a hint that may use in the round."
-          + "\n🐝•••Correct answer without hint will be 1000 points."
-          + "\n🎙️•••While correct answer using hint will be 500 points"
-          + "\n🐝•••And if you answer is wrong with or without hint, you get 0 point."
+    print("🎙•••Player can choose any song from the song cart."
+          + "\n🐝•••Then the player should guess the missing word/s from the song lyrics."
+          + "\n🎙️•••The choices will be: A,B,C,D and H for a hint that they may use in the round."
+          + "\n🐝•••A correct answer without using hint is worth 1000 points."
+          + "\n🎙️•••While a correct answer using hint is only 500 points"
+          + "\n🐝•••And if your answer is wrong with or without hint, you will get 0 points."
           + "\n🎙•••May you gather the most points in the game. Enjoy!")
     input("\n😉Enter any key to go back to the Menu")
 
