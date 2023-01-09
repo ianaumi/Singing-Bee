@@ -171,6 +171,10 @@ def display_game_menu_header():
     md = Markdown(game_menu_header)
     console.print(md)
 
+def display_invalid_option(line, column):
+    print_position(line, column, "Invalid Option")
+    time.sleep(1)
+
 def game_menu():
     global player_name
     global player_choice
@@ -200,8 +204,7 @@ def game_menu():
                 clear_screen()
                 break
         else:
-            print_position(0,30,"Invalid Option")
-            time.sleep(1)
+            display_invalid_option(0,0)
 
 
 # calls the key from a specific song
@@ -215,43 +218,54 @@ def display_list(item):
         choice[str(num)] = key
 
     for n, items in choice.items():
-        print(f"[{n}] {items}")
+        print_position(1,13,f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
+
+def display_song_header():
+    song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
+    md = Markdown(song_header)
+    console.print(md)
+
+def display_year_header():
+    year_header = f"# SELECT YEAR \n\n## SONG CART:{len(song_choice)}"
+    md = Markdown(year_header)
+    console.print(md)
+
+def display_your_song_list():
+    your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
+    md = Markdown(your_songs_header)
+    console.print(md)
 
 
 # SONG SELECTION
 def song_selection():
-    global year_choice
-    global song_choice
-    global player_choice
-
     while True:
-        clear_screen()
-        print("🛒SONG CART: ", str(len(song_choice)), "\n🐝-------")
-        print(" == YEAR == ")
+        # >>>>>>>>>>>>YEAR SELECT<<<<<<<<<<<
         # clears the key choices from songs
         choice.clear()
-
-        # displays the year of the songlist file
+        clear_screen()
+        display_year_header()
+        print("\n" * 2)
         display_list(song_list)
-        print("🐝-------\n[D] Done")
-        player_choice = input("Select a Year: ")
+        print_position(1, 13, f"[{Fore.YELLOW}D{Fore.WHITE}] Done")
+        player_choice = get_user_choice_in_position(2, 12)
 
         # checks if player is done choosing
         if player_choice.upper() == 'D':
             clear_screen()
-            print("🐝-------\n== YOUR SONGS ==")
-
-            for song in song_choice:
-                print(song)
+            display_your_song_list()
+            print("\n" * 2)
+            for num, song in enumerate(song_choice, start=1):
+                print_position(1,14,f"{Fore.YELLOW}{num}{Fore.WHITE}. {song}")
 
             # allows player to go back to year category
-            print("🐝-------\n[B] Back")
-            print("😉Press any key to start the game")
-            player_choice = input("Choice:")
+            print_position(4, 32, f"[{Fore.YELLOW}B{Fore.WHITE}] Back")
+            print_position(1, 25, f"{Fore.YELLOW}Press any key to start")
+            player_choice = get_user_choice_in_position(0,26)
 
             if player_choice.upper() == 'B':
                 clear_screen()
                 continue
+
             else:
                 year_choice.reverse()
                 song_choice.reverse()
@@ -261,33 +275,41 @@ def song_selection():
         if player_choice in choice:
             # inserts the year choice of user from the year category
             year_choice.insert(0, choice[player_choice])
-            clear_screen()
+
         else:
-            print("❌Invalid Option❌")
+            display_invalid_option(0, 11)
             clear_screen()
             continue
 
-        print("🐝-------\n == SONGS ==")
+        # >>>>>>>>>>SONG SELECT<<<<<<<<<<<
         # clears the key choices from year
+        clear_screen()
         choice.clear()
+        display_song_header()
+        print("\n" * 2)
         display_list(song_list[year_choice[0]])
-        print("🐝-------\n[B] To go back.")
+        print_position(1, 13, f"[{Fore.YELLOW}B{Fore.WHITE}] Back")
 
-        player_choice = input("🎶Choice>> ")
+        player_choice = get_user_choice_in_position(2, 12)
         if player_choice.upper() == 'B':
             year_choice.pop()
             clear_screen()
             continue
 
         if player_choice in choice:
-            # inserts the song choice of user from the song category
-            song_choice.insert(0, choice[player_choice])
-            clear_screen()
+            if choice[player_choice] in song_choice:
+                print_position(0, 11, "You already chose that song")
+                time.sleep(1)
+                continue
 
+            else:
+                # inserts the song choice of user from the song category
+                song_choice.insert(0, choice[player_choice])
+                continue
         else:
-            print("❌Invalid Option❌")
-            time.sleep(2)
-            clear_screen()
+            display_invalid_option(0, 11, )
+            year_choice.pop()
+            continue
 
 
 def is_empty(empty):
@@ -351,8 +373,9 @@ def main():
     pass
     mixer.init()
     # play_sound("sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav")
-    display_welcome_screen()
-    game_menu()
+    # display_welcome_screen()
+    # game_menu()
+    song_selection()
     # player_choice = input("test")
     # print(player_choice)
     # display_welcome_screen()
