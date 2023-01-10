@@ -14,17 +14,15 @@ player_points = 0  # stores the points of the user once the round started
 # hints = 3
 
 def main():
-    mixer.init()
-    # start_game_menu(player_name)
-    # play sound
-    util.play_sound("sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav")
-    # displays.set_screen_size(80,40)
-    # display.set_screen_size(80,40)
-    # display.loading_screen()
-    # player_name = util.get_player_name()
-    # display.advice_screen()
-    # display.copyright_disclaimer_screen()
-    # song_selection(year_choice,song_choice,choice)
+    while True:
+        mixer.init()
+        displays.set_screen_size(80,40)
+        display.loading_screen()
+        player_name = util.get_player_name()
+        display.advice_screen()
+        display.copyright_disclaimer_screen()
+        start_game_menu(player_name)
+        song_selection(year_choice,song_choice,choice)
 
 
 if __name__ == "__main__":

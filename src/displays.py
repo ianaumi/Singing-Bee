@@ -70,7 +70,7 @@ def advice_screen():
     clear_screen()
 
 def copyright_disclaimer_screen():
-    header_text("# COPYRIGHT DISCLAMER NOTICE !")
+    header_text("# COPYRIGHT DISCLIMER NOTICE !")
     print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
         All material is the copyright property of its respective owner(s).\n
                      Under Section 107 of the Copyright Act 1976,
