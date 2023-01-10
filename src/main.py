@@ -18,7 +18,6 @@ player_points = 0  # stores the points of the user once the round started
 hints = 3
 console = Console()
 game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
-about_header = "# ABOUT THE GAME"
 help_header = "# INSTRUCTIONS"
 
 
@@ -54,48 +53,30 @@ def get_player_name():
     return player_name
 
 
-# def display_loading_screen():
-#     count = 0
-#     while count < 4:
-#         clear_screen()
-#         print_position(10, 20, logo)
-#         print("\n", " " * 30, f"{Fore.YELLOW}Loading", "." * count)
-#         time.sleep(1)
-#         count += 1
-
-
-def display_welcome_screen():
-    display_loading_screen()
-    get_player_name()
-    display_advice()
-    display_copyright_disclamer()
-    clear_screen()
-
-
 def get_user_choice_in_position(line, column):
     print("\n"*line, " " * column, end="")
     player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
     return player_choice
 
 
-def display_about():
-    md = Markdown(about_header)
-    console.print(md)
-    print_position(3,30,f"""
-                      {Fore.YELLOW}Singing Bee is a console game that 
-                tests your knowledge of the most iconic songs.
-                   Fill in the missing lyrics and sing along
-          to your most treasured tunes from the 1960s up to the 2020s!\n\n
-        
-              Singing Beewas based on a Philippine TV show called 
-                "The Singing Bee". We combined this TV show with 
-               "Who Wants to be a Millionaire". Both concepts of
-                    the said shows results to this game.\n\n
-                    
-                          Bees communicate by dancing!{Fore.WHITE}  
-    """)
-    displays.press_any_key()
-    clear_screen()
+# def display_about():
+#     md = Markdown(about_header)
+#     console.print(md)
+#     print_position(3,30,f"""
+#                       {Fore.YELLOW}Singing Bee is a console game that
+#                 tests your knowledge of the most iconic songs.
+#                    Fill in the missing lyrics and sing along
+#           to your most treasured tunes from the 1960s up to the 2020s!\n\n
+#
+#               Singing Beewas based on a Philippine TV show called
+#                 "The Singing Bee". We combined this TV show with
+#                "Who Wants to be a Millionaire". Both concepts of
+#                     the said shows results to this game.\n\n
+#
+#                           Bees communicate by dancing!{Fore.WHITE}
+#     """)
+#     displays.press_any_key()
+#     clear_screen()
 
 
 def display_help():
@@ -358,6 +339,7 @@ def main():
     displays.clear_screen()
     displays.advice_screen()
     displays.copyright_disclaimer_screen()
+    displays.about_game_screen()
 
 
 

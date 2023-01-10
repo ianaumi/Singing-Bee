@@ -15,6 +15,7 @@ logo = """
                    |_____|_|_|_|_  |_|_|_|_  |  |___|___|___|
                                |___|     |___|               
 """
+about_header = "# ABOUT THE GAME"
 console = Console()
 def set_screen_size(column,line):
     system(f'mode con: cols={column} lines={line}')
@@ -32,7 +33,7 @@ def press_any_key():
 def print_position(line,column,text):
     print("\n" * line," " * column, text)
 
-
+# >>>>>>>>>>> GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<<<
 def loading_screen():
     count = 0
     while count < 4:
@@ -41,18 +42,18 @@ def loading_screen():
         print("\n", " " * 30, f"{Fore.YELLOW}Loading", "." * count)
         time.sleep(1)
         count += 1
+    clear_screen()
 
 
 def advice_screen():
-    clear_screen()
     md = Markdown(warning)
     console.print(md)
     print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
     press_any_key()
+    clear_screen()
 
 
 def copyright_disclaimer_screen():
-    clear_screen()
     md = Markdown(copyright)
     console.print(md)
     print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
@@ -68,3 +69,24 @@ def copyright_disclaimer_screen():
                      No Copyright infringement intended here.{Fore.WHITE}
     """)
     press_any_key()
+    clear_screen()
+
+# >>>>>>>>>>>>>>>>>>>>> GAME MENU SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<
+def about_game_screen():
+    md = Markdown(about_header)
+    console.print(md)
+    print_position(3, 30, f"""
+                      {Fore.YELLOW}Singing Bee is a console game that 
+                tests your knowledge of the most iconic songs.
+                   Fill in the missing lyrics and sing along
+          to your most treasured tunes from the 1960s up to the 2020s!\n\n
+
+              Singing Beewas based on a Philippine TV show called 
+                "The Singing Bee". We combined this TV show with 
+               "Who Wants to be a Millionaire". Both concepts of
+                    the said shows results to this game.\n\n
+
+                          Bees communicate by dancing!{Fore.WHITE}  
+    """)
+    press_any_key()
+    clear_screen()
