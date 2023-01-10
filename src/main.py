@@ -17,13 +17,6 @@ player_choice = None  # stores the every action of the player.
 player_points = 0  # stores the points of the user once the round started
 hints = 3
 console = Console()
-logo = """                                   
-                    _____ _         _            _           
-                   |   __|_|___ ___|_|___ ___   | |_ ___ ___ 
-                   |__   | |   | . | |   | . |  | . | -_| -_|
-                   |_____|_|_|_|_  |_|_|_|_  |  |___|___|___|
-                               |___|     |___|               
-"""
 game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
 about_header = "# ABOUT THE GAME"
 help_header = "# INSTRUCTIONS"
@@ -50,24 +43,6 @@ def options(keys):
 def print_position(line,column,text):
     print("\n" * line," " * column, text)
 
-def display_copyright_disclamer():
-    clear_screen()
-    md = Markdown(copyright)
-    console.print(md)
-    print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
-        All material is the copyright property of its respective owner(s).\n
-                     Under Section 107 of the Copyright Act 1976,
-         allowance is made for “fair use” for purposes such as criticism, 
-          comment, news reporting, teaching, scholarship, and research.\n
-                  Fair use is a use permitted by copyright statute 
-                        that might otherwise be infringing.\n
-                       Non-profit, educational or personal use 
-                      tips the balance in favour of fair use.\n
-                       WE DO NOT OWN THE RIGHTS OF ANY SONG. 
-                     No Copyright infringement intended here.{Fore.WHITE}
-    """)
-    displays.press_any_key()
-
 
 def get_player_name():
     global player_name
@@ -79,14 +54,14 @@ def get_player_name():
     return player_name
 
 
-def display_loading_screen():
-    count = 0
-    while count < 4:
-        clear_screen()
-        print_position(10, 20, logo)
-        print("\n", " " * 30, f"{Fore.YELLOW}Loading", "." * count)
-        time.sleep(1)
-        count += 1
+# def display_loading_screen():
+#     count = 0
+#     while count < 4:
+#         clear_screen()
+#         print_position(10, 20, logo)
+#         print("\n", " " * 30, f"{Fore.YELLOW}Loading", "." * count)
+#         time.sleep(1)
+#         count += 1
 
 
 def display_welcome_screen():
@@ -379,6 +354,7 @@ def main():
     mixer.init()
     displays.set_screen_size(80,40)
     open_song_list_file()
+    displays.loading_screen()
     displays.clear_screen()
     displays.advice_screen()
     displays.copyright_disclaimer_screen()

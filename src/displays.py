@@ -1,12 +1,20 @@
+import time
+import colorama
 from os import system
 from rich.console import Console
 from rich.markdown import Markdown
-import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
 warning = "# WARNING!"
 copyright = "# COPYRIGHT DISCLAMER NOTICE !"
+logo = """                                   
+                    _____ _         _            _           
+                   |   __|_|___ ___|_|___ ___   | |_ ___ ___ 
+                   |__   | |   | . | |   | . |  | . | -_| -_|
+                   |_____|_|_|_|_  |_|_|_|_  |  |___|___|___|
+                               |___|     |___|               
+"""
 console = Console()
 def set_screen_size(column,line):
     system(f'mode con: cols={column} lines={line}')
@@ -23,6 +31,16 @@ def press_any_key():
 
 def print_position(line,column,text):
     print("\n" * line," " * column, text)
+
+
+def loading_screen():
+    count = 0
+    while count < 4:
+        clear_screen()
+        print_position(10, 20, logo)
+        print("\n", " " * 30, f"{Fore.YELLOW}Loading", "." * count)
+        time.sleep(1)
+        count += 1
 
 
 def advice_screen():
