@@ -26,7 +26,7 @@
       "answer": "B"
     },
     "Stand by Me - Ben E. King": {
-      "lyrics": "when the night has come\nAnd the land is dark\nAnd the _______ is the only light\nwe'll see",
+      "lyrics": "When the night has come\nAnd the land is dark\nAnd the _______ is the only light\nwe'll see",
       "choices": "[A] Moon [B] Sun [H] Hint [C] Stars [D] Night",
       "hint": "[A] Moon [C] Stars",
       "answer": "A"
@@ -109,7 +109,7 @@
       "lyrics": "And I need you now tonight \nAnd I need you more than ever \nAnd if you only hold me tight \nWe'll be holding on ____",
       "choices": "[A] Evermore [B] Whenever [H] Hint [C] Always [D] Forever",
       "hint": "[B] Whenever [D] Forever",
-      "answer": "C"
+      "answer": "D"
     },
     "Wake Me Up Before You Go-Go - Wham!": {
       "lyrics": "Wake me up before you go-go \nDon't leave me hanging on like a yo-yo \nWake me up before you go-go \nI don't wanna ____ it when you hit that high",
@@ -170,7 +170,7 @@
     "Lose Yourself - Eminem": {
       "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
       "choices": "[A] Row [B] Go [H] Hint [C] Blow [D] Know",
-      "hint": "[B] Go [D] Know",
+      "hint": "[C] Blow [D] Know",
       "answer": "C"
     },
     "Seven Nation Army - The White Stripes": {
