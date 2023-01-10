@@ -21,9 +21,11 @@ copyright = "# COPYRIGHT DISCLAMER NOTICE !"
 about_header = "# ABOUT THE GAME"
 help_header = "# INSTRUCTIONS"
 game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
-
-
+song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
+year_header = f"# SELECT YEAR \n\n## SONG CART:{len(song_choice)}"
+your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
 console = Console()
+
 def set_screen_size(column,line):
     system(f'mode con: cols={column} lines={line}')
 
@@ -139,4 +141,22 @@ def quit_screen():
     exit()
 
 
-# >>>>>>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>> SONG SELECTION <<<<<<<<<<<<<<<<<<<<<
+def song_header():
+    md = Markdown(song_header)
+    console.print(md)
+
+def year_header():
+    md = Markdown(year_header)
+    console.print(md)
+
+def your_song_list():
+    md = Markdown(your_songs_header)
+    console.print(md)
+
+def display_list(item):
+    for num, key in enumerate(item, start=1):
+        choice[str(num)] = key
+
+    for n, items in choice.items():
+        print_position(1,13,f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")

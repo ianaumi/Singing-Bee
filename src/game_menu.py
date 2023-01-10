@@ -1,17 +1,11 @@
 
 def start_game_menu():
-    from displays import clear_screen
-    from displays import game_menu_header
-    from displays import about_game_screen
-    from displays import help_screen
-    from displays import quit_screen
-    from displays import print_position
-    from displays import invalid_option_screen
-    from main import player_choice
-    from main import get_input_position
-    from main import options
+    from displays import(clear_screen, game_menu_header, about_game_screen,
+    help_screen,quit_screen,print_position , invalid_option_screen )
+    from main import player_choice, get_input_position, options
     import colorama
     from colorama import Fore, Back, Style
+    colorama.init(autoreset=True)
 
     while True:
         clear_screen()
@@ -40,4 +34,3 @@ def start_game_menu():
                 break
         else:
             invalid_option_screen(0,0)
-
