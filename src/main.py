@@ -17,7 +17,6 @@ player_choice = None  # stores the every action of the player.
 player_points = 0  # stores the points of the user once the round started
 hints = 3
 console = Console()
-copyright = "# COPYRIGHT DISCLAMER NOTICE !"
 logo = """                                   
                     _____ _         _            _           
                    |   __|_|___ ___|_|___ ___   | |_ ___ ___ 
@@ -50,15 +49,6 @@ def options(keys):
 
 def print_position(line,column,text):
     print("\n" * line," " * column, text)
-
-
-# def display_advice():
-#     clear_screen()
-#     md = Markdown(warning)
-#     console.print(md)
-#     print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
-#     displays.press_any_key()
-
 
 def display_copyright_disclamer():
     clear_screen()
@@ -386,11 +376,16 @@ def round_start():
 
 
 def main():
+    mixer.init()
     displays.set_screen_size(80,40)
     open_song_list_file()
-    mixer.init()
     displays.clear_screen()
     displays.advice_screen()
+    displays.copyright_disclaimer_screen()
+
+
+
+
     # song_selection()
 
 
