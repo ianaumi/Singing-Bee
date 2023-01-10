@@ -14,16 +14,21 @@ def ask_play_again(player_name):
     else:
         display.quit_screen(player_name)
 
-def run_start_round(player_name):
+def player_status(player_name,player_hints,player_points):
+    display.print_position(2, 5, f"Player:{player_name}")
+    display.print_position(0, 5, f"Hints:{player_hints}")
+    display.print_position(0, 5, f"Honeys:{player_points}")
 
+def run_start_round(player_name):
     player_points = 0 # stores the points of the user once the round started
     player_hints = 3
     while True:
-        print(song_choice[0])
-        print(song_info("lyrics"))
+        display.header_text(f"# Song playing - {song_choice[0]}")
+        player_status(player_name,player_hints,player_points)
+        display.print_position(2,10,song_info("lyrics"))
         print(song_info("choices"))
 
-        print("Total hints available: ", player_hints)
+        print("Hints", player_hints)
         while True:
             player_choice = input("What is your choice: ")
             if player_choice.upper() in util.options(["A", "B", "C", "D", "H"]):
@@ -49,6 +54,7 @@ def run_start_round(player_name):
                         print("You earned 500 honeys!")
                         player_points = player_points + 500
                         break
+
                     else:
                         print("You earned 1000 honeys!")
                         player_points = player_points + 1000
