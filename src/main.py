@@ -2,6 +2,8 @@ import json
 import time
 import colorama
 import displays
+import game_menu
+from displays import print_position
 from colorama import Fore, Back, Style
 from os import system
 from pygame import mixer
@@ -18,8 +20,6 @@ player_points = 0  # stores the points of the user once the round started
 hints = 3
 console = Console()
 
-
-
 # reading from the song list json file
 def open_song_list_file():
     with open('songList.json') as f:
@@ -31,72 +31,26 @@ def play_sound(path):
     mixer.music.play()
 
 
-
 # input validator for some options
 def options(keys):
     option = keys
     return option
 
 
-def print_position(line,column,text):
-    print("\n" * line," " * column, text)
+# def get_player_name():
+#     global player_name
+#     clear_screen()
+#     print_position(10, 20, logo)
+#     print_position(2,24,f"{Fore.YELLOW}Welcome brood! your name is? : ")
+#     player_name = get_user_choice_in_position(1,27)
+#     print()
+#     return player_name
 
 
-def get_player_name():
-    global player_name
-    clear_screen()
-    print_position(10, 20, logo)
-    print_position(2,24,f"{Fore.YELLOW}Welcome brood! your name is? : ")
-    player_choice = get_user_choice_in_position(1,27)
-    print()
-    return player_name
-
-
-def get_user_choice_in_position(line, column):
-    print("\n"*line, " " * column, end="")
-    player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
-    return player_choice
-
-def display_game_menu_header():
-    game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
-    md = Markdown(game_menu_header)
-    console.print(md)
-
-def display_invalid_option(line, column):
-    print_position(line, column, "Invalid Option")
-    time.sleep(1)
-
-
-def game_menu():
-    global player_name
-    global player_choice
-    while True:
-        clear_screen()
-        display_game_menu_header()
-        print_position(3, 32,f"{Fore.YELLOW}[P] Play")
-        print_position(1, 32,f"{Fore.YELLOW}[A] About")
-        print_position(1, 32,f"{Fore.YELLOW}[H] Help")
-        print_position(1, 32,f"{Fore.YELLOW}[Q] Quit\n")
-        player_choice = get_user_choice_in_position(1,31)
-
-        if player_choice.upper() in options(["P", "A", "H", "Q"]):
-            if player_choice.upper() == "A":
-                clear_screen()
-                display_about()
-
-            elif player_choice.upper() == "H":
-                clear_screen()
-                display_help()
-
-            elif player_choice.upper() == "Q":
-                clear_screen()
-                display_quit_screen()
-
-            elif player_choice.upper() == "P":
-                clear_screen()
-                break
-        else:
-            display_invalid_option(0,0)
+# def get_input_position(line, column):
+#     print("\n"*line, " " * column, end="")
+#     player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
+#     return player_choice
 
 
 # calls the key from a specific song
@@ -105,27 +59,27 @@ def song_info(value):
 
 
 # displays the enumeration list of year or song
-def display_list(item):
-    for num, key in enumerate(item, start=1):
-        choice[str(num)] = key
+# def display_list(item):
+#     for num, key in enumerate(item, start=1):
+#         choice[str(num)] = key
+#
+#     for n, items in choice.items():
+#         print_position(1,13,f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
 
-    for n, items in choice.items():
-        print_position(1,13,f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
-
-def display_song_header():
-    song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
-    md = Markdown(song_header)
-    console.print(md)
-
-def display_year_header():
-    year_header = f"# SELECT YEAR \n\n## SONG CART:{len(song_choice)}"
-    md = Markdown(year_header)
-    console.print(md)
-
-def display_your_song_list():
-    your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
-    md = Markdown(your_songs_header)
-    console.print(md)
+# def display_song_header():
+#     song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
+#     md = Markdown(song_header)
+#     console.print(md)
+#
+# def display_year_header():
+#     year_header = f"# SELECT YEAR \n\n## SONG CART:{len(song_choice)}"
+#     md = Markdown(year_header)
+#     console.print(md)
+#
+# def display_your_song_list():
+#     your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
+#     md = Markdown(your_songs_header)
+#     console.print(md)
 
 
 # SONG SELECTION
@@ -287,11 +241,15 @@ def main():
     open_song_list_file()
     # displays.loading_screen()
     # displays.clear_screen()
+    # displays.invalid_option_screen(20,20)
     # displays.advice_screen()
     # displays.copyright_disclaimer_screen()
-    displays.about_game_screen()
-    displays.help_screen()
-    displays.quit_screen()
+    # displays.game_menu_header()
+    # displays.about_game_screen()
+    # displays.help_screen()
+    # displays.quit_screen()
+    game_menu.start_game_menu()
+
 
 
 
