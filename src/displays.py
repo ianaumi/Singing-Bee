@@ -2,8 +2,8 @@ from time import sleep
 from os import system
 from rich.console import Console
 from rich.markdown import Markdown
-import  colorama
-from colorama import Fore,Style
+import colorama
+from colorama import Fore, Style
 
 
 colorama.init(autoreset=True)
@@ -16,7 +16,7 @@ logo = """
                                |___|     |___|               
 """
 # warning = "# WARNING!"
-# copyright = "# COPYRIGHT DISCLAMER NOTICE !"
+# copyright = "# COPYRIGHT DISCLAIMER NOTICE !"
 # about_header = "# ABOUT THE GAME"
 # help_header = "# INSTRUCTIONS"
 # song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
@@ -70,7 +70,7 @@ def advice_screen():
     clear_screen()
 
 def copyright_disclaimer_screen():
-    header_text("# COPYRIGHT DISCLAMER NOTICE !")
+    header_text("# COPYRIGHT DISCLAIMER NOTICE !")
     print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
         All material is the copyright property of its respective owner(s).\n
                      Under Section 107 of the Copyright Act 1976,
@@ -157,13 +157,16 @@ def category_header(text,song_choice):
     header_text(f"# {text} \n\n## SONG CART:{len(song_choice)}")
     print("\n" * 2)
 
-def select_year_from(year_list,choice):
-    choice_list(year_list,choice)
+
+def select_year_from(year_list, choice):
+    choice_list(year_list, choice)
     print_position(1, 13, f"[{Fore.YELLOW}D{Fore.WHITE}] Done")
 
-def select_song_from(song_list,year_choice,choice):
-    choice_list(song_list[year_choice],choice)
+
+def select_song_from(song_list, year_choice, choice):
+    choice_list(song_list[year_choice], choice)
     print_position(1, 13, f"[{Fore.YELLOW}B{Fore.WHITE}] Back")
+
 
 def player_chosen_songs(song_choice):
     header_text(f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}")
