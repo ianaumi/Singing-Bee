@@ -15,13 +15,6 @@ logo = """
                    |_____|_|_|_|_  |_|_|_|_  |  |___|___|___|
                                |___|     |___|               
 """
-# warning = "# WARNING!"
-# copyright = "# COPYRIGHT DISCLAIMER NOTICE !"
-# about_header = "# ABOUT THE GAME"
-# help_header = "# INSTRUCTIONS"
-# song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
-# year_header = f"# SELECT YEAR \n\n## SONG CART:{len(song_choice)}"
-# your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
 console = Console()
 
 def header_text(text):
