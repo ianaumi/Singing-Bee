@@ -5,7 +5,6 @@ from rich.markdown import Markdown
 import colorama
 from colorama import Fore, Style
 
-
 colorama.init(autoreset=True)
 
 logo = """                                   
@@ -24,12 +23,15 @@ logo = """
 # your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
 console = Console()
 
+
 def header_text(text):
     md = Markdown(text)
     console.print(md)
 
-def set_screen_size(column,line):
+
+def set_screen_size(column, line):
     system(f'mode con: cols={column} lines={line}')
+
 
 def clear_screen():
     system('cls')
@@ -41,8 +43,8 @@ def press_any_key():
     input()
 
 
-def print_position(line,column,text):
-    print("\n" * line," " * column, text)
+def print_position(line, column, text):
+    print("\n" * line, " " * column, text)
 
 
 def invalid_option(line, column):
@@ -65,13 +67,14 @@ def loading_screen():
 
 def advice_screen():
     header_text("# WARNING!")
-    print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
+    print_position(10, 10, f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
     press_any_key()
     clear_screen()
 
+
 def copyright_disclaimer_screen():
     header_text("# COPYRIGHT DISCLAIMER NOTICE !")
-    print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
+    print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/sounds you will hear.
         All material is the copyright property of its respective owner(s).\n
                      Under Section 107 of the Copyright Act 1976,
          allowance is made for “fair use” for purposes such as criticism, 
@@ -89,10 +92,10 @@ def copyright_disclaimer_screen():
 # >>>>>>>>>>>>>>>>>>>>> END OF GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<
 
 
-
 # >>>>>>>>>>>>>>>>>>>>> GAME MENU SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<
 def game_menu_header(player_name):
     header_text(f"# WELCOME TO SINGING BEE {player_name} !")
+
 
 def about_game_screen():
     header_text("# ABOUT THE GAME")
@@ -102,7 +105,7 @@ def about_game_screen():
                    Fill in the missing lyrics and sing along
           to your most treasured tunes from the 1960s up to the 2020s!\n\n
  
-              Singing Beewas based on a Philippine TV show called 
+              Singing Bee is based on a Philippine TV show called 
                 "The Singing Bee". We combined this TV show with 
                "Who Wants to be a Millionaire". Both concepts of
                     the said shows results to this game.\n\n
@@ -112,12 +115,13 @@ def about_game_screen():
     press_any_key()
     clear_screen()
 
+
 def help_screen():
     header_text("# INSTRUCTIONS")
     print_position(3, 0, f""" 
-    {Fore.YELLOW}•{Fore.WHITE} You can choose {Fore.YELLOW}any songs{Fore.WHITE} based on the songlist\n
+    {Fore.YELLOW}•{Fore.WHITE} You can choose {Fore.YELLOW}any songs{Fore.WHITE} based on the song list\n
     {Fore.YELLOW}•{Fore.WHITE} You should guess the {Fore.YELLOW}missing word/s{Fore.WHITE} on the lyrics of the song.\n
-    {Fore.YELLOW}•{Fore.WHITE} Your choices will be: {Fore.YELLOW}A{Fore.WHITE},{Fore.YELLOW}B{Fore.WHITE},{Fore.YELLOW}C{Fore.WHITE},{Fore.YELLOW}D{Fore.WHITE} and {Fore.YELLOW}H{Fore.WHITE} for a {Fore.YELLOW}hint{Fore.WHITE} that may use in the round.\n
+    {Fore.YELLOW}•{Fore.WHITE} Your choices will be: {Fore.YELLOW}A{Fore.WHITE},{Fore.YELLOW}B{Fore.WHITE}, {Fore.YELLOW}C{Fore.WHITE},{Fore.YELLOW}D{Fore.WHITE} and {Fore.YELLOW}H{Fore.WHITE} for a {Fore.YELLOW}hint{Fore.WHITE} that may use in the round.\n
     {Fore.YELLOW}•{Fore.WHITE} Correct answer without hint will be {Fore.YELLOW}1000 honeys{Fore.WHITE}.\n
     {Fore.YELLOW}•{Fore.WHITE} While correct answer using hint will be {Fore.YELLOW}500 honey{Fore.WHITE}.\n
     {Fore.YELLOW}•{Fore.WHITE} And if your answer is wrong with or without hint, you get {Fore.YELLOW}0 honey{Fore.WHITE}.\n
@@ -130,8 +134,9 @@ def help_screen():
     press_any_key()
     clear_screen()
 
+
 def quit_screen(player_name):
-    print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
+    print_position(15, 29, f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
     """)
@@ -142,18 +147,16 @@ def quit_screen(player_name):
 # >>>>>>>>>>>>>>>>>>>> END OF GAME MENU SECTION <<<<<<<<<<<<<<
 
 
-
-
-
 # >>>>>>>>>>>>>>>>>> SONG SELECTION <<<<<<<<<<<<<<<<<<<<<
-
 def choice_list(item, choice):
     for num, key in enumerate(item, start=1):
         choice[str(num)] = key
 
     for n, items in choice.items():
-        print_position(1,13,f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
-def category_header(text,song_choice):
+        print_position(1, 13, f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
+
+
+def category_header(text, song_choice):
     header_text(f"# {text} \n\n## SONG CART:{len(song_choice)}")
     print("\n" * 2)
 

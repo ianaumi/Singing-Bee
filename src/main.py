@@ -13,6 +13,7 @@ player_choice = None  # stores th   e every action of the player.
 player_points = 0  # stores the points of the user once the round started
 # hints = 3
 
+
 def main():
     mixer.init()
     # start_game_menu(player_name)
