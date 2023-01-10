@@ -1,12 +1,15 @@
 import displays as display
 import utils as util
 
+song_list = util.get_song_list_file()
+year_choice = []  # stores the year choice of player
+song_choice = []  # stores the song choice of player
+choice = {}  # stores the keys player can press and use it to call the key from the song list json file
 
-def song_selection(year_choice, song_choice, choice):
+def run_song_selection():
     while True:
         # >>>>>>>>>>>>YEAR SELECT<<<<<<<<<<<
         # clears the key choices from songs
-        song_list = util.get_song_list_file()
         choice.clear()
         display.clear_screen()
         display.category_header("YEAR", song_choice)
@@ -15,9 +18,13 @@ def song_selection(year_choice, song_choice, choice):
         # checks if player is done choosing
         player_choice = util.get_input_position(2, 12)
         if player_choice.upper() == 'D':
+            if util.list_is_empty(song_choice):
+                display.print_position(0,11,"Please fill your cart first.")
+                display.sleep(1)
+                continue
+
             display.clear_screen()
             display.player_chosen_songs(song_choice)
-
             player_choice = util.get_input_position(1, 24)
 
             if player_choice.upper() == 'B':
