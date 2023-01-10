@@ -12,6 +12,13 @@ def play_sound(path):
     mixer.music.load(path)
     mixer.music.play()
 
+def list_is_empty(chosen_songs):
+    if not chosen_songs:
+        return True
+    else:
+        return False
+
+
 def options(keys):
     option = keys
     return option
