@@ -1,13 +1,13 @@
 import json
 import time
 import colorama
+import displays
 from colorama import Fore, Back, Style
 from os import system
 from pygame import mixer
 from rich.console import Console
 from rich.markdown import Markdown
 colorama.init(autoreset=True)
-
 
 year_choice = []  # stores the year choice of player
 song_choice = []  # stores the song choice of player
@@ -17,7 +17,6 @@ player_choice = None  # stores the every action of the player.
 player_points = 0  # stores the points of the user once the round started
 hints = 3
 console = Console()
-warning = "# WARNING!"
 copyright = "# COPYRIGHT DISCLAMER NOTICE !"
 logo = """                                   
                     _____ _         _            _           
@@ -30,21 +29,17 @@ game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
 about_header = "# ABOUT THE GAME"
 help_header = "# INSTRUCTIONS"
 
-# sets the size of the window of  terminal 100x40
-system('mode con: cols=80 lines=40')
 
 # reading from the song list json file
-with open('songList.json') as f:
-    song_list = json.load(f)
+def open_song_list_file():
+    with open('songList.json') as f:
+        song_list = json.load(f)
 
 # plays the sound from the dictionary
 def play_sound(path):
     mixer.music.load(path)
     mixer.music.play()
 
-
-def clear_screen():
-    system('cls')
 
 
 # input validator for some options
@@ -57,18 +52,12 @@ def print_position(line,column,text):
     print("\n" * line," " * column, text)
 
 
-def display_press_any_key():
-    print_position(2,24,f"{Style.BRIGHT}{Fore.YELLOW} Press any key to continue")
-    print("\n", " " * 37, end="")
-    input()
-
-
-def display_advice():
-    clear_screen()
-    md = Markdown(warning)
-    console.print(md)
-    print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
-    display_press_any_key()
+# def display_advice():
+#     clear_screen()
+#     md = Markdown(warning)
+#     console.print(md)
+#     print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
+#     displays.press_any_key()
 
 
 def display_copyright_disclamer():
@@ -87,7 +76,7 @@ def display_copyright_disclamer():
                        WE DO NOT OWN THE RIGHTS OF ANY SONG. 
                      No Copyright infringement intended here.{Fore.WHITE}
     """)
-    display_press_any_key()
+    displays.press_any_key()
 
 
 def get_player_name():
@@ -140,7 +129,7 @@ def display_about():
                     
                           Bees communicate by dancing!{Fore.WHITE}  
     """)
-    display_press_any_key()
+    displays.press_any_key()
     clear_screen()
 
 
@@ -160,7 +149,7 @@ def display_help():
             {Fore.YELLOW}    Bees can fly up to 12 mph. On every foraging trip, 
                 a bee will visit 50-100 flowers to collect nectar!{Fore.WHITE}
     """)
-    display_press_any_key()
+    displays.press_any_key()
 
 
 def display_quit_screen():
@@ -397,10 +386,12 @@ def round_start():
 
 
 def main():
-    pass
+    displays.set_screen_size(80,40)
+    open_song_list_file()
     mixer.init()
-
-    song_selection()
+    displays.clear_screen()
+    displays.advice_screen()
+    # song_selection()
 
 
 
