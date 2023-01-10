@@ -1,6 +1,7 @@
 import time
 import colorama
 import main
+from main import player_name
 from os import system
 from rich.console import Console
 from rich.markdown import Markdown
@@ -17,7 +18,10 @@ logo = """
 warning = "# WARNING!"
 copyright = "# COPYRIGHT DISCLAMER NOTICE !"
 about_header = "# ABOUT THE GAME"
-help_header = "# INSTRUCTIONS"  
+help_header = "# INSTRUCTIONS"
+game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
+
+
 console = Console()
 def set_screen_size(column,line):
     system(f'mode con: cols={column} lines={line}')
@@ -111,3 +115,12 @@ def help_screen():
     """)
     press_any_key()
     clear_screen()
+
+def quit_screen():
+    print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
+        No matter where you are, the hive will be always a home for you.\n
+                              Sing-you soon!
+    """)
+    time.sleep(5)
+    clear_screen()
+    exit()

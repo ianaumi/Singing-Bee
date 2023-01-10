@@ -17,7 +17,7 @@ player_choice = None  # stores the every action of the player.
 player_points = 0  # stores the points of the user once the round started
 hints = 3
 console = Console()
-game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
+
 
 
 # reading from the song list json file
@@ -56,15 +56,6 @@ def get_user_choice_in_position(line, column):
     print("\n"*line, " " * column, end="")
     player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
     return player_choice
-
-def display_quit_screen():
-    print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
-        No matter where you are, the hive will be always a home for you.\n
-                              Sing-you soon!
-    """)
-    time.sleep(5)
-    clear_screen()
-    exit()
 
 def display_game_menu_header():
     game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
@@ -300,7 +291,7 @@ def main():
     # displays.copyright_disclaimer_screen()
     displays.about_game_screen()
     displays.help_screen()
-
+    displays.quit_screen()
 
 
 
