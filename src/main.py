@@ -18,7 +18,6 @@ player_points = 0  # stores the points of the user once the round started
 hints = 3
 console = Console()
 game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
-help_header = "# INSTRUCTIONS"
 
 
 # reading from the song list json file
@@ -57,46 +56,6 @@ def get_user_choice_in_position(line, column):
     print("\n"*line, " " * column, end="")
     player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
     return player_choice
-
-
-# def display_about():
-#     md = Markdown(about_header)
-#     console.print(md)
-#     print_position(3,30,f"""
-#                       {Fore.YELLOW}Singing Bee is a console game that
-#                 tests your knowledge of the most iconic songs.
-#                    Fill in the missing lyrics and sing along
-#           to your most treasured tunes from the 1960s up to the 2020s!\n\n
-#
-#               Singing Beewas based on a Philippine TV show called
-#                 "The Singing Bee". We combined this TV show with
-#                "Who Wants to be a Millionaire". Both concepts of
-#                     the said shows results to this game.\n\n
-#
-#                           Bees communicate by dancing!{Fore.WHITE}
-#     """)
-#     displays.press_any_key()
-#     clear_screen()
-
-
-def display_help():
-    md = Markdown(help_header)
-    console.print(md)
-    print_position(3, 0, f""" 
-    {Fore.YELLOW}•{Fore.WHITE} You can choose {Fore.YELLOW}any songs{Fore.WHITE} based on the songlist\n
-    {Fore.YELLOW}•{Fore.WHITE} You should guess the {Fore.YELLOW}missing word/s{Fore.WHITE} on the lyrics of the song.\n
-    {Fore.YELLOW}•{Fore.WHITE} Your choices will be: {Fore.YELLOW}A{Fore.WHITE},{Fore.YELLOW}B{Fore.WHITE},{Fore.YELLOW}C{Fore.WHITE},{Fore.YELLOW}D{Fore.WHITE} and {Fore.YELLOW}H{Fore.WHITE} for a {Fore.YELLOW}hint{Fore.WHITE} that may use in the round.\n
-    {Fore.YELLOW}•{Fore.WHITE} Correct answer without hint will be {Fore.YELLOW}1000 honeys{Fore.WHITE}.\n
-    {Fore.YELLOW}•{Fore.WHITE} While correct answer using hint will be {Fore.YELLOW}500 honey{Fore.WHITE}.\n
-    {Fore.YELLOW}•{Fore.WHITE} And if your answer is wrong with or without hint, you get {Fore.YELLOW}0 honey{Fore.WHITE}.\n
-    {Fore.YELLOW}•{Fore.WHITE} Check the song list here -> {Fore.YELLOW}tinyurl.com/DaBeeBook{Fore.WHITE}\n
-    {Fore.YELLOW}•{Fore.WHITE} May you gather the most honeys in the game. Enjoy!\n\n
-
-            {Fore.YELLOW}    Bees can fly up to 12 mph. On every foraging trip, 
-                a bee will visit 50-100 flowers to collect nectar!{Fore.WHITE}
-    """)
-    displays.press_any_key()
-
 
 def display_quit_screen():
     print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
@@ -335,11 +294,12 @@ def main():
     mixer.init()
     displays.set_screen_size(80,40)
     open_song_list_file()
-    displays.loading_screen()
-    displays.clear_screen()
-    displays.advice_screen()
-    displays.copyright_disclaimer_screen()
+    # displays.loading_screen()
+    # displays.clear_screen()
+    # displays.advice_screen()
+    # displays.copyright_disclaimer_screen()
     displays.about_game_screen()
+    displays.help_screen()
 
 
 
