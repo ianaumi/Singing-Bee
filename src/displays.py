@@ -94,6 +94,12 @@ def copyright_disclaimer_screen():
 def game_menu_header(player_name):
     header_text(f"# WELCOME TO SINGING BEE {player_name} !")
 
+def game_menu_options():
+    print_position(3, 32, f"{Fore.YELLOW}[P] Play")
+    print_position(1, 32, f"{Fore.YELLOW}[A] About")
+    print_position(1, 32, f"{Fore.YELLOW}[H] Help")
+    print_position(1, 32, f"{Fore.YELLOW}[Q] Quit\n")
+
 def about_game_screen():
     header_text("# ABOUT THE GAME")
     print_position(3, 30, f"""
@@ -131,6 +137,7 @@ def help_screen():
     clear_screen()
 
 def quit_screen(player_name):
+    clear_screen()
     print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
@@ -177,3 +184,16 @@ def player_chosen_songs(song_choice):
     print_position(1, 25, f"{Fore.YELLOW}Press any key to start")
 
 # >>>>>>>>>>>>>>>>>>>>>>> END OF SONG SELECTION <<<<<<<<<<<<<<<<<
+
+
+
+
+# >>>>>>>>>>>>>>>>>>>>>>>>> START OF ROUND <<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+
+
+# >>>>>>>>>>>>>>>>>>>>>>>>> END OF ROUND <<<<<<<<<<<<<<<<<<<<<<<<
