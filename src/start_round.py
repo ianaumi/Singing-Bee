@@ -2,13 +2,8 @@ import utils as util
 import displays as display
 from song_selection import song_list,choice,year_choice,song_choice
 
-
 def song_info(value):
     return song_list[year_choice[0]][song_choice[0]][value]
-
-
-#FIXME parameter name
-
 
 def ask_play_again(player_name):
     print("[P] Play again")
@@ -33,7 +28,7 @@ def run_start_round(player_name):
             player_choice = input("What is your choice: ")
             if player_choice.upper() in util.options(["A", "B", "C", "D", "H"]):
                 hint_used = False
-
+                #FIXME
                 if player_choice.upper() == "H":
                     if player_hints > 0:
                         if not hint_used:
