@@ -1,13 +1,12 @@
-import time
-import colorama
-from main import player_name
+from time import sleep
 from os import system
 from rich.console import Console
 from rich.markdown import Markdown
-from colorama import Fore, Back, Style
+import  colorama
+from colorama import Fore,Style
 
-def colorama_set_auto_style():
-    colorama.init(autoreset=True)
+
+colorama.init(autoreset=True)
 
 logo = """                                   
                     _____ _         _            _           
@@ -16,15 +15,18 @@ logo = """
                    |_____|_|_|_|_  |_|_|_|_  |  |___|___|___|
                                |___|     |___|               
 """
-warning = "# WARNING!"
-copyright = "# COPYRIGHT DISCLAMER NOTICE !"
-about_header = "# ABOUT THE GAME"
-help_header = "# INSTRUCTIONS"
-game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
-song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
-year_header = f"# SELECT YEAR \n\n## SONG CART:{len(song_choice)}"
-your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
+# warning = "# WARNING!"
+# copyright = "# COPYRIGHT DISCLAMER NOTICE !"
+# about_header = "# ABOUT THE GAME"
+# help_header = "# INSTRUCTIONS"
+# song_header = f"# SELECT A SONG FROM {year_choice[0]} \n## SONG CART:{len(song_choice)}"
+# year_header = f"# SELECT YEAR \n\n## SONG CART:{len(song_choice)}"
+# your_songs_header = f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}"
 console = Console()
+
+def header_text(text):
+    md = Markdown(text)
+    console.print(md)
 
 def set_screen_size(column,line):
     system(f'mode con: cols={column} lines={line}')
@@ -43,35 +45,32 @@ def print_position(line,column,text):
     print("\n" * line," " * column, text)
 
 
-def invalid_option_screen(line, column):
-    clear_screen()
+def invalid_option(line, column):
     print_position(line, column, "Invalid Option")
-    time.sleep(1)
+    sleep(1)
 
 
 # >>>>>>>>>>> GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<<<
 def loading_screen():
+    global logo
     count = 0
     while count < 4:
         clear_screen()
         print_position(10, 20, logo)
         print("\n", " " * 30, f"{Fore.YELLOW}Loading", "." * count)
-        time.sleep(1)
+        sleep(1)
         count += 1
     clear_screen()
 
 
 def advice_screen():
-    md = Markdown(warning)
-    console.print(md)
+    header_text("# WARNING!")
     print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
     press_any_key()
     clear_screen()
 
-
 def copyright_disclaimer_screen():
-    md = Markdown(copyright)
-    console.print(md)
+    header_text("# COPYRIGHT DISCLAMER NOTICE !")
     print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
         All material is the copyright property of its respective owner(s).\n
                      Under Section 107 of the Copyright Act 1976,
@@ -87,21 +86,22 @@ def copyright_disclaimer_screen():
     press_any_key()
     clear_screen()
 
+# >>>>>>>>>>>>>>>>>>>>> END OF GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<
+
+
+
 # >>>>>>>>>>>>>>>>>>>>> GAME MENU SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<
-def game_menu_header():
-    game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
-    md = Markdown(game_menu_header)
-    console.print(md)
+def game_menu_header(player_name):
+    header_text(f"# WELCOME TO SINGING BEE {player_name} !")
 
 def about_game_screen():
-    md = Markdown(about_header)
-    console.print(md)
+    header_text("# ABOUT THE GAME")
     print_position(3, 30, f"""
                       {Fore.YELLOW}Singing Bee is a console game that 
                 tests your knowledge of the most iconic songs.
                    Fill in the missing lyrics and sing along
           to your most treasured tunes from the 1960s up to the 2020s!\n\n
-
+ 
               Singing Beewas based on a Philippine TV show called 
                 "The Singing Bee". We combined this TV show with 
                "Who Wants to be a Millionaire". Both concepts of
@@ -113,8 +113,7 @@ def about_game_screen():
     clear_screen()
 
 def help_screen():
-    md = Markdown(help_header)
-    console.print(md)
+    header_text("# INSTRUCTIONS")
     print_position(3, 0, f""" 
     {Fore.YELLOW}•{Fore.WHITE} You can choose {Fore.YELLOW}any songs{Fore.WHITE} based on the songlist\n
     {Fore.YELLOW}•{Fore.WHITE} You should guess the {Fore.YELLOW}missing word/s{Fore.WHITE} on the lyrics of the song.\n
@@ -131,32 +130,47 @@ def help_screen():
     press_any_key()
     clear_screen()
 
-def quit_screen():
+def quit_screen(player_name):
     print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
     """)
-    time.sleep(5)
+    sleep(5)
     clear_screen()
     exit()
 
+# >>>>>>>>>>>>>>>>>>>> END OF GAME MENU SECTION <<<<<<<<<<<<<<
+
+
+
+
 
 # >>>>>>>>>>>>>>>>>> SONG SELECTION <<<<<<<<<<<<<<<<<<<<<
-def song_header():
-    md = Markdown(song_header)
-    console.print(md)
 
-def year_header():
-    md = Markdown(year_header)
-    console.print(md)
-
-def your_song_list():
-    md = Markdown(your_songs_header)
-    console.print(md)
-
-def display_list(item):
+def choice_list(item, choice):
     for num, key in enumerate(item, start=1):
         choice[str(num)] = key
 
     for n, items in choice.items():
         print_position(1,13,f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
+def category_header(text,song_choice):
+    header_text(f"# {text} \n\n## SONG CART:{len(song_choice)}")
+    print("\n" * 2)
+
+def select_year_from(year_list,choice):
+    choice_list(year_list,choice)
+    print_position(1, 13, f"[{Fore.YELLOW}D{Fore.WHITE}] Done")
+
+def select_song_from(song_list,year_choice,choice):
+    choice_list(song_list[year_choice],choice)
+    print_position(1, 13, f"[{Fore.YELLOW}B{Fore.WHITE}] Back")
+
+def player_chosen_songs(song_choice):
+    header_text(f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}")
+    print("\n" * 2)
+    for num, song in enumerate(song_choice, start=1):
+        print_position(1, 14, f"{Fore.YELLOW}{num}{Fore.WHITE}. {song}")
+    print_position(4, 32, f"[{Fore.YELLOW}B{Fore.WHITE}] Back")
+    print_position(1, 25, f"{Fore.YELLOW}Press any key to start")
+
+# >>>>>>>>>>>>>>>>>>>>>>> END OF SONG SELECTION <<<<<<<<<<<<<<<<<
