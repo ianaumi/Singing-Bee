@@ -1,12 +1,13 @@
 import time
 import colorama
-import main
 from main import player_name
 from os import system
 from rich.console import Console
 from rich.markdown import Markdown
 from colorama import Fore, Back, Style
-colorama.init(autoreset=True)
+
+def colorama_set_auto_style():
+    colorama.init(autoreset=True)
 
 logo = """                                   
                     _____ _         _            _           
@@ -38,6 +39,13 @@ def press_any_key():
 
 def print_position(line,column,text):
     print("\n" * line," " * column, text)
+
+
+def invalid_option_screen(line, column):
+    clear_screen()
+    print_position(line, column, "Invalid Option")
+    time.sleep(1)
+
 
 # >>>>>>>>>>> GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<<<
 def loading_screen():
@@ -78,6 +86,11 @@ def copyright_disclaimer_screen():
     clear_screen()
 
 # >>>>>>>>>>>>>>>>>>>>> GAME MENU SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<
+def game_menu_header():
+    game_menu_header = f"# WELCOME TO SINGING BEE {player_name} !"
+    md = Markdown(game_menu_header)
+    console.print(md)
+
 def about_game_screen():
     md = Markdown(about_header)
     console.print(md)
@@ -124,3 +137,6 @@ def quit_screen():
     time.sleep(5)
     clear_screen()
     exit()
+
+
+# >>>>>>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<<<<<
