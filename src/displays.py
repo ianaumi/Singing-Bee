@@ -182,6 +182,24 @@ def player_chosen_songs(song_choice):
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>> START OF ROUND <<<<<<<<<<<<<<<<<<<<<<
+def player_status(player_name,player_hints,player_points):
+    player = "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"umi{Fore.WHITE}").ljust(15)) + "|"
+    hints  = "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"3{Fore.WHITE}").ljust(16)   ) + "|"
+    points = "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"missu{Fore.WHITE}").ljust(14)) + " |"
+    #FIXME alignment to the left
+    print_position(0,5,f"""{Fore.YELLOW}_|___|_    
+       ({Style.BRIGHT}{Fore.RED}●{Fore.WHITE}'◡'{Style.BRIGHT}{Fore.RED}●{Style.NORMAL}{Fore.YELLOW})/{Fore.WHITE}Status""")
+    print_position(0,5,("+" + "-" * 18 + "+"))
+    print_position(0, 5,("|" + (" " * 18) + "|"))
+    print_position(0, 5, player)
+    print_position(0, 5, hints)
+    print_position(0, 5, points)
+    print_position(0, 5,("|" + (" " * 18) + "|"))
+    print_position(0,5,("+" + "-" * 18 + "+"))
+
+def total_score(player_name,player_points):
+    print_position(0,20,f"CONGRATS, {player_name}!\n You managed to get {player_points} Honeys! ")
+
 
 
 
