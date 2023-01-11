@@ -28,7 +28,7 @@ to your most treasured tunes from the 1960s up to the 2020s! Singing Beewas base
 Instructions
 <br>
 + Player can choose any song from the song cart.
-+ Check the song list here -> tinyurl.com/DaBeeBook
++ Check the song list [here](tinyurl.com/DaBeeBook)
 + Then the player should guess the missing word/s from the song lyrics.
 + A correct answer without using hint is worth 1000 points.
 + While a correct answer using hint is only 500 points
