@@ -56,13 +56,15 @@ def run_start_round(player_name):
             # Fails the readability of the code
             player_choice = util.get_input_position(3,27)
             if player_choice.upper() in util.options(["A", "B", "C", "D", "H"]):
+                player_used_hint = False
+
                 if player_choice.upper() == "H":
                     if player_hints > 0:
                         if not player_used_hint:
                             #FIXME CODE FROM THE TOP NOT PRINTING (LYRICS, CHOICES ETC.)
                             display.print_position(3,35,song_info("hint"))
                             player_used_hint = True
-                            player_hints -= 1
+                            player_hints = player_hints - 1
                             while True:
                                 player_choice = util.get_input_position(0,27)
                                 if player_choice.upper() in song_info("hint"):
@@ -75,6 +77,7 @@ def run_start_round(player_name):
                 if player_choice.upper() == (song_info("answer")):
                     print("Correct!")
 
+                    #FIXME player used hint is still true after moving on to the next song
                     if player_used_hint:
                         print("You earned 500 honeys!")
                         player_points = player_points + 500
