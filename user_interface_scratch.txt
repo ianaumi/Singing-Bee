@@ -1,0 +1,217 @@
+
+================================= WELCOME SCREEN SECTION ===========================
+            
+														  ████          ░░
+                                                          ██████                        
+                                    ████░░░░██████      ██                              
+                                  ██████░░░░████░░░░░░██    ██████                      
+                                ░░██████░░░░████░░░░░░░░████  ████                      
+                              ░░░░████░░░░░░████░░░░░░░░░░                              
+                            ██░░░░████░░░░██████░░████░░░░░░                            
+                          ████░░░░████░░░░██████░░████░░░░░░                            
+                      ████████░░░░████░░░░██████░░░░░░░░░░░░                            
+              ░░          ████░░░░████░░░░██████░░░░░░██░░░░                        ░░  
+            ░░░░            ██░░░░████░░░░░░████░░░░░░░░████                      ░░░░  
+            ░░░░░░              ░░██████░░░░████░░░░░░░░░░                        ░░░░░░
+          ░░  ░░                  ██████░░░░██████░░░░░░                        ░░  ░░  
+      ░░░░  ░░                      ████░░░░██████░░░░                      ░░░░  ░░    
+    ░░░░░░░░                        ██  ██░░░░██    ██                    ░░░░░░░░      
+  ░░░░░░░░                        ██  ░░  ██    ██  ██                  ░░░░░░░░        
+░░░░░░░░                            ░░░░██    ██                      ░░░░░░░░          
+  ░░░░                                ░░░░                              ░░░░            
+                                              
+					# look for more nice font
+			_____ _____ _   _ _____ _____ _   _ _____  ______ _____ _____ 
+			/  ___|_   _| \ | |  __ \_   _| \ | |  __ \ | ___ \  ___|  ___|
+			\ `--.  | | |  \| | |  \/ | | |  \| | |  \/ | |_/ / |__ | |__  
+			 `--. \ | | | . ` | | __  | | | . ` | | __  | ___ \  __||  __| 
+			/\__/ /_| |_| |\  | |_\ \_| |_| |\  | |_\ \ | |_/ / |___| |___ 
+			\____/ \___/\_| \_/\____/\___/\_| \_/\____/ \____/\____/\____/ 
+                                                               											  
+
+									█████████████▒▒▒ 70% <- loading screen bar
+									# this should be the loading screen 1-100%
+									# 10 Seconds of loading
+									# prints out some facts about honey while loading
+										
+
+# after the loading is done
+====================================================
+
+			Welcome to singing bee! 
+			You are ? ____________ < user can type here
+			
+			# 2 seconds loading
+			# it clears the screen 
+
+# after entering username 
+===================================================
+			
+			Welcome to the singing bee!
+			        name here   
+					
+			  > [S] Start
+					[A] About
+					[H] Help
+					[Q] Quit
+					
+       # maybe some informations here at the bottom? 
+	   
+	   
+# Quit selected
+========================================================
+
+						Good bye!
+						
+			      # what else to put here???
+				  
+				  
+# Help selected
+========================================================
+				  _  _ ___ _    ___ 
+				 | || | __| |  | _ \
+				 | __ | _|| |__|  _/
+				 |_||_|___|____|_|    <- help title here
+                       
+			  
+			  Lorem ipsum dolor sit amet, 
+		  consectetur adipiscing elit. Duis
+      Pellentesque habitant morbi tristique senectu
+		Nam ut luctus erat, ut tincidunt tortor.   <- help informations
+		
+		      Press any key to go back.   <- information to go back	
+
+# about selected 
+============================================================
+				 _   ___  ___  _   _ _____ 
+				/_\ | _ )/ _ \| | | |_   _|
+			 / _ \| _ \ (_) | |_| | | |  
+      /_/ \_\___/\___/ \___/  |_|    <- about title here
+                              
+			  
+			  Lorem ipsum dolor sit amet, 
+		  consectetur adipiscing elit. Duis
+      Pellentesque habitant morbi tristique senectu
+		Nam ut luctus erat, ut tincidunt tortor. 
+	Pellentesque tempus dui sit amet diam faucibus v nisl
+     unisi, ornare sit amet turpis posuere, convallici.	   <- about the game
+	 
+	            press any key to go back. <- information to go back
+                            
+# start selected 
+===============================================================================					
+
+			
+				
+										
+										
+									
+						█████████████▒▒▒ 70%	<- loading bar
+						
+						
+						
+# done loading 
+# year selection
+===============================================================================
+
+						      ====YEAR=====
+							    Song count: 0
+   	          > [1] 60'S
+								[2] 70'S
+								[3] 80'S
+								[4] 90'S 
+								[5] 2000'S
+								[6] 2010'S
+								[7] 2020's
+								[D] Done
+								
+								
+# chose number 7 / song selection 
+====================================================================================								
+						
+						     ===SONGS====
+							    2020'S  <- last selected year
+								
+            > [1] Song - Artist
+							[2] August - Taylorswift
+							[3] Cardigan - Taylorswift
+							[4] Anti-Hero -Taylorswift
+							[5] Fragile - Laufey
+							[6] Glimpse of us - Joji
+							[7] Bad habit - Steve Lacy
+							[B] Back
+							
+							# might not be able to use selection module, find a way where to put userChoice input 
+							
+# clicked Done [D] 
+=======================================================================================
+					
+							Your songlist <- title here 
+							press any key to continue # can't go back anymore 
+							
+						Title                         Artist 
+						
+number counter ->	1   Fragile						  Laufey
+					2	Cardigan					            Taylorswift
+					3	Anti-Hero  					          Taylorswift
+					4	Glimpse of us                 Joji 
+					5	Bad habit                     Steve Lacy 
+					6	Valentine					            Laufey
+					7	Just Like Chet                Laufey 
+					
+	
+					
+# pressed any key 
+=========================================================================================
+
+						    Singing bee <- game title
+					  ////////Fragile - Laufey ////////// <- song title # can find a way to animate?
+					  
+					  
+					  Will you let me come closer to you?
+				I know that you're ______, but what can I do? <- lyrics
+		I leave in the morning, I'll forget that I am surely falling (ah-ah)
+		
+		# what format for choices?					# how will the user know he is correct?
+		     [A] choice1
+			   [B] choice1
+			   [C] choice1
+			   [D] choice1
+							
+							
+							# scoreboard here what design?
+							
+							name:umi
+							score: 0
+							round: 1
+							
+# songlist is empty = game done 
+===============================================================================================
+							
+						Your total score is 
+							 9482891
+							 
+						Want to play again?
+						
+					 [Y] Yes            [N] No
+					 
+# pressed No 
+======================================================================================					 
+						
+						goodbye here 
+						
+# pressed yes
+======================================================================================
+
+				going back to the # after entering username 
+				
+				
+				
+				
+	======================================================================================
+	  time sleep 3 seconds then
+	   program stops 
+	  
+	  
+	  
+				
