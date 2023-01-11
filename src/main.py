@@ -2,6 +2,7 @@ import json
 from pygame import mixer
 from song_selection import song_selection
 from game_menu import start_game_menu
+from start_round import round_start
 import displays as display
 import utils as util
 
@@ -9,7 +10,7 @@ year_choice = []  # stores the year choice of player
 song_choice = []  # stores the song choice of player
 choice = {}  # stores the keys player can press and use it to call the key from the song list json file
 player_name = "mimi"  # stores the player's name
-player_choice = None  # stores th   e every action of the player.
+player_choice = None  # stores the every action of the player.
 player_points = 0  # stores the points of the user once the round started
 # hints = 3
 
@@ -25,7 +26,7 @@ def main():
     # display.advice_screen()
     # display.copyright_disclaimer_screen()
     # song_selection(year_choice,song_choice,choice)
-
+    # round_start
 
 if __name__ == "__main__":
     main()

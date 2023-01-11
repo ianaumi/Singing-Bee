@@ -32,6 +32,22 @@ def is_empty(empty):
         return False
 
 
+def player_picked_hint(hints, hint_used):
+    global player_choice
+
+    if hints > 0:
+        if not hint_used:
+            print(song_info(year_choice[0], song_choice[0], "hint"))
+            hint_used = True
+            hints = hints - 1
+            while True:
+                player_choice = input("What is your choice: ")
+                if player_choice.upper() in song_info(year_choice[0], song_choice[0], "hint"):
+                    break
+                else:
+                    print("Invalid Option")
+
+
 def round_start():
     global player_points
     global hints
@@ -53,17 +69,7 @@ def round_start():
                 hint_used = False
 
                 if player_choice.upper() == "H":
-                    if hints > 0:
-                        if not hint_used:
-                            print(song_info(year_choice[0], song_choice[0], "hint"))
-                            hint_used = True
-                            hints = hints - 1
-                            while True:
-                                player_choice = input("What is your choice: ")
-                                if player_choice.upper() in song_info(year_choice[0], song_choice[0], "hint"):
-                                    break
-                                else:
-                                    print("Invalid Option")
+                    player_picked_hint(hints, hint_used)
 
                 if player_choice.upper() == (song_info(year_choice[0], song_choice[0], "answer")):
                     print("Correct!")

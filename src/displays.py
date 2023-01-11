@@ -89,7 +89,6 @@ def copyright_disclaimer_screen():
 # >>>>>>>>>>>>>>>>>>>>> END OF GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<
 
 
-
 # >>>>>>>>>>>>>>>>>>>>> GAME MENU SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<
 def game_menu_header(player_name):
     header_text(f"# WELCOME TO SINGING BEE {player_name} !")
