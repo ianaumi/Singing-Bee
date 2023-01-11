@@ -22,13 +22,11 @@ def run_start_round(player_name):
     #     choice = input()
     #     if choice == 'A':
     #         exit()
-
     display.loading_screen()
     player_points = 0 # stores the points of the user once the round started
     player_hints = 3
     player_skipped_song = False
     player_used_hint = False
-
     while True:
         display.header_text(f"# Song playing - {song_choice[0]}\n\n ## Remaining songs: {len(song_choice)}")
 
@@ -68,6 +66,7 @@ def run_start_round(player_name):
                                     break
                                 else:
                                     display.invalid_option(0,27)
+                    player_picked_hint(hints, hint_used)
 
                 #FIXME WHERE TO PUT THE ANSWER CHECKINGS
                 #>>>>>>>>>> ANSWER CHECKER <<<<<<<<<<<<<<<<<<
