@@ -56,7 +56,7 @@ def run_song_selection():
 
         player_choice = util.get_input_position(2, 12)
         if player_choice.upper() == 'B':
-            year_choice.pop()
+            year_choice.pop(0)
             display.clear_screen()
             continue
 
