@@ -30,6 +30,7 @@ def run_start_round(player_name):
     player_used_hint = False
 
     while True:
+
         display.header_text(f"# Song playing - {song_choice[0]}\n\n ## Remaining songs: {len(song_choice)}")
 
         display.player_status(player_name,player_hints,player_points)

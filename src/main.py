@@ -10,8 +10,8 @@ player_choice = None  # stores the every action of the player.
 
 def game_loop():
     while True:
-        # display.loading_screen()
-        # run_game_menu(player_name)
+        display.loading_screen()
+        run_game_menu(player_name)
         run_song_selection()
         run_start_round(player_name)
 # hints = 3
@@ -20,10 +20,10 @@ def main():
     global player_name
     mixer.init()
     display.set_screen_size(80,40)
-    # display.loading_screen()
-    # player_name = util.get_player_name()
-    # display.advice_screen()
-    # display.copyright_disclaimer_screen()
+    display.loading_screen()
+    player_name = util.get_player_name()
+    display.advice_screen()
+    display.copyright_disclaimer_screen()
     game_loop()
 
     # start_game_menu(player_name)
