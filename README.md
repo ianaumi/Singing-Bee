@@ -10,7 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="#about-the-game">About The Game</a> •
+  <a href="#about-the-game">About the game</a> •
+  <a href="#about-the-project">About The Project</a>•
   <a href="#how-to-play">How to play</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
@@ -22,7 +23,9 @@
 <p>Singing Bee is a console game that tests your knowledge of the most iconic songs. Fill in the missing lyrics and sing along 
 to your most treasured tunes from the 1960s up to the 2020s! Singing Beewas based on a Philippine TV show called 
 "The Singing Bee". We combined this TV show with "Who Wants to be a Millionaire". Both concepts of the said shows results to this game.</p>
-<br>
+
+## About the project
+As a first year student, this project is our final subject on our subject <b>algorithm and logic formulation</b>
 
 ## How to play
 Instructions
@@ -34,11 +37,10 @@ Instructions
 + While a correct answer using hint is only 500 points
 + And if your answer is wrong with or without hint, you will get 0 points.
 + May you gather the most honeys in the game. Enjoy!
-<br>
+
 
 ## Download
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor leo vel eros sollicitudin, quis egestas lorem pulvinar. Sed turpis neque, posuere sed mattis sed, ullamcorper in nibh. Nam laoreet feugiat risus, quis sollicitudin purus viverra vitae.[Named Link](http://www.google.fr/ "Named Link")
-<br>
 
 ## Credits
 <p>
@@ -49,7 +51,6 @@ Under Section 107 of the Copyright Act 1976, allowance is made for “fair use�
 comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute 
 that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favour of fair use.
 WE DO NOT OWN THE RIGHTS OF ANY SONG. No Copyright infringement intended here.</p>
-<br>
 
 ## License
 <p>MIT License
