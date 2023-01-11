@@ -24,6 +24,7 @@ def run_game_menu(player_name):
 
             elif player_choice.upper() == "P":
                 clear_screen()
+                display.loading_screen()
                 break
         else:
             display.invalid_option(0,30)
