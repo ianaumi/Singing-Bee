@@ -241,42 +241,42 @@
 
   "2020s": {
     "About you - 1975": {
-      "lyrics": "            There was something 'bout you that now I can't remember\n              It's the same damn thing that made my heart surrender\n             And I miss you on a _______, I miss you in the morning\n                  I never know what to think about",
+      "lyrics": "            There was something 'bout you that now I can't remember\n              It's the same damn thing that made my heart surrender\n                         And I miss you on a _______, I miss you in the morning\n                       I never know what to think about",
       "choices": "[A] Spain [B] Plane [H] Hint [C] Train [D] Rain",
       "hint": "[C] Train [D] Rain",
       "answer": "C",
       "sound": "sounds\\Song musics\\2020s\\About you - 1975.wav"
     },
     "All I Really Want Is You - The Marias": {
-      "lyrics": "All I really want is you\nWhat would you do?\nLaying in the rain with you\nMiddle of June\nAll I really want is you\nWhat would you do?\n____ outside, the moon\nTripping with you",
+      "lyrics": "                            All I really want is you\n                              What would you do?\n                          Laying in the rain with you\n                                 Middle of June\n                           All I really want is you\n                              What would you do?\n                            ____ outside, the moon\n                               Tripping with you",
       "choices": "[A] Seeping [B] Sleeping [H] Hint [C] Creeping [D] Leaping",
       "hint": "[A] Seeping [B] Sleeping",
       "answer": "B",
       "sound": "sounds\\Song musics\\2020's\\All I Really Want Is You - The Marias.wav"
     },
     "Bad Habit - Steve Lacy": {
-      "lyrics": "I bite my tongue, it's a bad habit\nKinda mad that I didn't take a _______ at it\nThought you were too good for me, my dear\nNever gave me time of day, my dear\nIt's okay, things happen for\nReasons that I think are sure, yeah",
+      "lyrics": "                        I bite my tongue, it's a bad habit\n                  Kinda mad that I didn't take a _______ at it\n                   Thought you were too good for me, my dear\n                      Never gave me time of day, my dear\n                           It's okay, things happen for\n                      Reasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [H] Hint [C] Stab [D] Grab",
       "hint": "[A] Cab [C] Stab",
       "answer": "C",
       "sound": "sounds\\Song musics\\2020's\\Bad Habit - Steve Lacy.wav"
     },
     "Cruel Summer - Taylor Swift": {
-      "lyrics": "I'm drunk in the back of the car\nAnd I cried like a baby coming home from the bar (oh)\nSaid, \"I'm fine, \" but it wasn't true\nI don't wanna keep secrets just to keep you\nAnd I ___ in through the garden gate\nEvery night that summer just to seal my fate (oh)\nAnd I screamed for whatever it's worth I love you ain't that the worst thing you've ever heard?",
+      "lyrics": "                        I'm drunk in the back of the car\n             And I cried like a baby coming home from the bar (oh)\n                       Said, \"I'm fine,\" but it wasn't true\n                   I don't wanna keep secrets just to keep you\n                       And I ___ in through the garden gate\n             Every night that summer just to seal my fate (oh)\n                         And I screamed for whatever it's worth\n            I love you ain't that the worst thing you've ever heard?",
       "choices": "[A] Walked [B] Ran [H] Hint [C] Went [D] Snuck",
       "hint": "[C] Went [D] Snuck",
       "answer": "D",
       "sound": "sounds\\Song musics\\2020's\\Cruel Summer - Taylor Swift.wav"
     },
     "Drivers License - Olivia Rodrigo": {
-      "lyrics": "I guess you didn't mean what you wrote in that song about me\n'Cause you said _____, now I drive alone past your street",
+      "lyrics": "          I guess you didn't mean what you wrote in that song about me\n            'Cause you said _____, now I drive alone past your street",
       "choices": "[A] Whatever [B] Forever [H] Hint [C] Together [D] Forget her",
        "hint": "[B] Forever [D] Forget her",
       "answer": "B",
       "sound": "sounds\\Song musics\\2020's\\Drivers License - Olivia Rodrigo.wav"
     },
     "Fallen - Lola Amour": {
-      "lyrics": "What if I told you that I've fallen\nAnd I like the way you say my name?\nMy heart skips a beat when I hear you ____\nAnd I like that it won't go away",
+      "lyrics": "                       What if I told you that I've fallen\n                       And I like the way you say my name?\n                    My heart skips a beat when I hear you ____\n                        And I like that it won't go away",
       "choices": "[A] Calling [B] Breathing [H] Hint [C] Heart beating [D] Talking",
       "hint": "[A] Calling [B] Breathing",
       "answer": "A",
