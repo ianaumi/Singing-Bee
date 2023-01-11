@@ -66,7 +66,6 @@ def run_start_round(player_name):
                                     break
                                 else:
                                     display.invalid_option(0,27)
-                    player_picked_hint(hints, hint_used)
 
                 #FIXME WHERE TO PUT THE ANSWER CHECKINGS
                 #>>>>>>>>>> ANSWER CHECKER <<<<<<<<<<<<<<<<<<
