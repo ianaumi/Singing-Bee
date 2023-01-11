@@ -35,6 +35,7 @@ def run_song_selection():
                 year_choice.reverse()
                 song_choice.reverse()
                 display.clear_screen()
+                display.loading_screen()
                 break
 
         if player_choice in choice:

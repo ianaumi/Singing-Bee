@@ -131,7 +131,8 @@ def help_screen():
 
 def quit_screen(player_name):
     clear_screen()
-    print_position(15,29,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
+    #FIXME CENTRALIZE ALIGNMENT
+    print_position(15,30,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
     """)
@@ -183,28 +184,21 @@ def player_chosen_songs(song_choice):
 
 # >>>>>>>>>>>>>>>>>>>>>>>>> START OF ROUND <<<<<<<<<<<<<<<<<<<<<<
 def player_status(player_name,player_hints,player_points):
-    player = "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"umi{Fore.WHITE}").ljust(15)) + "|"
-    hints  = "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"3{Fore.WHITE}").ljust(16)   ) + "|"
-    points = "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"missu{Fore.WHITE}").ljust(14)) + " |"
-    #FIXME alignment to the left
+    # player = "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|"
+    # hints  = "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_hints}{Fore.WHITE}").ljust(16)   ) + "|"
+    # points = "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14)) + " |"
     print_position(0,5,f"""{Fore.YELLOW}_|___|_    
        ({Style.BRIGHT}{Fore.RED}●{Fore.WHITE}'◡'{Style.BRIGHT}{Fore.RED}●{Style.NORMAL}{Fore.YELLOW})/{Fore.WHITE}Status""")
     print_position(0,5,("+" + "-" * 18 + "+"))
     print_position(0, 5,("|" + (" " * 18) + "|"))
-    print_position(0, 5, player)
-    print_position(0, 5, hints)
-    print_position(0, 5, points)
+    print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
+    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_hints}{Fore.WHITE}").ljust(16)   ) + "|")
+    print_position(0, 5, "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14)) + " |")
     print_position(0, 5,("|" + (" " * 18) + "|"))
     print_position(0,5,("+" + "-" * 18 + "+"))
 
 def total_score(player_name,player_points):
-    print_position(0,20,f"CONGRATS, {player_name}!\n You managed to get {player_points} Honeys! ")
-
-
-
-
-
-
-
+    clear_screen()
+    print_position(10,20,f"CONGRATS, {player_name}!\n You managed to get {player_points} Honeys! ")
 
 # >>>>>>>>>>>>>>>>>>>>>>>>> END OF ROUND <<<<<<<<<<<<<<<<<<<<<<<<
