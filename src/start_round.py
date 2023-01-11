@@ -1,3 +1,5 @@
+import time
+
 import utils as util
 import displays as display
 from song_selection import song_list,year_choice,song_choice
@@ -22,11 +24,11 @@ def run_start_round(player_name):
     #     choice = input()
     #     if choice == 'A':
     #         exit()
-    display.loading_screen()
     player_points = 0 # stores the points of the user once the round started
     player_hints = 3
     player_skipped_song = False
     player_used_hint = False
+
     while True:
         display.header_text(f"# Song playing - {song_choice[0]}\n\n ## Remaining songs: {len(song_choice)}")
 
@@ -36,13 +38,14 @@ def run_start_round(player_name):
 
 
         if not player_skipped_song:
-            util.play_sound(song_info("sound"))
-            display.print_position(3,27,"press enter to continue")
-            util.get_input_position(1, 27)
-            util.stop_sound()
-            player_skipped_song = True
-            display.clear_screen()
-            continue
+            pass
+            # util.play_sound(song_info("sound"))
+            # display.print_position(3,27,"press enter to continue")
+            # util.get_input_position(1, 27)
+            # util.stop_sound()
+            # player_skipped_song = True
+            # display.clear_screen()
+            # continue
 
         #FIXME alignment
         #FIXME IF CONDITION WETHER TO PRINT CHOICES OR HINT CHOICES
@@ -75,15 +78,21 @@ def run_start_round(player_name):
                     if player_used_hint:
                         print("You earned 500 honeys!")
                         player_points = player_points + 500
+                        display.sleep(2)
+                        display.clear_screen()
                         break
 
                     else:
                         print("You earned 1000 honeys!")
                         player_points = player_points + 1000
+                        display.sleep(2)
+                        display.clear_screen()
                         break
                 else:
                     print("Wrong")
                     print("You earned 0 honeys")
+                    display.sleep(2)
+                    display.clear_screen()
                     break
             else:
                 display.invalid_option(0,27)
