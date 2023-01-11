@@ -27,6 +27,7 @@ def run_start_round(player_name):
     player_points = 0 # stores the points of the user once the round started
     player_hints = 3
     player_skipped_song = False
+    player_used_hint = False
 
     while True:
         display.header_text(f"# Song playing - {song_choice[0]}\n\n ## Remaining songs: {len(song_choice)}")
@@ -54,13 +55,12 @@ def run_start_round(player_name):
             # Fails the readability of the code
             player_choice = util.get_input_position(3,27)
             if player_choice.upper() in util.options(["A", "B", "C", "D", "H"]):
-                hint_used = False
                 if player_choice.upper() == "H":
                     if player_hints > 0:
-                        if not hint_used:
+                        if not player_used_hint:
                             #FIXME CODE FROM THE TOP NOT PRINTING (LYRICS, CHOICES ETC.)
                             display.print_position(3,35,song_info("hint"))
-                            hint_used = True
+                            player_used_hint = True
                             player_hints -= 1
                             while True:
                                 player_choice = util.get_input_position(0,27)
@@ -68,12 +68,13 @@ def run_start_round(player_name):
                                     break
                                 else:
                                     display.invalid_option(0,27)
-        
+
                 #FIXME WHERE TO PUT THE ANSWER CHECKINGS
+                #>>>>>>>>>> ANSWER CHECKER <<<<<<<<<<<<<<<<<<
                 if player_choice.upper() == (song_info("answer")):
                     print("Correct!")
 
-                    if hint_used:
+                    if player_used_hint:
                         print("You earned 500 honeys!")
                         player_points = player_points + 500
                         break

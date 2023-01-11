@@ -184,9 +184,6 @@ def player_chosen_songs(song_choice):
 
 # >>>>>>>>>>>>>>>>>>>>>>>>> START OF ROUND <<<<<<<<<<<<<<<<<<<<<<
 def player_status(player_name,player_hints,player_points):
-    # player = "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|"
-    # hints  = "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_hints}{Fore.WHITE}").ljust(16)   ) + "|"
-    # points = "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14)) + " |"
     print_position(0,5,f"""{Fore.YELLOW}_|___|_    
        ({Style.BRIGHT}{Fore.RED}●{Fore.WHITE}'◡'{Style.BRIGHT}{Fore.RED}●{Style.NORMAL}{Fore.YELLOW})/{Fore.WHITE}Status""")
     print_position(0,5,("+" + "-" * 18 + "+"))

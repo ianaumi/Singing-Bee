@@ -26,10 +26,12 @@ def options(keys):
     option = keys
     return option
 
+
 def get_input_position(line, column):
     print("\n"*line, " " * column, end="")
     player_choice = input(f"{Fore.YELLOW}{Style.BRIGHT}>> {Fore.WHITE}")
     return player_choice
+
 
 #FIXME LIMIT THE NAME CHARACTERS TO 3 MIN 8 MAX
 def get_player_name():

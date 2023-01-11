@@ -1,11 +1,13 @@
 import utils as util
 import  displays as display
-from displays import print_position,clear_screen,header_text
+from displays import clear_screen,header_text,logo
+
 
 def run_game_menu(player_name):
     while True:
         clear_screen()
         header_text(f"# WELCOME TO SINGING BEE {player_name}!")
+        display.print_position(3, 20, logo)
         display.game_menu_options()
         player_choice = util.get_input_position(1,31)
 
