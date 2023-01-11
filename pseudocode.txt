@@ -11,6 +11,12 @@ set year_choice = []
 set song_choice = []
 set player_choice = None
 
+def list_is_empty(chosen_songs))
+    if not chosen_songs:
+        return True  
+    else 
+        return False 
+
 # game menu
 adsasdsa
 
@@ -27,6 +33,10 @@ song_selection():
 
         get player_choice
         if player_choice = 'D':
+            if list_is_empty(song_choice):
+                print("please add song first")
+                continue
+            endif
 
             print "your songs"
             for song in song_choice:
