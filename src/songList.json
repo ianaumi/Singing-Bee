@@ -47,28 +47,28 @@
 
   "70s": {
     "Easy Come, Easy Go - Bobby Sherman": {
-      "lyrics": "                                                                                     I'm taking the _____ out of the sun\n                                                                                  Whatever made me think that I was number one",
+      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                       I'm taking the _____ out of the sun\n                                                                                                    Whatever made me think that I was number one",
       "choices": "[A] Shade [B] Glade [H] Hint [C] Weighed, [D] Heights",
       "hint": "[A] Shade [B] Glade",
       "answer": "A",
       "sound": "sounds\\Song musics\\70s\\Easy Come, Easy Go - Bobby Sherman.wav"
     },
     "Let It Be - The Beatles": {
-      "lyrics": "                                                                                  Let it be, let it be, let it be, let it be\n                                                                                        ______ words of wisdom, let it be",
+      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                    Let it be, let it be, let it be, let it be\n                                                                                                           ______ words of wisdom, let it be",
       "choices": "[A] Lisper [B] Wisper [H] Hint [C] Dispur [D] Whisper",
       "hint": "[A] Lisper [D] Whisper",
       "answer": "D",
       "sound": "sounds\\Song musics\\70s\\Let It Be - The Beatles.wav"
     },
     "Make It with You - Bread": {
-      "lyrics": "                                                                                            Hey, have you ever tried\n                                                                                       Really reaching out for the other ____?\n                                                                                            I may be climbing on rainbows\n                                                                                                But baby, here goes",
+      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                            Hey, have you ever tried\n                                                                                                         Really reaching out for the other ____?\n                                                                                                             I may be climbing on rainbows\n                                                                                                                  But baby, here goes",
       "choices": "[A] Cried [B] Bride [H] Hint [C] Side [D] Aside",
       "hint": "[B] Bride [C] Side",
       "answer": "C",
       "sound": "sounds\\Song musics\\70s\\Make It with You - Bread.wav"
     },
     "No Sugar Tonight / New Mother Nature - The Guess Who": {
-      "lyrics": "                                                                                       No sugar tonight in my coffee\n                                                                                          No sugar tonight in my tea\n                                                                                          No sugar to _____ beside me\n                                                                                           No sugar to run with me",
+      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                          No sugar tonight in my coffee\n                                                                                                             No sugar tonight in my tea\n                                                                                                             No sugar to _____ beside me\n                                                                                                              No sugar to run with me",
       "choices": "[A] Band [B] Stand [H] Hint [C] Brand [D] Land",
       "hint": "[B] Stand [C] Brand",
       "answer": "B",
