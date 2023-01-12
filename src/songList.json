@@ -92,42 +92,42 @@
 
   "80s": {
     "Every Breath You Take - The Police": {
-      "lyrics": "Every move you make \nAnd every vow you break \nEvery ____ you fake \nEvery claim you stake \nI'll be watching you",
+      "lyrics": "                              Every move you make\n                            And every vow you break\n                              Every ____ you fake\n                             Every claim you stake\n                              I'll be watching you",
       "choices": "[A] Tears [B] Face [H] Hint [C] Smile [D] Truth",
       "hint": "[A] Tears [C] Smile",
       "answer": "C",
       "sound": "sounds\\Song musics\\80s\\Every Breath You Take - The Police.wav"
     },
     "Eye of the Tiger - Survivor": {
-      "lyrics": "It's the eye of the tiger \nIt's the thrill of the fight \n____ up to the challenge of our rival \nAnd the last known survivor",
+      "lyrics": "                            It's the eye of the tiger\n                          It's the thrill of the fight\n                      ____ up to the challenge of our rival\n                           And the last known survivor",
       "choices": "[A] Fighting [B] Rising [H] Hint [C] Facing [D] Beaten",
       "hint": "[A] Fighting [B] Rising",
       "answer": "B",
       "sound": "sounds\\Song musics\\80s\\Eye of the Tiger - Survivor.wav"
     },
     "I Wanna Dance with Somebody - Whitney Houston": {
-      "lyrics": "Oh, I wanna dance with somebody \nI wanna feel the ____ with somebody \nYeah, I wanna dance with somebody \nWith somebody who loves me",
+      "lyrics": "                          Oh, I wanna dance with somebody\n                        I wanna feel the ____ with somebody\n                         Yeah, I wanna dance with somebody\n                           With somebody who loves me",
       "choices": "[A] Warm [B] Touch [H] Hint [C] Love [D] Heat",
       "hint": "[C] Love [D] Heat",
       "answer": "D",
       "sound": "sounds\\Song musics\\80s\\I Wanna Dance with Somebody - Whitney Houston.wav"
     },
     "Never Gonna Give You Up - Rick Astley": {
-      "lyrics": "Never gonna give you up \nNever gonna let you down \nNever gonna ____ around and desert you",
+      "lyrics": "                            Never gonna give you up\n                           Never gonna let you down\n                            Never gonna ____ around\n                                and desert you",
       "choices": "[A] Roam [B] Run [H] Hint [C] Fool [D] Turn",
       "hint": "[B] Run [D] Turn",
       "answer": "B",
       "sound": "sounds\\Song musics\\80s\\Never Gonna Give You Up - Rick Astley.wav"
     },
     "Total Eclipse of the Heart - Bonnie Tyler": {
-      "lyrics": "And I need you now tonight \nAnd I need you more than ever \nAnd if you only hold me tight \nWe'll be holding on ____",
+      "lyrics": "                            And I need you now tonight\n                          And I need you more than ever\n                          And if you only hold me tight\n                            We'll be holding on ____",
       "choices": "[A] Evermore [B] Whenever [H] Hint [C] Always [D] Forever",
       "hint": "[B] Whenever [D] Forever",
       "answer": "D",
       "sound": "sounds\\Song musics\\80s\\Total Eclipse of the Heart - Bonnie Tyler.wav"
     },
     "Wake Me Up Before You Go-Go - Wham!": {
-      "lyrics": "Wake me up before you go-go \nDon't leave me hanging on like a yo-yo \nWake me up before you go-go \nI don't wanna ____ it when you hit that high",
+      "lyrics": "                           Wake me up before you go-go\n                     Don't leave me hanging on like a yo-yo\n                           Wake me up before you go-go\n                    I don't wanna ____ it when you hit that high",
       "choices": "[A] Miss [B] Hear [H] Hint [C] See [D] Find",
       "hint": "[A] Miss [D] Find",
       "answer": "A",
