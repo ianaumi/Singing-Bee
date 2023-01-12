@@ -22,13 +22,13 @@ def main():
     mixer.init()
     display.set_screen_size(80,40)
     # >>>>>>>>>>>>>>>>> TEST BLOCK <<<<<<<<<<<<<<<<<<<
-    # while True:
-    #     print(songlist["70s"]["War - Edwin Starr"]["lyrics"])
-    #     # middle line
-    #     print("-"*40)
-    #     choice = input()
-    #     if choice.upper() == 'A':
-    #         exit()
+    while True:
+        print(songlist["2010s"]["Shut Up And Dance - Walk The Moon"]["lyrics"])
+        # middle line
+        print("-"*40)
+        choice = input()
+        if choice.upper() == 'A':
+            exit()
 
     # display.loading_screen()
     # player_name = util.get_player_name()

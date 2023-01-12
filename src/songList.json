@@ -137,42 +137,42 @@
 
   "90s": {
     "Always be my Baby - Mariah Carey": {
-      "lyrics": "You'll always be apart of me \nI'm part of you indefinitely \nBoy don't you know you can't _____ me \nOh darlin' 'cause you'll always be my baby",
+      "lyrics": "                               You'll always be apart of me\n                               I'm part of you indefinitely \n                            Boy don't you know you can't _____ me \n                         Oh darlin' 'cause you'll always be my baby",
       "choices": "[A] Tape [B] Shape [H] Hint [C] Scrape [D] Escape",
       "hint": "[B] Shape [D] Escape",
       "answer": "D",
       "sound": "sounds\\Song musics\\90s\\Always be my Baby - Mariah Carey.wav"
     },
     "Iris - Goo Goo Dolls": {
-      "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
+      "lyrics": "                       And I'd give up forever to touch you \n                     'Cause I know that you feel me somehow \n                  You're the closest to heaven that I'll ever be \n                      And I don't want to go ____ right now",
       "choices": "[A] Alone [B] Home [H] Hint [C] Down [D] Roam",
       "hint": "[A] Alone [B] Home",
       "answer": "B",
       "sound": "sounds\\Song musics\\90s\\Iris - Goo Goo Dolls.wav"
     },
     "Kiss Me - Sixpence None The Richer": {
-      "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
+      "lyrics": "                              Lift your open hand \n                Strike up the band and make the fireflies dance \n                           Silver moon's _____ \n                                 So kiss me",
       "choices": "[A] Darling [B] Sparkling [H] Hint [C] Dazzling [D] Starling",
       "hint": "[B] Sparkling [D] Starling",
       "answer": "B",
       "sound": "sounds\\Song musics\\90s\\Kiss Me - Sixpence None The Richer.wav"
     },
     "Linger - The Cranberries": {
-      "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
+      "lyrics": "                                  But I'm in so deep \n                           You know I'm such a ____ for you \n                       You got me wrapped around your finger \n                           Do you have to let it linger?",
       "choices": "[A] Cool [B] Cruel [H] Hint [C] Tool [D] Fool",
       "hint": "[C] Tool [D] Fool",
       "answer": "D",
       "sound": "sounds\\Song musics\\90s\\Linger - The Cranberries.wav"
     },
     "My Heart will go on - Celine Dion": {
-      "lyrics": "Near, far, wherever you are \nI believe that the heart does go on \nOnce more, you open the ____",
+      "lyrics": "                             Near, far, wherever you are \n                        I believe that the heart does go on \n                            Once more, you open the ____",
       "choices": "[A] Door [B] Shore [H] Hint [C] Core [D] Floor",
       "hint": "[A] Door [C] Core",
       "answer": "A",
       "sound": "sounds\\Song musics\\90s\\My Heart will go on - Celine Dion.wav"
     },
     "Weak - SWV": {
-      "lyrics": "I get so weak in the knees \nI can hardly ____ (I do) \nI lose all control (control) \nAnd something takes over me (takes over me)",
+      "lyrics": "                              I get so weak in the knees \n                               I can hardly ____ (I do) \n                             I lose all control (control) \n                       And something takes over me (takes over me)",
       "choices": "[A] Seek [B] Squeak [H] Hint [C] Speak [D] Peak",
       "hint": "[B] Squeak [C] Speak",
       "answer": "C",
@@ -227,42 +227,42 @@
 
   "2010s": {
     "Buwan - Juan Karlos": {
-      "lyrics": "Ang iyong ganda'y umaabot sa buwan\nAng tibok ng puso'y rinig sa _______\nAt bumabalik dito sa akin\nIkaw ang mahal, ikaw lang ang mamahalin",
+      "lyrics": "                       Ang iyong ganda'y umaabot sa buwan\n                      Ang tibok ng puso'y rinig sa _______\n                           At bumabalik dito sa akin \n                    Ikaw ang mahal, ikaw lang ang mamahalin",
       "choices": "[A] Kalangitan [B] Kapalaran [H] Hint [C] Kalawakan [D] Kalayaan",
       "hint": "[A] Kalangitan [C] Kalawakan",
       "answer": "C",
       "sound": "sounds\\Song musics\\2010s\\Buwan - Juan Karlos.wav"
     },
     "Counting Stars - One Republic": {
-      "lyrics": "I feel your love, and I feel it burn\nDown this river, every turn\n_______ is our four-letter word\nMake that money, watch it burn",
+      "lyrics": "                        I feel your love, and I feel it burn\n                           Down this river, every turn\n                         _______ is our four-letter word\n                          Make that money, watch it burn",
       "choices": "[A] Hope [B] Nope [H] Hint [C] Cope [D] Rope",
       "hint": "[A] Hope [B] Nope",
       "answer": "A",
       "sound": "sounds\\Song musics\\2010s\\Counting Stars - One Republic.wav"
     },
     "Leaves - Ben&Ben": {
-      "lyrics": "I never thought I would see the day\nThat I decide if I should leave or stay\nBut in the end, what makes it worth the _______\nThat no matter what happens we try to make it right",
+      "lyrics": "                       I never thought I would see the day\n                    That I decide if I should leave or stay\n                 But in the end, what makes it worth the _______\n               That no matter what happens we try to make it right",
       "choices": "[A] Tries [B] Fights [H] Hint [C] Nights [D] Heights",
       "hint": "[B] Fights [C] Nights",
       "answer": "B",
       "sound": "sounds\\Song musics\\2010s\\Leaves - Ben&Ben.wav"
     },
     "Mundo - IV Of Spades": {
-      "lyrics": "Sa'n darating ang mga salita\nNa nanggagaling sa aming dalawa\nKung lumisan ka wag naman sana\nIka'y _______ na nang di makawala",
+      "lyrics": "                          Sa'n darating ang mga salita\n                         Na nanggagaling sa aming dalawa\n                         Kung lumisan ka wag naman sana\n                        Ika'y _______ na nang di makawala",
       "choices": "[A] Sumapit [B] Kumapit [H] Hint [C] Lumapit [D] Sumabit",
       "hint": "[B] Kumapit [C] Lumapit",
       "answer": "B",
       "sound": "sounds\\Song musics\\2010s\\Mundo - IV Of Spades.wav"
     },
     "Shake It Off - Taylor Swift": {
-      "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
+      "lyrics": "              Just think, while you've been getting down and out about\n                The liars and the dirty, dirty cheats of the world\n              You could've been getting down to this sick _______",
       "choices": "[A] Heat [B] Feet [H] Hint [C] Cheat [D] Beat",
       "hint": "[A] Heat [D] Beat",
       "answer": "D",
       "sound": "sounds\\Song musics\\2010s\\Shake It Off - Taylor Swift.wav"
     },
     "Shut Up And Dance - Walk The Moon": {
-      "lyrics": "A backless dress and some beat up sneaks\nMy _______ Juliet teenage dream\nI felt it in my chest as she looked at me\nI knew we were bound to be together",
+      "lyrics": "                     A backless dress and some beat up sneaks\n                          My _______ Juliet teenage dream\n                     I felt it in my chest as she looked at me\n                        I knew we were bound to be together",
       "choices": "[A] Nickelback [B] Massachusetts [H] Hint [C] Discotheque [D] Ricochet",
       "hint": "[C] Discotheque [D] Ricochet",
       "answer": "C",
