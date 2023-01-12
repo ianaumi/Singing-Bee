@@ -23,7 +23,7 @@ def main():
     display.set_screen_size(80,40)
     # >>>>>>>>>>>>>>>>> TEST BLOCK <<<<<<<<<<<<<<<<<<<
     while True:
-        print(songlist["2010s"]["Shut Up And Dance - Walk The Moon"]["lyrics"])
+        print(songlist["2000s"]["With a Smile - Eraserheads"]["lyrics"])
         # middle line
         print("-"*40)
         choice = input()

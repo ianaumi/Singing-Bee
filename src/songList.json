@@ -1,43 +1,42 @@
 {
   "60s": {
-
     "Ain't No Mountain High Enough - Marvin Gaye & Tammi Terrell": {
-      "lyrics": "Ain't no mountain high enough\nAin't no valley low enough\nAin't no river wide enough\nTo keep me from _______ to you, babe",
+      "lyrics": "                           Ain't no mountain high enough\n                            Ain't no valley low enough\n                            Ain't no river wide enough\n                        To keep me from _______ to you, babe",
       "choices": "[A] Running [B] Walking [H] Hint [C] Coming [D] Getting",
       "hint": "[C] Coming [D] Getting",
       "answer": "D",
       "sound": "sounds\\Song musics\\60s\\Ain't No Mountain High Enough - Marvin Gaye & Tammi Terrell.wav"
     },
     "Brown Eyed Girl - Van Morrison": {
-      "lyrics": "Skipping and a jumping\nIn the misty morning fog with\nOur hearts a thumpin' and you\nMy _______ girl",
+      "lyrics": "                              Skipping and a jumping\n                           In the misty morning fog with\n                           Our hearts a thumpin' and you\n                                  My _______ girl",
       "choices": "[A] Brown-eyed [B] Blue-eyed [H] Hint [C] Black-eyed [D] Red-eyed",
       "hint": "[A] Brown-eyed [B] Blue-eyed",
       "answer": "A",
       "sound": "sounds\\Song musics\\60s\\Brown Eyed Girl - Van Morrison.wav"
     },
     "Fortunate Son - Creedence Clearwater Revival": {
-      "lyrics": "It ain't me, it ain't me\nI ain't no senator's son son\nIt ain't me, it ain't me\nI ain't no _______ one, no",
+      "lyrics": "                              It ain't me, it ain't me\n                            I ain't no senator's son son\n                              It ain't me, it ain't me\n                             I ain't no _______ one, no",
       "choices": "[A] Unfortunate [B] Exfoliate [H] Hint [C] Fortunate [D] Concatenate",
       "hint": "[C] Fortunate [D] Concatenate",
       "answer": "C",
       "sound": "sounds\\Song musics\\60s\\Fortunate Son - Creedence Clearwater Revival.wav"
     },
     "Hey Jude - The Beatles": {
-      "lyrics": "Hey, Jude, don't make it bad\nTake a sad song and make it better\nRemember to let her into your _______\nThen you can start to make it better",
+      "lyrics": "                           Hey, Jude, don't make it bad\n                        Take a sad song and make it better\n                       Remember to let her into your _______\n                       Then you can start to make it better",
       "choices": "[A] Life [B] Heart [H] Hint [C] Home [D] Self",
       "hint": "[A] Life [B] Heart",
       "answer": "B",
       "sound": "sounds\\Song musics\\60s\\Hey Jude - The Beatles.wav"
     },
     "Stand by Me - Ben E. King": {
-      "lyrics": "When the night has come\nAnd the land is dark\nAnd the _______ is the only light\nwe'll see",
+      "lyrics": "                            When the night has come\n                              And the land is dark\n                        And the _______ is the only light\n                                   we'll see",
       "choices": "[A] Moon [B] Sun [H] Hint [C] Stars [D] Night",
       "hint": "[A] Moon [C] Stars",
       "answer": "A",
       "sound": "sounds\\Song musics\\60s\\Stand by Me - Ben E. King.wav"
     },
     "The House of the Rising Sun - The Animals": {
-      "lyrics": "Well, there is a house in _______\nThey call the Rising Sun\nAnd it's been the ruin of many a poor boy\nAnd God, I know I'm one",
+      "lyrics": "                       Well, there is a house in _______\n                            They call the Rising Sun\n                     And it's been the ruin of many a poor boy\n                             And God, I know I'm one",
       "choices": "[A] New York [B] New Jersey [H] Hint [C] New Portland [D] New Orleans",
       "hint": "[B] New Jersey [D] New Orleans",
       "answer": "D",
@@ -47,42 +46,42 @@
 
   "70s": {
     "Easy Come, Easy Go - Bobby Sherman": {
-      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                       I'm taking the _____ out of the sun\n                                                                                                    Whatever made me think that I was number one",
+      "lyrics": "                       I'm taking the _____ out of the sun\n                 Whatever made me think that I was number one",
       "choices": "[A] Shade [B] Glade [H] Hint [C] Weighed, [D] Heights",
       "hint": "[A] Shade [B] Glade",
       "answer": "A",
       "sound": "sounds\\Song musics\\70s\\Easy Come, Easy Go - Bobby Sherman.wav"
     },
     "Let It Be - The Beatles": {
-      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                    Let it be, let it be, let it be, let it be\n                                                                                                           ______ words of wisdom, let it be",
+      "lyrics": "                   Let it be, let it be, let it be, let it be\n                       ______ words of wisdom, let it be",
       "choices": "[A] Lisper [B] Wisper [H] Hint [C] Dispur [D] Whisper",
       "hint": "[A] Lisper [D] Whisper",
       "answer": "D",
       "sound": "sounds\\Song musics\\70s\\Let It Be - The Beatles.wav"
     },
     "Make It with You - Bread": {
-      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                            Hey, have you ever tried\n                                                                                                         Really reaching out for the other ____?\n                                                                                                             I may be climbing on rainbows\n                                                                                                                  But baby, here goes",
+      "lyrics": "                            Hey, have you ever tried\n                      Really reaching out for the other ____\n              Make It with You - BreadI may be climbing on rainbows\n                               But baby, here goes",
       "choices": "[A] Cried [B] Bride [H] Hint [C] Side [D] Aside",
       "hint": "[B] Bride [C] Side",
       "answer": "C",
       "sound": "sounds\\Song musics\\70s\\Make It with You - Bread.wav"
     },
     "No Sugar Tonight / New Mother Nature - The Guess Who": {
-      "lyrics": "                                                                                                                                                                                                                                                                                                                                                                                                                                          No sugar tonight in my coffee\n                                                                                                             No sugar tonight in my tea\n                                                                                                             No sugar to _____ beside me\n                                                                                                              No sugar to run with me",
+      "lyrics": "                          No sugar tonight in my coffee\n                            No sugar tonight in my tea\n                           No sugar to _____ beside me\n                             No sugar to run with me",
       "choices": "[A] Band [B] Stand [H] Hint [C] Brand [D] Land",
       "hint": "[B] Stand [C] Brand",
       "answer": "B",
       "sound": "sounds\\Song musics\\70s\\No Sugar Tonight - New Mother Nature - The Guess Who.wav"
     },
     "Raindrops Keep Fallin' on My Head - B. J. Thomas": {
-      "lyrics": "                                                                                       But there's one thing I know\n                                                                                        The blues they send to meet me\n                                                                                       Won't defeat me, it won't be ____\n                                                                                       Till happiness steps up to greet me",
+      "lyrics": "                          But there's one thing I know\n                         The blues they send to meet me\n                        Won't defeat me, it won't be ____\n                       Till happiness steps up to greet me",
       "choices": "[A] Song [B] Long [H] Hint [C] Belong [D] Strong",
       "hint": "[B] Long [D] Strong",
       "answer": "B",
       "sound": "sounds\\Song musics\\70s\\Raindrops Keep Fallin' on My Head - B. J. Thomas.wav"
     },
     "War - Edwin Starr": {
-      "lyrics": "                                                                                           War, huh (God y'all)\n                                                                                    What is it ____ for? You tell me (nothing)\n                                                                                        Say it, say it, say it, say it",
+      "lyrics": "                              War, huh (God y'all)\n                   What is it ____ for? You tell me (nothing)\n                          Say it, say it, say it, say it",
       "choices": "[A] Good [B] Should [H] Hint [C] Stood [D] Could",
       "hint": "[A] Good [D] Could",
       "answer": "A",
@@ -182,42 +181,42 @@
 
   "2000s": {
     "Helena - My Chemical Romance": {
-      "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
+      "lyrics": "                        What's the _____ that I can say?\n                           Things are better if I stay\n                             So long and goodnight\n                             So long and goodnight",
       "choices": "[A] Worst [B] Best [H] Hint [C] Thing [D] Most",
       "hint": "[A] Worst [D] Most",
       "answer": "A",
       "sound": "sounds\\Song musics\\2000s\\Helena - My Chemical Romance.wav"
     },
     "Lose Yourself - Eminem": {
-      "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
+      "lyrics": "                You better lose yourself in the music, the moment\n                      You own it, you better never let it go\n              You only get one shot, do not miss your chance to ____\n                    This opportunity comes once in a lifetime",
       "choices": "[A] Row [B] Go [H] Hint [C] Blow [D] Know",
       "hint": "[C] Blow [D] Know",
       "answer": "C",
       "sound": "sounds\\Song musics\\2000s\\Lose Yourself - Eminem.wav"
     },
     "Seven Nation Army - The White Stripes": {
-      "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
+      "lyrics": "                            Don't wanna hear about it\n                      Every single one's got a story to tell\n                             Everyone knows about it\n                  From the Queen of England to the ______ of Hell",
       "choices": "[A] Guards [B] Hounds [H] Hint [C] Dogs [D] Demons",
       "hint": "[B] Hounds [D] Demons",
       "answer": "B",
       "sound": "sounds\\Song musics\\2000s\\Seven Nation Army - The White Stripes.wav"
     },
     "Toxic - Britney Spears": {
-      "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
+      "lyrics": "                    With a taste of your _____, I'm on a ride\n                         You're toxic, I'm slippin' under\n                        With a taste of a poison paradise\n                               I'm addicted to you",
       "choices": "[A] Love [B] Heart [H] Hint [C] Kiss [D] Lips",
       "hint": "[C] Kiss [D] Lips",
       "answer": "D",
       "sound": "sounds\\Song musics\\2000s\\Toxic - Britney Spears.wav"
     },
     "When I Come Around - Green Day": {
-      "lyrics": "Well, don't get lonely now, and dry your whining eyes \nI'm just _______ for the moment \nSleazin' my back yard so don't get \nSo uptight you been thinking about ditching me",
+      "lyrics": "               Well, don't get lonely now, and dry your whining eyes\n                           I'm just _______ for the moment\n                         Sleazin' my back yard so don't get\n                   So uptight you been thinking about ditching me",
       "choices": "[A] Crying [B] Lacking [H] Hint [C] Whining [D] Weeping",
       "hint": "[C] Whining [D] Weeping",
       "answer": "C",
       "sound": "sounds\\Song musics\\2000s\\When I Come Around - Green Day.wav"
     },
     "With a Smile - Eraserheads": {
-      "lyrics": "Girl, I'll stay through the bad times \nEven if I have to _____ you everyday \nWe'll get by with a smile \nYou can never be too happy in this life.",
+      "lyrics": "                      Girl, I'll stay through the bad times\n                      Even if I have to _____ you everyday\n                           We'll get by with a smile\n                    You can never be too happy in this life.",
       "choices": "[A] Fetch [B] Kiss [H] Hint [C] Love [D] Miss",
       "hint": "[A] Fetch [B] Kiss",
       "answer": "A",
