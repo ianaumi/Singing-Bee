@@ -4,23 +4,55 @@ from game_menu import run_game_menu
 from start_round import run_start_round
 import displays as display
 import utils as util
+import sounds
+
 
 player_name = None  # stores the player's name
 player_choice = None  # stores the every action of the player.
 
+
 def game_loop():
     while True:
-        # display.loading_screen()
-        # run_game_menu(player_name)
+
+        # background sound for the game menu
+        sounds.play_background("sounds\\Game sounds\\game_menu_background.wav",-1)
+        # stores the playername for the game menu
+        run_game_menu(player_name)
+        # stop the sound after player pressing play
+        sounds.stop_sound()
+
+        # background sound for song selection
+        sounds.play_background("sounds\\Game sounds\\song_selection_background.wav",-1)
         run_song_selection()
+
+        sounds.stop_sound()
+        # starts the round and plays the song
         run_start_round(player_name)
-# hints = 3
+
 
 def main():
-    songlist = util.get_song_list_file()
     global player_name
+    # initialize the audio player
     mixer.init()
+
+    # sets the screen to 80 x 40
     display.set_screen_size(80,40)
+
+    # plays the intro sound theme
+    sounds.play_background("sounds\\Game sounds\\intro_background.wav",1)
+    display.loading_screen()
+
+    # gets the player name
+    player_name = util.get_player_name()
+    display.advice_screen()
+    display.copyright_disclaimer_screen()
+
+    # stops the sound after displaying advice and copyright
+    sounds.stop_sound()
+
+    # will proceed to game menu
+    game_loop()
+
     # >>>>>>>>>>>>>>>>> TEST BLOCK <<<<<<<<<<<<<<<<<<<
     # while True:
     #     print(songlist["70s"]["War - Edwin Starr"]["lyrics"])
@@ -29,23 +61,6 @@ def main():
     #     choice = input()
     #     if choice.upper() == 'A':
     #         exit()
-
-    # display.loading_screen()
-    # player_name = util.get_player_name()
-    # display.advice_screen()
-    # display.copyright_disclaimer_screen()
-    # game_loop()
-
-    # start_game_menu(player_name)
-    # play sound
-    # displays.set_screen_size(80,40)
-    # display.set_screen_size(80,40)
-    # display.loading_screen()
-    # player_name = util.get_player_name()
-    # display.advice_screen()
-    # display.copyright_disclaimer_screen()
-    # song_selection(year_choice,song_choice,choice)
-    # round_start
 
 if __name__ == "__main__":
     main()

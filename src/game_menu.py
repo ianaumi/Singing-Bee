@@ -1,6 +1,7 @@
 import utils as util
 import  displays as display
 from displays import clear_screen,header_text,logo
+import  sounds
 
 
 def run_game_menu(player_name):
@@ -13,18 +14,24 @@ def run_game_menu(player_name):
 
         if player_choice.upper() in util.options(["P", "A", "H", "Q"]):
             if player_choice.upper() == "A":
+                sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
                 clear_screen()
                 display.about_game_screen()
 
             elif player_choice.upper() == "H":
+                sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
                 clear_screen()
                 display.help_screen()
 
             elif player_choice.upper() == "Q":
+                sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
+                sounds.stop_sound()
                 clear_screen()
                 display.quit_screen(player_name)
 
+
             elif player_choice.upper() == "P":
+                sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
                 clear_screen()
                 display.loading_screen()
                 break

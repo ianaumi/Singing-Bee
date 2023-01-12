@@ -4,6 +4,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 import colorama
 from colorama import Fore, Style
+import sounds
 
 
 colorama.init(autoreset=True)
@@ -32,6 +33,7 @@ def press_any_key():
     print_position(2, 24, f"{Style.BRIGHT}{Fore.YELLOW} Press any key to continue")
     print("\n", " " * 37, end="")
     input()
+    sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
 
 
 def print_position(line,column,text):
@@ -39,6 +41,7 @@ def print_position(line,column,text):
 
 
 def invalid_option(line, column):
+    sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
     print_position(line, column, "Invalid Option")
     sleep(1)
     clear_screen()
@@ -130,13 +133,14 @@ def help_screen():
     clear_screen()
 
 def quit_screen(player_name):
+    sounds.stop_sound()
     clear_screen()
-    #FIXME CENTRALIZE ALIGNMENT
     print_position(15,30,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
     """)
-    sleep(5)
+    sounds.play_sound("sounds\\Game sounds\\quit_sound.wav")
+    sleep(1)
     clear_screen()
     exit()
 
@@ -196,6 +200,7 @@ def player_status(player_name,player_hints,player_points):
 
 def total_score(player_name,player_points):
     clear_screen()
+    sounds.play_background("sounds\\Game sounds\\total_score_sound.wav",-1)
     print_position(15,30,f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!\n\n" + " " * 23 + f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!\n\n")
 
 def answer_result(text,points):
