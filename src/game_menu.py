@@ -1,7 +1,11 @@
-import utils as util
+import utilities as util
 import  displays as display
 from displays import clear_screen,header_text,logo
 import  sounds
+'''game_menu is where player can know more about the game 
+such as: about the game, the instructions. This is where also the
+player can proceed to the main game.
+'''
 
 
 def run_game_menu(player_name):
@@ -12,7 +16,7 @@ def run_game_menu(player_name):
         display.game_menu_options()
         player_choice = util.get_input_position(1,31)
 
-        if player_choice.upper() in util.options(["P", "A", "H", "Q"]):
+        if player_choice.upper() in ["P", "A", "H", "Q"]:
             if player_choice.upper() == "A":
                 sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
                 clear_screen()

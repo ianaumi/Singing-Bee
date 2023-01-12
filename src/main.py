@@ -3,7 +3,7 @@ from song_selection import run_song_selection
 from game_menu import run_game_menu
 from start_round import run_start_round
 import displays as display
-import utils as util
+import utilities as util
 import sounds
 
 
@@ -11,6 +11,7 @@ player_name = None  # stores the player's name
 player_choice = None  # stores the every action of the player.
 
 
+# the main game loop
 def game_loop():
     while True:
 
@@ -31,6 +32,7 @@ def game_loop():
 
 
 def main():
+
     global player_name
     # initialize the audio player
     mixer.init()
@@ -54,13 +56,13 @@ def main():
     game_loop()
 
     # >>>>>>>>>>>>>>>>> TEST BLOCK <<<<<<<<<<<<<<<<<<<
-    while True:
-        print(songlist["2000s"]["With a Smile - Eraserheads"]["lyrics"])
-        # middle line
-        print("-"*40)
-        choice = input()
-        if choice.upper() == 'A':
-            exit()
+    # while True:
+    #     print(songlist["2000s"]["With a Smile - Eraserheads"]["lyrics"])
+    #     # middle line
+    #     print("-"*40)
+    #     choice = input()
+    #     if choice.upper() == 'A':
+    #         exit()
 
 if __name__ == "__main__":
     main()
