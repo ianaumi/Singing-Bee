@@ -5,237 +5,268 @@
       "lyrics": "Ain't no mountain high enough\nAin't no valley low enough\nAin't no river wide enough\nTo keep me from _______ to you, babe",
       "choices": "[A] Running [B] Walking [H] Hint [C] Coming [D] Getting",
       "hint": "[C] Coming [D] Getting",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\60s\\Ain't No Mountain High Enough - Marvin Gaye & Tammi Terrell.wav"
     },
     "Brown Eyed Girl - Van Morrison": {
       "lyrics": "Skipping and a jumping\nIn the misty morning fog with\nOur hearts a thumpin' and you\nMy _______ girl",
       "choices": "[A] Brown-eyed [B] Blue-eyed [H] Hint [C] Black-eyed [D] Red-eyed",
       "hint": "[A] Brown-eyed [B] Blue-eyed",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\60s\\Brown Eyed Girl - Van Morrison.wav"
     },
     "Fortunate Son - Creedence Clearwater Revival": {
       "lyrics": "It ain't me, it ain't me\nI ain't no senator's son son\nIt ain't me, it ain't me\nI ain't no _______ one, no",
       "choices": "[A] Unfortunate [B] Exfoliate [H] Hint [C] Fortunate [D] Concatenate",
       "hint": "[C] Fortunate [D] Concatenate",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\60s\\Fortunate Son - Creedence Clearwater Revival.wav"
     },
     "Hey Jude - The Beatles": {
       "lyrics": "Hey, Jude, don't make it bad\nTake a sad song and make it better\nRemember to let her into your _______\nThen you can start to make it better",
       "choices": "[A] Life [B] Heart [H] Hint [C] Home [D] Self",
       "hint": "[A] Life [B] Heart",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\60s\\Hey Jude - The Beatles.wav"
     },
     "Stand by Me - Ben E. King": {
       "lyrics": "When the night has come\nAnd the land is dark\nAnd the _______ is the only light\nwe'll see",
       "choices": "[A] Moon [B] Sun [H] Hint [C] Stars [D] Night",
       "hint": "[A] Moon [C] Stars",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\60s\\Stand by Me - Ben E. King.wav"
     },
     "The House of the Rising Sun - The Animals": {
       "lyrics": "Well, there is a house in _______\nThey call the Rising Sun\nAnd it's been the ruin of many a poor boy\nAnd God, I know I'm one",
       "choices": "[A] New York [B] New Jersey [H] Hint [C] New Portland [D] New Orleans",
       "hint": "[B] New Jersey [D] New Orleans",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\60s\\The House of the Rising Sun - The Animals.wav"
     }
   },
 
   "70s": {
-
     "Easy Come, Easy Go - Bobby Sherman": {
       "lyrics": "                        I'm taking the _____ out of the sun\n                     Whatever made me think that I was number one",
       "choices": "[A] Shade [B] Glade [H] Hint [C] Weighed, [D] Heights",
       "hint": "[A] Shade [B] Glade",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\70s\\Easy Come, Easy Go - Bobby Sherman.wav"
     },
     "Let It Be - The Beatles": {
       "lyrics": "                        Let it be, let it be, let it be, let it be\n                              ______ words of wisdom, let it be",
       "choices": "[A] Lisper [B] Wisper [H] Hint [C] Dispur [D] Whisper",
       "hint": "[A] Lisper [D] Whisper",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\70s\\Let It Be - The Beatles.wav"
     },
     "Make It with You - Bread": {
       "lyrics": "                          Hey, have you ever tried\n                    Really reaching out for the other ____?\n                          I may be climbing on rainbows\n                              But baby, here goes",
       "choices": "[A] Cried [B] Bride [H] Hint [C] Side [D] Aside",
       "hint": "[B] Bride [C] Side",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\70s\\Make It with You - Bread.wav"
     },
     "No Sugar Tonight / New Mother Nature - The Guess Who": {
       "lyrics": "                        No sugar tonight in my coffee\n                           No sugar tonight in my tea\n                          No sugar to _____ beside me\n                              No sugar to run with me",
       "choices": "[A] Band [B] Stand [H] Hint [C] Brand [D] Land",
       "hint": "[B] Stand [C] Brand",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\70s\\No Sugar Tonight - New Mother Nature - The Guess Who.wav"
     },
     "Raindrops Keep Fallin' on My Head - B. J. Thomas": {
       "lyrics": "                          But there's one thing I know\n                           The blues they send to meet me\n                          Won't defeat me, it won't be ____\n                         Till happiness steps up to greet me",
       "choices": "[A] Song [B] Long [H] Hint [C] Belong [D] Strong",
       "hint": "[B] Long [D] Strong",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\70s\\Raindrops Keep Fallin' on My Head - B. J. Thomas.wav"
     },
     "War - Edwin Starr": {
       "lyrics": "                          War, huh (God y'all)\n                 What is it ____ for? You tell me (nothing)\n                        Say it, say it, say it, say it",
       "choices": "[A] Good [B] Should [H] Hint [C] Stood [D] Could",
       "hint": "[A] Good [D] Could",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\70s\\War - Edwin Starr.wav"
     }
   },
 
   "80s": {
-
     "Every Breath You Take - The Police": {
       "lyrics": "Every move you make \nAnd every vow you break \nEvery ____ you fake \nEvery claim you stake \nI'll be watching you",
       "choices": "[A] Tears [B] Face [H] Hint [C] Smile [D] Truth",
       "hint": "[A] Tears [C] Smile",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\80s\\Every Breath You Take - The Police.wav"
     },
     "Eye of the Tiger - Survivor": {
       "lyrics": "It's the eye of the tiger \nIt's the thrill of the fight \n____ up to the challenge of our rival \nAnd the last known survivor",
       "choices": "[A] Fighting [B] Rising [H] Hint [C] Facing [D] Beaten",
       "hint": "[A] Fighting [B] Rising",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\80s\\Eye of the Tiger - Survivor.wav"
     },
     "I Wanna Dance with Somebody - Whitney Houston": {
       "lyrics": "Oh, I wanna dance with somebody \nI wanna feel the ____ with somebody \nYeah, I wanna dance with somebody \nWith somebody who loves me",
       "choices": "[A] Warm [B] Touch [H] Hint [C] Love [D] Heat",
       "hint": "[C] Love [D] Heat",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\80s\\I Wanna Dance with Somebody - Whitney Houston.wav"
     },
     "Never Gonna Give You Up - Rick Astley": {
       "lyrics": "Never gonna give you up \nNever gonna let you down \nNever gonna ____ around and desert you",
       "choices": "[A] Roam [B] Run [H] Hint [C] Fool [D] Turn",
       "hint": "[B] Run [D] Turn",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\80s\\Never Gonna Give You Up - Rick Astley.wav"
     },
     "Total Eclipse of the Heart - Bonnie Tyler": {
       "lyrics": "And I need you now tonight \nAnd I need you more than ever \nAnd if you only hold me tight \nWe'll be holding on ____",
       "choices": "[A] Evermore [B] Whenever [H] Hint [C] Always [D] Forever",
       "hint": "[B] Whenever [D] Forever",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\80s\\Total Eclipse of the Heart - Bonnie Tyler.wav"
     },
     "Wake Me Up Before You Go-Go - Wham!": {
       "lyrics": "Wake me up before you go-go \nDon't leave me hanging on like a yo-yo \nWake me up before you go-go \nI don't wanna ____ it when you hit that high",
       "choices": "[A] Miss [B] Hear [H] Hint [C] See [D] Find",
       "hint": "[A] Miss [D] Find",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\80s\\Wake Me Up Before You Go-Go - Wham.wav"
     }
   },
 
   "90s": {
-
     "Always be my Baby - Mariah Carey": {
       "lyrics": "You'll always be apart of me \nI'm part of you indefinitely \nBoy don't you know you can't _____ me \nOh darlin' 'cause you'll always be my baby",
       "choices": "[A] Tape [B] Shape [H] Hint [C] Scrape [D] Escape",
       "hint": "[B] Shape [D] Escape",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\90s\\Always be my Baby - Mariah Carey.wav"
     },
     "Iris - Goo Goo Dolls": {
       "lyrics": "And I'd give up forever to touch you \n'Cause I know that you feel me somehow \nYou're the closest to heaven that I'll ever be \nAnd I don't want to go ____ right now",
       "choices": "[A] Alone [B] Home [H] Hint [C] Down [D] Roam",
       "hint": "[A] Alone [B] Home",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\90s\\Iris - Goo Goo Dolls.wav"
     },
     "Kiss Me - Sixpence None The Richer": {
       "lyrics": "Lift your open hand \nStrike up the band and make the fireflies dance \nSilver moon's _____ \nSo kiss me",
       "choices": "[A] Darling [B] Sparkling [H] Hint [C] Dazzling [D] Starling",
       "hint": "[B] Sparkling [D] Starling",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\90s\\Kiss Me - Sixpence None The Richer.wav"
     },
     "Linger - The Cranberries": {
       "lyrics": "But I'm in so deep \nYou know I'm such a ____ for you \nYou got me wrapped around your finger \nDo you have to let it linger?",
       "choices": "[A] Cool [B] Cruel [H] Hint [C] Tool [D] Fool",
       "hint": "[C] Tool [D] Fool",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\90s\\Linger - The Cranberries.wav"
     },
     "My Heart will go on - Celine Dion": {
       "lyrics": "Near, far, wherever you are \nI believe that the heart does go on \nOnce more, you open the ____",
       "choices": "[A] Door [B] Shore [H] Hint [C] Core [D] Floor",
       "hint": "[A] Door [C] Core",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\90s\\My Heart will go on - Celine Dion.wav"
     },
     "Weak - SWV": {
       "lyrics": "I get so weak in the knees \nI can hardly ____ (I do) \nI lose all control (control) \nAnd something takes over me (takes over me)",
       "choices": "[A] Seek [B] Squeak [H] Hint [C] Speak [D] Peak",
       "hint": "[B] Squeak [C] Speak",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\90s\\Weak - SWV.wav"
     }
   },
 
   "2000s": {
-
     "Helena - My Chemical Romance": {
       "lyrics": "What's the _____ that I can say? \nThings are better if I stay \nSo long and goodnight \nSo long and goodnight",
       "choices": "[A] Worst [B] Best [H] Hint [C] Thing [D] Most",
       "hint": "[A] Worst [D] Most",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\2000s\\Helena - My Chemical Romance.wav"
     },
     "Lose Yourself - Eminem": {
       "lyrics": "You better lose yourself in the music, the moment \nYou own it, you better never let it go \nYou only get one shot, do not miss your chance to ____ \nThis opportunity comes once in a lifetime",
       "choices": "[A] Row [B] Go [H] Hint [C] Blow [D] Know",
       "hint": "[C] Blow [D] Know",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\2000s\\Lose Yourself - Eminem.wav"
     },
     "Seven Nation Army - The White Stripes": {
       "lyrics": "Don't wanna hear about it \nEvery single one's got a story to tell \nEveryone knows about it \nFrom the Queen of England to the ______ of Hell",
       "choices": "[A] Guards [B] Hounds [H] Hint [C] Dogs [D] Demons",
       "hint": "[B] Hounds [D] Demons",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\2000s\\Seven Nation Army - The White Stripes.wav"
     },
     "Toxic - Britney Spears": {
       "lyrics": "With a taste of your _____, I'm on a ride \nYou're toxic, I'm slippin' under \nWith a taste of a poison paradise \nI'm addicted to you",
       "choices": "[A] Love [B] Heart [H] Hint [C] Kiss [D] Lips",
       "hint": "[C] Kiss [D] Lips",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\2000s\\Toxic - Britney Spears.wav"
     },
     "When I Come Around - Green Day": {
       "lyrics": "Well, don't get lonely now, and dry your whining eyes \nI'm just _______ for the moment \nSleazin' my back yard so don't get \nSo uptight you been thinking about ditching me",
       "choices": "[A] Crying [B] Lacking [H] Hint [C] Whining [D] Weeping",
       "hint": "[C] Whining [D] Weeping",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\2000s\\When I Come Around - Green Day.wav"
     },
     "With a Smile - Eraserheads": {
       "lyrics": "Girl, I'll stay through the bad times \nEven if I have to _____ you everyday \nWe'll get by with a smile \nYou can never be too happy in this life.",
       "choices": "[A] Fetch [B] Kiss [H] Hint [C] Love [D] Miss",
       "hint": "[A] Fetch [B] Kiss",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\2000s\\With a Smile - Eraserheads.wav"
     }
   },
 
   "2010s": {
-
     "Buwan - Juan Karlos": {
       "lyrics": "Ang iyong ganda'y umaabot sa buwan\nAng tibok ng puso'y rinig sa _______\nAt bumabalik dito sa akin\nIkaw ang mahal, ikaw lang ang mamahalin",
       "choices": "[A] Kalangitan [B] Kapalaran [H] Hint [C] Kalawakan [D] Kalayaan",
       "hint": "[A] Kalangitan [C] Kalawakan",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\2010s\\Buwan - Juan Karlos.wav"
     },
     "Counting Stars - One Republic": {
       "lyrics": "I feel your love, and I feel it burn\nDown this river, every turn\n_______ is our four-letter word\nMake that money, watch it burn",
       "choices": "[A] Hope [B] Nope [H] Hint [C] Cope [D] Rope",
       "hint": "[A] Hope [B] Nope",
-      "answer": "A"
+      "answer": "A",
+      "sound": "sounds\\Song musics\\2010s\\Counting Stars - One Republic.wav"
     },
     "Leaves - Ben&Ben": {
       "lyrics": "I never thought I would see the day\nThat I decide if I should leave or stay\nBut in the end, what makes it worth the _______\nThat no matter what happens we try to make it right",
       "choices": "[A] Tries [B] Fights [H] Hint [C] Nights [D] Heights",
       "hint": "[B] Fights [C] Nights",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\2010s\\Leaves - Ben&Ben.wav"
     },
     "Mundo - IV Of Spades": {
       "lyrics": "Sa'n darating ang mga salita\nNa nanggagaling sa aming dalawa\nKung lumisan ka wag naman sana\nIka'y _______ na nang di makawala",
       "choices": "[A] Sumapit [B] Kumapit [H] Hint [C] Lumapit [D] Sumabit",
       "hint": "[B] Kumapit [C] Lumapit",
-      "answer": "B"
+      "answer": "B",
+      "sound": "sounds\\Song musics\\2010s\\Mundo - IV Of Spades.wav"
     },
     "Shake It Off - Taylor Swift": {
       "lyrics": "Just think, while you've been getting down and out about\nThe liars and the dirty, dirty cheats of the world\nYou could've been getting down to this sick _______",
       "choices": "[A] Heat [B] Feet [H] Hint [C] Cheat [D] Beat",
       "hint": "[A] Heat [D] Beat",
-      "answer": "D"
+      "answer": "D",
+      "sound": "sounds\\Song musics\\2010s\\Shake It Off - Taylor Swift.wav"
     },
     "Shut Up And Dance - Walk The Moon": {
       "lyrics": "A backless dress and some beat up sneaks\nMy _______ Juliet teenage dream\nI felt it in my chest as she looked at me\nI knew we were bound to be together",
       "choices": "[A] Nickelback [B] Massachusetts [H] Hint [C] Discotheque [D] Ricochet",
       "hint": "[C] Discotheque [D] Ricochet",
-      "answer": "C"
+      "answer": "C",
+      "sound": "sounds\\Song musics\\2010s\\Shut Up And Dance - Walk The Moon.wav"
     }
   },
 
@@ -252,35 +283,35 @@
       "choices": "[A] Seeping [B] Sleeping [H] Hint [C] Creeping [D] Leaping",
       "hint": "[A] Seeping [B] Sleeping",
       "answer": "B",
-      "sound": "sounds\\Song musics\\2020's\\All I Really Want Is You - The Marias.wav"
+      "sound": "sounds\\Song musics\\2020s\\All I Really Want Is You - The Marias.wav"
     },
     "Bad Habit - Steve Lacy": {
       "lyrics": "                    I bite my tongue, it's a bad habit\n                  Kinda mad that I didn't take a _______ at it\n                   Thought you were too good for me, my dear\n                      Never gave me time of day, my dear\n                           It's okay, things happen for\n                      Reasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [H] Hint [C] Stab [D] Grab",
       "hint": "[A] Cab [C] Stab",
       "answer": "C",
-      "sound": "sounds\\Song musics\\2020's\\Bad Habit - Steve Lacy.wav"
+      "sound": "sounds\\Song musics\\2020s\\Bad Habit - Steve Lacy.wav"
     },
     "Cruel Summer - Taylor Swift": {
       "lyrics": "                        I'm drunk in the back of the car\n             And I cried like a baby coming home from the bar (oh)\n                       Said, \"I'm fine,\" but it wasn't true\n                   I don't wanna keep secrets just to keep you\n                       And I ___ in through the garden gate\n             Every night that summer just to seal my fate (oh)\n                         And I screamed for whatever it's worth\n            I love you ain't that the worst thing you've ever heard?",
       "choices": "[A] Walked [B] Ran [H] Hint [C] Went [D] Snuck",
       "hint": "[C] Went [D] Snuck",
       "answer": "D",
-      "sound": "sounds\\Song musics\\2020's\\Cruel Summer - Taylor Swift.wav"
+      "sound": "sounds\\Song musics\\2020s\\Cruel Summer - Taylor Swift.wav"
     },
     "Drivers License - Olivia Rodrigo": {
       "lyrics": "          I guess you didn't mean what you wrote in that song about me\n            'Cause you said _____, now I drive alone past your street",
       "choices": "[A] Whatever [B] Forever [H] Hint [C] Together [D] Forget her",
        "hint": "[B] Forever [D] Forget her",
       "answer": "B",
-      "sound": "sounds\\Song musics\\2020's\\Drivers License - Olivia Rodrigo.wav"
+      "sound": "sounds\\Song musics\\2020s\\Drivers License - Olivia Rodrigo.wav"
     },
     "Fallen - Lola Amour": {
-      "lyrics": "                       What if I told you that I've fallen\n                       And I like the way you say my name?\n                    My heart skips a beat when I hear you ____\n                        And I like that it won't go away",
+      "lyrics": "                     What if I told you that I've fallen\n                       And I like the way you say my name?\n                    My heart skips a beat when I hear you ____\n                        And I like that it won't go away",
       "choices": "[A] Calling [B] Breathing [H] Hint [C] Heart beating [D] Talking",
       "hint": "[A] Calling [B] Breathing",
       "answer": "A",
-      "sound": "sounds\\Song musics\\2020's\\Fallen - Lola Amour.wav"
+      "sound": "sounds\\Song musics\\2020s\\Fallen - Lola Amour.wav"
     }
   }
 }
