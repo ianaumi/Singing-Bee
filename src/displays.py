@@ -246,7 +246,7 @@ def player_chosen_songs(song_choice):
 
 # informs the player with the current status of hints and points
 def player_status(player_name,player_hints,player_points):
-    print_position(0,5,f"""{Fore.YELLOW})/{Fore.WHITE}Status""")
+    print_position(0,5,f"""{Fore.YELLOW}/{Fore.WHITE}Status""")
     print_position(0,5,("+" + "-" * 18 + "+"))
     print_position(0, 5,("|" + (" " * 18) + "|"))
     print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
@@ -267,10 +267,10 @@ def total_score(player_name,player_points):
 
 # prints the result of the answer of the player
 def answer_result(text,points):
-    print_position(0, 27, text)
+    print_position(0, 30, text)
 
     # prints out how many honey did the user got from the answer
-    print_position(0, 27, f"+ {points} Honey")
+    print_position(0, 30, f"+ {points} Honey")
     sleep(2)
     clear_screen()
 
