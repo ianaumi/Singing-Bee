@@ -1,5 +1,6 @@
 import displays as display
 import utils as util
+import sounds
 
 song_list = util.get_song_list_file()
 year_choice = []  # stores the year choice of player
@@ -18,7 +19,9 @@ def run_song_selection():
         # checks if player is done choosing
         player_choice = util.get_input_position(2, 12)
         if player_choice.upper() == 'D':
+            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
             if util.list_is_empty(song_choice):
+                sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
                 display.print_position(0,11,"Please fill your cart first.")
                 display.sleep(1)
                 continue
@@ -26,7 +29,7 @@ def run_song_selection():
             display.clear_screen()
             display.player_chosen_songs(song_choice)
             player_choice = util.get_input_position(1, 24)
-
+            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
             if player_choice.upper() == 'B':
                 display.clear_screen()
                 continue
@@ -39,8 +42,10 @@ def run_song_selection():
                 break
 
         if player_choice in choice:
+            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
             # inserts the year choice of user from the year category
             year_choice.insert(0, choice[player_choice])
+
 
         else:
             display.invalid_option(0, 11)
@@ -56,17 +61,20 @@ def run_song_selection():
 
         player_choice = util.get_input_position(2, 12)
         if player_choice.upper() == 'B':
+            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
             year_choice.pop(0)
             display.clear_screen()
             continue
 
         if player_choice in choice:
             if choice[player_choice] in song_choice:
+                sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
                 display.print_position(0, 11, "You already chose that song")
                 display.sleep(1)
                 continue
 
             else:
+                sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
                 # inserts the song choice of user from the song category
                 song_choice.insert(0, choice[player_choice])
                 continue
