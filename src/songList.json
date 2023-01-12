@@ -241,21 +241,21 @@
 
   "2020s": {
     "About you - 1975": {
-      "lyrics": "            There was something 'bout you that now I can't remember\n              It's the same damn thing that made my heart surrender\n                         And I miss you on a _______, I miss you in the morning\n                       I never know what to think about",
+      "lyrics": "            There was something 'bout you that now I can't remember\n              It's the same damn thing that made my heart surrender\n              And I miss you on a _______, I miss you in the morning\n                       I never know what to think about",
       "choices": "[A] Spain [B] Plane [H] Hint [C] Train [D] Rain",
       "hint": "[C] Train [D] Rain",
       "answer": "C",
       "sound": "sounds\\Song musics\\2020s\\About you - 1975.wav"
     },
     "All I Really Want Is You - The Marias": {
-      "lyrics": "                            All I really want is you\n                              What would you do?\n                          Laying in the rain with you\n                                 Middle of June\n                           All I really want is you\n                              What would you do?\n                            ____ outside, the moon\n                               Tripping with you",
+      "lyrics": "                         All I really want is you\n                              What would you do?\n                          Laying in the rain with you\n                                 Middle of June\n                           All I really want is you\n                              What would you do?\n                            ____ outside, the moon\n                               Tripping with you",
       "choices": "[A] Seeping [B] Sleeping [H] Hint [C] Creeping [D] Leaping",
       "hint": "[A] Seeping [B] Sleeping",
       "answer": "B",
       "sound": "sounds\\Song musics\\2020's\\All I Really Want Is You - The Marias.wav"
     },
     "Bad Habit - Steve Lacy": {
-      "lyrics": "                        I bite my tongue, it's a bad habit\n                  Kinda mad that I didn't take a _______ at it\n                   Thought you were too good for me, my dear\n                      Never gave me time of day, my dear\n                           It's okay, things happen for\n                      Reasons that I think are sure, yeah",
+      "lyrics": "                    I bite my tongue, it's a bad habit\n                  Kinda mad that I didn't take a _______ at it\n                   Thought you were too good for me, my dear\n                      Never gave me time of day, my dear\n                           It's okay, things happen for\n                      Reasons that I think are sure, yeah",
       "choices": "[A] Cab [B] Zap [H] Hint [C] Stab [D] Grab",
       "hint": "[A] Cab [C] Stab",
       "answer": "C",
