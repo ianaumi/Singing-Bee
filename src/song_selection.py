@@ -72,5 +72,5 @@ def run_song_selection():
                 continue
         else:
             display.invalid_option(0, 11)
-            year_choice.pop()
+            year_choice.pop(0)
             continue

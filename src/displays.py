@@ -41,6 +41,7 @@ def print_position(line,column,text):
 def invalid_option(line, column):
     print_position(line, column, "Invalid Option")
     sleep(1)
+    clear_screen()
 
 
 # >>>>>>>>>>> GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<<<
@@ -195,6 +196,18 @@ def player_status(player_name,player_hints,player_points):
 
 def total_score(player_name,player_points):
     clear_screen()
-    print_position(10,20,f"CONGRATS, {player_name}!\n You managed to get {player_points} Honeys! ")
+    print_position(15,30,f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!\n\n" + " " * 23 + f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!\n\n")
+
+def answer_result(text,points):
+    print_position(0, 27, text)
+    print_position(0, 27, f"+ {points} Honey")
+    sleep(2)
+    clear_screen()
+
+def hint_text_info(text):
+    print_position(0, 27, text)
+    sleep(1)
+    clear_screen()
+
 
 # >>>>>>>>>>>>>>>>>>>>>>>>> END OF ROUND <<<<<<<<<<<<<<<<<<<<<<<<

@@ -1,7 +1,7 @@
 import json
 from pygame import mixer
 from colorama import Fore, Style
-from displays import clear_screen,print_position,logo
+from displays import clear_screen,print_position,logo,quit_screen
 
 
 def get_song_list_file():
@@ -42,3 +42,13 @@ def get_player_name():
     print()
     clear_screen()
     return player_name
+
+def ask_play_again(player_name):
+    # print total score here
+    print_position(0, 30, f"[{Fore.YELLOW}P{Fore.WHITE}] Play again\n")
+    print_position(0, 26, f"{Fore.YELLOW}{Style.BRIGHT}Press any key to quit{Fore.WHITE}")
+    player_choice = get_input_position(0, 30)
+    if player_choice.upper() == 'P':
+        return True
+    else:
+        quit_screen(player_name)
