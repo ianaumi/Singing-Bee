@@ -18,22 +18,21 @@ def run_start_round(player_name):
         display.print_position(2,0,song_info("lyrics"))
 
         if not player_skipped_song:
-            pass
-            # util.play_sound(song_info("sound"))
-            # display.print_position(3,27,"press enter to continue")
-            # util.get_input_position(1, 27)
-            # util.stop_sound()
-            # player_skipped_song = True
-            # display.clear_screen()
-            # continue
+            util.play_sound(song_info("sound"))
+            display.print_position(3,27,"press enter to continue")
+            util.get_input_position(1, 27)
+            util.stop_sound()
+            player_skipped_song = True
+            display.clear_screen()
+            continue
 
         #FIXME alignment
         if player_used_hint :
-            display.print_position(2,0,song_info("hint").center(80))
+            display.print_position(2    ,0,song_info("hint").center(80))
         else:
             display.print_position(2,0,song_info("choices").center(80))
 
-        player_choice = util.get_input_position(3, 30)
+        player_choice = util.get_input_position(2, 30)
 
         # input validation
         #FIXME add UI
