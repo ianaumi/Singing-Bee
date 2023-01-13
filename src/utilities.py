@@ -43,9 +43,6 @@ def get_player_name():
         print_position(10, 20, logo)
 
         # asks the player's name
-        print_position(2, 24, f"{Fore.YELLOW}Welcome brood! your name is?")
-        print_position(0, 24, f"{Fore.YELLOW}3-8 name length only please~")
-        player_name = get_input_position(1, 27)
         print_position(2,24,f"{Fore.YELLOW}Welcome brood! your name is?")
         print_position(0, 24, f"{Fore.YELLOW}3-8 name length only please ~")
         player_name = get_input_position(1, 27,">>")
