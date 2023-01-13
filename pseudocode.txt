@@ -84,16 +84,16 @@ set player_choice = 0
 set player_hint_count = 3
 set player_used_hint = False
 
-print player_status(player_name, player_hint_count, player_points)
+print get player_status = player_name, player_hint_count, player_points)
 
 print(song_info("Lyrics"))
 
 while True:
     
     if player_used_hint:
-        print(song_info("hint"))
+        print song_info("hint")
     else:
-        print(song_info("choice"))
+        print song_info("choice")
     endif
 
     get player_choice
@@ -103,7 +103,7 @@ while True:
         continue
     endif
     
-    if player_choice.upper() = 'H'
+    if player_choice = 'H'
 
         if player_hint_count <= 0:
             print "You already used hint"
@@ -149,7 +149,7 @@ while True:
 
     if util.list_is_empty(song_choice): 
 
-        print total_score()
+        print get total_score = player_name, player_points
 
         get player_choice = util.ask_play_again(player_name)
     endif
