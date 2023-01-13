@@ -35,14 +35,13 @@ def run_start_round(player_name):
             sounds.play_background(song_info("sound"), 0)
 
             # lets the user skip the sound
-            display.print_position(3, 27, "press enter to continue")
             display.press_any_key()
 
             # stops the sound
             sounds.stop_sound()
 
             # plays the background music while player is choosing answer
-            sounds.play_background("sounds/Game sounds\\waiting_choice_sound.wav", -1)
+            sounds.play_background("sounds/game_sounds\\waiting_choice_sound.wav", -1)
             player_skipped_song = True
             display.clear_screen()
             continue
