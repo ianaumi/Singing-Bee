@@ -62,12 +62,23 @@ def invalid_option(line, column):
 
     # plays the invalid sound
     sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
-    print_position(line, column, "Invalid Option")
+    print_position(line, column, "Invalid input")
     sleep(1)
     clear_screen()
 
 # >>>>>>>>>>> GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<<<
 
+def back_button():
+    print_position(2, 32, f"[{Fore.YELLOW}B{Fore.WHITE}] Back")
+
+def login_option():
+    print_position(2, 32, f"[{Fore.YELLOW}1{Fore.WHITE}] Log in")
+    print_position(1, 32, f"[{Fore.YELLOW}2{Fore.WHITE}] Register")
+
+def success_name(player_name):
+    print_position(15, 0, f"welcome {Fore.YELLOW}{player_name}{Fore.WHITE}!".center(80))
+    print_position(0, 25, f"{Fore.YELLOW}registered successfully.{Fore.WHITE}")
+    sleep(2)
 
 # created own style of loading text
 def loading_screen():
@@ -82,6 +93,12 @@ def loading_screen():
         sleep(1)
         count += 1
     clear_screen()
+
+# greets the user a welcome back if already registered
+def welcome_back(player_name):
+    print_position(10, 20, logo)
+    print_position(2,0,f"Welcome back {Fore.YELLOW}{player_name}{Fore.WHITE}!".center(85))
+    press_any_key()
 
 
 # informs the player to lower the volume to avoid accidentally loud sounds
@@ -226,7 +243,7 @@ def select_song_from(song_list, year_choice, choice):
 
 # displays out all the song player chose
 def player_chosen_songs(song_choice):
-
+    song_choice.reverse()
     # used the length of the array to access how many song player has
     header_text(f"# YOUR SONG LIST \n## Total songs:{len(song_choice)}")
     print("\n" * 2)
@@ -245,14 +262,10 @@ def player_chosen_songs(song_choice):
 
 # informs the player with the current status of hints and points
 def player_status(player_name, player_hints, player_points):
-    print_position(0, 5, f"""{Fore.YELLOW}/{Fore.WHITE}Status""")
-    print_position(0, 5, ("+" + "-" * 18 + "+"))
-    print_position(0, 5, ("|" + (" " * 18) + "|"))
-    print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
-    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_hints}{Fore.WHITE}").ljust(16)) + "|")
-    print_position(0, 5, "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14)) + " |")
-    print_position(0, 5, ("|" + (" " * 18) + "|"))
-    print_position(0, 5, ("+" + "-" * 18 + "+"))
+    print_position(3, 5, f"Player:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_name}{Fore.WHITE}").ljust(15))
+    print_position(0, 5, f"Hints:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_hints}{Fore.WHITE}").ljust(16))
+    print_position(0, 5, f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14))
+
 
 
 # displays the total score of the player
@@ -270,7 +283,7 @@ def answer_result(text, points):
     print(text.center(80))
 
     # prints out how much honey did the user got from the answer
-    print(f"+ {points} Honey".center(80))
+    print(f"{Fore.YELLOW}+ {points} Honey{Fore.WHITE}".center(90))
     sleep(2)
     clear_screen()
 
