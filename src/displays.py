@@ -267,14 +267,8 @@ def total_score(player_name,player_points):
 
     # plays the background music
     sounds.play_background("sounds\\Game sounds\\total_score_sound.wav",-1)
-    print_position(15, 30, f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!\n\n" + " " * 23 + f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!\n\n")
-
-
-# prints the result of the answer of the player
-def answer_result(text, points):
-    print_position(0, 30, text)
-    print_position(15,0,f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!".center(85))
-    print_position(1,0,f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!".center(85))
+    print_position(15, 0, f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!".center(85))
+    print_position(1, 0, f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!".center(85))
 
 
 # prints the result of the answer of the player
@@ -283,7 +277,6 @@ def answer_result(text,points):
 
     # prints out how many honey did the user got from the answer
     print(f"+ {points} Honey".center(80))
-    # print_position(0, 30, f"+ {points} Honey")
     sleep(2)
     clear_screen()
 
