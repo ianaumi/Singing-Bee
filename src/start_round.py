@@ -42,7 +42,7 @@ def run_start_round(player_name):
             sounds.stop_sound()
 
             # plays the background music while player is choosing answer
-            sounds.play_background("sounds\\Game sounds\\waiting_choice_sound.wav", -1)
+            sounds.play_background("sounds/Game sounds\\waiting_choice_sound.wav", -1)
             player_skipped_song = True
             display.clear_screen()
             continue

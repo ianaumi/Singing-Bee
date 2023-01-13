@@ -17,8 +17,10 @@ def game_loop():
 
         # background sound for the game menu
         sounds.play_background("sounds/game_sounds\\game_menu_background.wav", -1)
+
         # stores the player name for the game menu
         run_game_menu(player_name)
+
         # stop the sound after player pressing play
         sounds.stop_sound()
 
