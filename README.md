@@ -1,4 +1,3 @@
-Click here https://ianaumi.itch.io/singing-bee[Link text Here](https://link-url-here.org)<p align="center">
   <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustrations/logo.png" width="450" height="80">
 </p>
 
@@ -45,7 +44,7 @@ You may play the game with windows 11 however, there will be a window size issue
 ### Download our game!
 Click [here](https://ianaumi.itch.io/singing-bee) to download our game!
 Keep in mind that your device will detect our game as a virus. That's unfortunate, let us know if 
-you have a suggestion on how we will make our game downloadable without detecting is as a virus!
+you have a suggestion on how we will make our game downloadable without the device detecting it as a virus!
 
 ## Credits
 <p>
