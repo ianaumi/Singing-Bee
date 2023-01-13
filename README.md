@@ -1,3 +1,4 @@
+<p align="center">
   <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustrations/logo.png" width="450" height="80">
 </p>
 
