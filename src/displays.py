@@ -180,10 +180,10 @@ def quit_screen(player_name):
     clear_screen()
 
     # final message for the player
-    print_position(15,30,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
-        No matter where you are, the hive will be always a home for you.\n
-                              Sing-you soon!
-    """)
+    print_position(15,0,f"Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.".center(84))
+    print_position(1,0,"No matter where you are, the hive will be always a home for you.".center(82))
+    print_position(1,0,"Sing-you soon!".center(72))
+
     sounds.play_sound("sounds\\Game sounds\\quit_sound.wav")
     sleep(1)
     clear_screen()
@@ -262,22 +262,24 @@ def total_score(player_name,player_points):
 
     # plays the background music
     sounds.play_background("sounds\\Game sounds\\total_score_sound.wav",-1)
-    print_position(15,30,f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!\n\n" + " " * 23 + f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!\n\n")
+    print_position(15,0,f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!".center(85))
+    print_position(1,0,f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!".center(85))
 
 
 # prints the result of the answer of the player
 def answer_result(text,points):
-    print_position(0, 30, text)
+    print(text.center(80))
 
     # prints out how many honey did the user got from the answer
-    print_position(0, 30, f"+ {points} Honey")
+    print(f"+ {points} Honey".center(80))
+    # print_position(0, 30, f"+ {points} Honey")
     sleep(2)
     clear_screen()
 
 
 # displays the information about the hint
 def hint_text_info(text):
-    print_position(0, 27, text)
+    print(text.center(80))
     sleep(1)
     clear_screen()
 
