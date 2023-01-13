@@ -43,7 +43,7 @@ def run_start_round(player_name):
             sounds.stop_sound()
 
             # plays the background music while player is choosing answer
-            sounds.play_background("sounds\\Game sounds\\selecting_choice_sound.wav", -1)
+            sounds.play_background("sounds/game_sounds\\selecting_choice_sound.wav", -1)
             player_skipped_song = True
             display.clear_screen()
             continue
@@ -51,12 +51,12 @@ def run_start_round(player_name):
         # checks if player used a hint
         if player_used_hint:
             display.print_position(2, 0, song_info("hint").center(80))
-        if player_used_hint :
-            display.print_position(2,0,song_info("hint").center(75))
+        if player_used_hint:
+            display.print_position(2, 0, song_info("hint").center(75))
         else:
             display.print_position(2, 0, song_info("choices").center(80))
 
-        player_choice = util.get_input_position(2, 37,"")
+        player_choice = util.get_input_position(2, 37, "")
         # input validation
         if player_choice.upper() not in ["A", "B", "C", "D", "H"]:
             display.invalid_option(0, 30)
@@ -67,19 +67,19 @@ def run_start_round(player_name):
 
             # checks if player has enough hint
             if player_hint_count <= 0:
-                sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
+                sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
                 display.hint_text_info("You dont have enough hints")
                 continue
 
             # checks if player already used a hint
             if player_used_hint:
-                sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
+                sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
                 display.hint_text_info("You already used hint")
                 continue
 
             # checks player wants to use hint and has enough hint count
             if not player_used_hint and player_hint_count > 0:
-                sounds.play_sound("sounds\\Game sounds\\used_hint_sound.wav")
+                sounds.play_sound("sounds/game_sounds\\used_hint_sound.wav")
                 player_hint_count = player_hint_count - 1
                 player_used_hint = True
                 display.hint_text_info("You used hint")
@@ -90,25 +90,25 @@ def run_start_round(player_name):
 
             # checks if input is not in the hint choices
             if player_choice.upper() not in song_info("hint"):
-                sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
+                sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
                 display.invalid_option(0, 30)
                 continue
 
         # >>>>>>>>> answer checker <<<<<<<<<<<<<<<<<
         # checks if it's the wrong answer
         if player_choice.upper() != song_info("answer"):
-            sounds.play_sound("sounds\\Game sounds\\wrong_answer_sound.wav")
+            sounds.play_sound("sounds/game_sounds\\wrong_answer_sound.wav")
             display.answer_result("Wrong answer.", 0)
 
         # checks if it's a correct answer and player used hint
         elif player_used_hint and player_choice.upper() == song_info("answer"):
-            sounds.play_sound("sounds\\Game sounds\\correct_with_hint_sound.wav")
+            sounds.play_sound("sounds/game_sounds\\correct_with_hint_sound.wav")
             display.answer_result("Correct answer!", 500)
             player_points = player_points + 500
 
         # checks if it's a correct answer and player didn't use hint
         else:
-            sounds.play_sound("sounds\\Game sounds\\correct_answer_sound.wav")
+            sounds.play_sound("sounds/game_sounds\\correct_answer_sound.wav")
             display.answer_result("Correct answer!", 1000)
             player_points = player_points + 1000
 
@@ -128,7 +128,7 @@ def run_start_round(player_name):
             # displays the total number of score player has
             display.total_score(player_name, player_points)
 
-            # asks the user if wants to play again that returns a boolean
+            # asks the user if they want to play again that returns a boolean
             player_choice = util.ask_play_again(player_name)
 
             # if player choice is true, it will go back to game menu

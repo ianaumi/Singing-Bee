@@ -5,9 +5,8 @@ from pygame import mixer
 sounds file is used for playing sounds to the other files
 '''
 
+
 # plays a quick sound that overlaps pygame mixer
-
-
 def play_sound(path):
     sound = AudioSegment.from_wav(path)
     play(sound)
