@@ -150,8 +150,7 @@ while True:
 
     if util.list_is_empty(song_choice): 
 
-        // find a way to print the total score 
-        display total_score(player_name, player_points)
+        display total_score()
 
         get player_choice = util.ask_play_again(player_name)
     endif
