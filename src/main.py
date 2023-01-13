@@ -42,6 +42,7 @@ def main():
 
     # plays the intro sound theme
     sounds.play_background("sounds\\Game sounds\\intro_background.wav", 1)
+    sounds.play_background("sounds\\Game sounds\\intro_background.wav",-1)
     display.loading_screen()
 
     # gets the player name

@@ -185,6 +185,10 @@ def quit_screen(player_name):
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
     """)
+    print_position(15,0,f"Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.".center(84))
+    print_position(1,0,"No matter where you are, the hive will be always a home for you.".center(82))
+    print_position(1,0,"Sing-you soon!".center(72))
+
     sounds.play_sound("sounds\\Game sounds\\quit_sound.wav")
     sleep(1)
     clear_screen()
@@ -250,8 +254,8 @@ def player_status(player_name, player_hints, player_points):
     print_position(0, 5, f"""{Fore.YELLOW}/{Fore.WHITE}Status""")
     print_position(0, 5, ("+" + "-" * 18 + "+"))
     print_position(0, 5, ("|" + (" " * 18) + "|"))
-    print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
-    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_hints}{Fore.WHITE}").ljust(16)) + "|")
+    print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+ str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
+    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+ str(f"{player_hints}{Fore.WHITE}").ljust(16)) + "|")
     print_position(0, 5, "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14))  + " |")
     print_position(0, 5, ("|" + (" " * 18) + "|"))
     print_position(0, 5, ("+" + "-" * 18 + "+"))
@@ -269,16 +273,24 @@ def total_score(player_name,player_points):
 # prints the result of the answer of the player
 def answer_result(text, points):
     print_position(0, 30, text)
+    print_position(15,0,f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!".center(85))
+    print_position(1,0,f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!".center(85))
+
+
+# prints the result of the answer of the player
+def answer_result(text,points):
+    print(text.center(80))
 
     # prints out how many honey did the user got from the answer
-    print_position(0, 30, f"+ {points} Honey")
+    print(f"+ {points} Honey".center(80))
+    # print_position(0, 30, f"+ {points} Honey")
     sleep(2)
     clear_screen()
 
 
 # displays the information about the hint
 def hint_text_info(text):
-    print_position(0, 27, text)
+    print(text.center(80))
     sleep(1)
     clear_screen()
 

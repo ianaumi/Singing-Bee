@@ -38,9 +38,11 @@ def run_start_round(player_name):
             # lets the user skip the sound
             display.print_position(3, 27, "press enter to continue")
             util.get_input_position(1, 27)
+            # display.print_position(3,27,"press enter to continue")
+            # util.get_input_position(1, 37,"")
+            display.press_any_key()
 
             # stops the sound
-            sounds.play_sound("sounds\\Game sounds\\skip_sound.wav")
             sounds.stop_sound()
 
             # plays the background music while player is choosing answer
@@ -52,10 +54,12 @@ def run_start_round(player_name):
         # checks if player used a hint
         if player_used_hint:
             display.print_position(2, 0, song_info("hint").center(80))
+        if player_used_hint :
+            display.print_position(2,0,song_info("hint").center(75))
         else:
             display.print_position(2, 0, song_info("choices").center(80))
 
-        player_choice = util.get_input_position(2, 30)
+        player_choice = util.get_input_position(2, 37,"")
         # input validation
         if player_choice.upper() not in ["A", "B", "C", "D", "H"]:
             display.invalid_option(0, 30)

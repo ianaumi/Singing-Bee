@@ -27,7 +27,7 @@ def run_song_selection():
         display.select_year_from(song_list, choice)
 
         # checks if player is done choosing
-        player_choice = util.get_input_position(2, 12)
+        player_choice = util.get_input_position(2, 12,">>")
         if player_choice.upper() == 'D':
             sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
 
@@ -41,7 +41,7 @@ def run_song_selection():
             display.clear_screen()
             # prints all the songs player chose
             display.player_chosen_songs(song_choice)
-            player_choice = util.get_input_position(1, 24)
+            player_choice = util.get_input_position(1, 40,"")
             sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
 
             # checks if player wants to go back to song selection
@@ -76,7 +76,7 @@ def run_song_selection():
         # prints out main header for the song selection
         display.category_header(f"SONGS FROM {year_choice[0]}", song_choice)
         display.select_song_from(song_list, year_choice[0], choice)
-        player_choice = util.get_input_position(2, 12)
+        player_choice = util.get_input_position(2, 12,">>")
 
         # checks if player wants to go back
         if player_choice.upper() == 'B':
