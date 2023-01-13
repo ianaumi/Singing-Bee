@@ -11,7 +11,6 @@
 
 <p align="center">
   <a href="#about-the-game">About the game</a> •
-  <a href="#about-the-project">About The Project</a>•
   <a href="#how-to-play">How to play</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
@@ -22,10 +21,8 @@
 ## About The Game 
 <p>Singing Bee is a console game that tests your knowledge of the most iconic songs. Fill in the missing lyrics and sing along 
 to your most treasured tunes from the 1960s up to the 2020s! Singing Beewas based on a Philippine TV show called 
-"The Singing Bee". We combined this TV show with "Who Wants to be a Millionaire". Both concepts of the said shows results to this game.</p>
-
-## About the project
-As a first year student, this project is our final subject on our subject <b>algorithm and logic formulation</b>
+"The Singing Bee". We combined this TV show with "Who Wants to be a Millionaire". Both concepts of the said shows results to this game.
+Let's keep in mind that this game is for school project and we allow anyone to play it. However, we don’t have any intention to make profit out of it.</p>
 
 ## How to play
 Instructions
@@ -40,6 +37,14 @@ Instructions
 
 
 ## Download
+### Compatibility
+
+Windows 10 below
+Our game currently doesnt support windows 11 with all features of the game. 
+You may play the game with windows 11 however, there will be a window size issue.
+
+### Download our game!
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor leo vel eros sollicitudin, quis egestas lorem pulvinar. Sed turpis neque, posuere sed mattis sed, ullamcorper in nibh. Nam laoreet feugiat risus, quis sollicitudin purus viverra vitae.[Named Link](http://www.google.fr/ "Named Link")
 
 ## Credits
