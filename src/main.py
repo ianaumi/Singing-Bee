@@ -1,10 +1,12 @@
-from pygame import mixer
 from song_selection import run_song_selection
-from game_menu import run_game_menu
 from start_round import run_start_round
+from game_menu import run_game_menu
+from pygame import mixer
 import displays as display
+from displays import logo
 import utilities as util
 import sounds
+import os
 
 
 player_name = None  # stores the player's name
@@ -34,7 +36,6 @@ def game_loop():
 
 
 def main():
-
     global player_name
     # initialize the audio player
     mixer.init()
@@ -46,8 +47,11 @@ def main():
     sounds.play_background("sounds/game_sounds\\intro_background.wav", -1)
     display.loading_screen()
 
-    # gets the player name
-    player_name = util.get_player_name()
+    player_name = util.ask_to_login()
+    display.clear_screen()
+    display.welcome_back(player_name)
+
+    display.clear_screen()
     display.advice_screen()
     display.copyright_disclaimer_screen()
 
