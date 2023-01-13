@@ -28,7 +28,7 @@ def run_start_round(player_name):
         display.player_status(player_name, player_hint_count, player_points)
 
         # prints out the lyrics of a song
-        display.print_position(2, 0, song_info("lyrics"))
+        display.print_position(4, 0, song_info("lyrics"))
 
         # checks if user already skipped a song
         if not player_skipped_song:
@@ -64,13 +64,13 @@ def run_start_round(player_name):
             # checks if player already used a hint
             if player_used_hint:
                 sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
-                display.hint_text_info("You already used hint")
+                display.hint_text_info("You already used hint.")
                 continue
 
             # checks if player has enough hint
             if player_hint_count <= 0:
                 sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
-                display.hint_text_info("You dont have enough hints")
+                display.hint_text_info("You dont have enough hints.")
                 continue
 
             # checks player wants to use hint and has enough hint count
@@ -78,7 +78,7 @@ def run_start_round(player_name):
                 sounds.play_sound("sounds/game_sounds\\used_hint_sound.wav")
                 player_hint_count = player_hint_count - 1
                 player_used_hint = True
-                display.hint_text_info("You used hint")
+                display.hint_text_info("You used hint!")
                 continue
 
         # checks if user will enter an input aside from printed hint
