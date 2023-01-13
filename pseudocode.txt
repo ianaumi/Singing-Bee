@@ -78,3 +78,70 @@ song_selection():
 
 
 # start round
+print(song_choice[0])
+print(song_info(lyrics))
+print(song_info(choices))
+
+print(total hints points: , hints )
+
+while True:
+    player_choice insert (what is your choice)
+    if player_choice in optio ([A,B,C,D,H])
+        hint_used = False
+
+        if player_choice = H
+            if hints > 0
+                if not hint_used:
+                print song_infor(hint)
+                hint_used = True
+                set hints = hints - 1
+                while True:
+                    player_choice inser (what is your choice: )
+                    if player_choice in song_info(hint)
+                        break
+                    else:
+                        print "Invalid Option"
+                    endif
+                endwhile    
+            endif
+        endif
+    endif
+
+        if player_choice = (song_info(answer))
+            print "Correct"
+
+            if hint_used:
+                print "You earned 500 honeys!"
+                set player_choice = player_choice + 500
+                break
+            else
+                print "You earned 1000 honeys!"
+                set player_choice = player_choice + 1000
+                break
+            endif
+        else
+            print "Wrong"
+            print "You earned 0 honeys!"
+            break
+        endif
+    else
+        print "Invalid Option"
+endwhile
+
+song_choice.pop(0)
+year_choice.pop(0)
+
+if list_is_empty(year_choice)
+    while True:
+        get player_choice = "Do you want to play again? Y/N : "
+        if player_choice = in option(["Y", "N"])
+            if player_choice = "Y"
+                return main()
+            else player_choice = "N"
+                return display quit
+            endif
+        else
+            print "Invalid Option"
+        endif
+    endwhile
+endif
