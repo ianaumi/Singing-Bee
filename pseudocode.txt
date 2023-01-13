@@ -10,6 +10,7 @@ set song_list = songlist.json
 set year_choice = []
 set song_choice = []
 set player_choice = None
+set player_name = None
 
 def list_is_empty(chosen_songs))
     if not chosen_songs:
@@ -82,6 +83,9 @@ song_selection():
 def song_info(value):
     return song_List[year_choice[0]][song_choice[0]][value]
 
+
+// no start_round function
+
 set player_choice = 0
 set player_hint_count = 3
 set player_skipped_song = False
@@ -92,7 +96,8 @@ print player_status (player_name, player_hint_count, player_points)
 print(song_info("Lyrics"))
 
 while True:
-
+    
+    // remove the sound block
     if not player_skipped_song:
         sounds.play_background(song_info("sound"))
     
@@ -112,8 +117,11 @@ while True:
         print(song_info("choice"))
     endif
 
+    // user 'get'when getting user input
     insert player_choice = util.get_input_position
 
+
+    // remove all python methods
     if player_choice.upper() not in ['A', 'B', 'C', 'D', 'H']:
         display invaid_option
         continue
@@ -122,6 +130,7 @@ while True:
     if player_choice.upper() = 'H'
 
         if player_hint_count <= 0:
+        // remove all sound functions
             sound.play_sound("sounds/game_sound\\invalid_sound.wav")
             display hint_text_info("You already used hint")
             continue
@@ -169,13 +178,17 @@ while True:
     set player_used_hint = False
     set player_skipped_song = False
 
+
+    // dont use python method. just say song choice remove index 0
     song_choice.pop(0)
     year_choice.pop(0)
 
+    // remove any UI related thingy
     display clear_screen()
 
-    if util.list_is_empty(song_choice):
+    if util.list_is_empty(song_choice): 
 
+        // find a way to print the total score 
         display total_score(player_name, player_points)
 
         get player_choice = util.ask_play_again(player_name)
