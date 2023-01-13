@@ -78,70 +78,110 @@ song_selection():
 
 
 # start round
-print(song_choice[0])
-print(song_info(lyrics))
-print(song_info(choices))
 
-print(total hints points: , hints )
+def song_info(value):
+    return song_List[year_choice[0]][song_choice[0]][value]
+
+set player_choice = 0
+set player_hint_count = 3
+set player_skipped_song = False
+set player_used_hint = False
+
+print player_status (player_name, player_hint_count, player_points)
+
+print(song_info("Lyrics"))
 
 while True:
-    player_choice insert (what is your choice)
-    if player_choice in optio ([A,B,C,D,H])
-        hint_used = False
 
-        if player_choice = H
-            if hints > 0
-                if not hint_used:
-                print song_infor(hint)
-                hint_used = True
-                set hints = hints - 1
-                while True:
-                    player_choice inser (what is your choice: )
-                    if player_choice in song_info(hint)
-                        break
-                    else:
-                        print "Invalid Option"
-                    endif
-                endwhile    
-            endif
+    if not player_skipped_song:
+        sounds.play_background(song_info("sound"))
+    
+        display press_any_key()
+
+     sound.stop_sound()
+
+        sounds.play_background("sounds/game\\wautung_choice_sound.wav")
+        player_skipped_song = True
+        display clear_screen()
+        continue
+    endif
+
+    if player_used_hint:
+        print(song_info("hint"))
+    else:
+        print(song_info("choice"))
+    endif
+
+    insert player_choice = util.get_input_position
+
+    if player_choice.upper() not in ['A', 'B', 'C', 'D', 'H']:
+        display invaid_option
+        continue
+    endif
+    
+    if player_choice.upper() = 'H'
+
+        if player_hint_count <= 0:
+            sound.play_sound("sounds/game_sound\\invalid_sound.wav")
+            display hint_text_info("You already used hint")
+            continue
+        endif
+
+        if player_used_hint:
+            sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
+            display hint_text_info("You already used hint")
+            continue
+        endif
+
+        if not player_used_hint and player_hint_count > 0:
+            sound.play_sound("sound/game_sound\\used_hint_sound.wav")
+            get player_hint_count = player_hint_count - 1
+            get player_used_hint = True
+            display hint_text_info("You used hint")
+            continue
         endif
     endif
 
-        if player_choice = (song_info(answer))
-            print "Correct"
-
-            if hint_used:
-                print "You earned 500 honeys!"
-                set player_choice = player_choice + 500
-                break
-            else
-                print "You earned 1000 honeys!"
-                set player_choice = player_choice + 1000
-                break
-            endif
-        else
-            print "Wrong"
-            print "You earned 0 honeys!"
-            break
+    if player_used_hint:
+        
+        if player_choice.upper() not in song_info("hint"):
+            sound.play_sound("sound/game_sound\\invalid_sound.wav")
+            display answer_results("Wrong answer.")
         endif
-    else
-        print "Invalid Option"
+    endif
+
+    if player_choice.upper() != song_info("answer"):
+        sounds.play_sound("sounds/game_sounds\\wrong_answer_sound.wav")
+        display answer_result("Wrong answer.")
+
+    elif player_used_hint and player_choice.upper() = song_info("answer"):
+        sound.play_sound("sound/game_sound\\invalid_sound.wav")
+        get player_points = player_points + 500
+
+    else:
+        sound.play_sound("sound/game_sound\\invalid_sound.wav")
+        display answer_results("Correct answer!")
+        get player_points = player_points + 1000
+    endif
+
+    sound.stop_sound()
+
+    set player_used_hint = False
+    set player_skipped_song = False
+
+    song_choice.pop(0)
+    year_choice.pop(0)
+
+    display clear_screen()
+
+    if util.list_is_empty(song_choice):
+
+        display total_score(player_name, player_points)
+
+        get player_choice = util.ask_play_again(player_name)
+    endif
+
+    if player_choice:
+        break
+    endif
 endwhile
-
-song_choice.pop(0)
-year_choice.pop(0)
-
-if list_is_empty(year_choice)
-    while True:
-        get player_choice = "Do you want to play again? Y/N : "
-        if player_choice = in option(["Y", "N"])
-            if player_choice = "Y"
-                return main()
-            else player_choice = "N"
-                return display quit
-            endif
-        else
-            print "Invalid Option"
-        endif
-    endwhile
-endif
