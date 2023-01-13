@@ -98,7 +98,7 @@ def run_start_round(player_name):
 
         # checks if it's a correct answer and player used hint
         elif player_used_hint and player_choice.upper() == song_info("answer"):
-            sounds.play_sound("sounds/ame_sounds\\correct_with_hint_sound.wav")
+            sounds.play_sound("sounds/game_sounds\\correct_with_hint_sound.wav")
             display.answer_result("Correct answer!", 500)
             player_points = player_points + 500
 
