@@ -1,4 +1,4 @@
-<p align="center">
+Click here https://ianaumi.itch.io/singing-bee[Link text Here](https://link-url-here.org)<p align="center">
   <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustrations/logo.png" width="450" height="80">
 </p>
 
@@ -44,8 +44,7 @@ Our game currently doesnt support windows 11 with all features of the game.
 You may play the game with windows 11 however, there will be a window size issue.
 
 ### Download our game!
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor leo vel eros sollicitudin, quis egestas lorem pulvinar. Sed turpis neque, posuere sed mattis sed, ullamcorper in nibh. Nam laoreet feugiat risus, quis sollicitudin purus viverra vitae.[Named Link](http://www.google.fr/ "Named Link")
+Click [here](https://ianaumi.itch.io/singing-bee) to download our game!
 
 ## Credits
 <p>
