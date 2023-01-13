@@ -8,9 +8,8 @@ it contains of printing the lyrics , the sound, etc. related to the game.
 it's the core of the game where player can finally guess the blank lines.
 '''
 
+
 # gets the value from the key of a song
-
-
 def song_info(value):
     return song_list[year_choice[0]][song_choice[0]][value]
 
@@ -43,14 +42,12 @@ def run_start_round(player_name):
             sounds.stop_sound()
 
             # plays the background music while player is choosing answer
-            sounds.play_background("sounds/game_sounds\\selecting_choice_sound.wav", -1)
+            sounds.play_background("sounds\\Game sounds\\waiting_choice_sound.wav", -1)
             player_skipped_song = True
             display.clear_screen()
             continue
 
         # checks if player used a hint
-        if player_used_hint:
-            display.print_position(2, 0, song_info("hint").center(80))
         if player_used_hint:
             display.print_position(2, 0, song_info("hint").center(75))
         else:
