@@ -55,7 +55,7 @@ def run_start_round(player_name):
 
         player_choice = util.get_input_position(2, 37, "")
         # input validation
-        if player_choice.upper() not in ["A", "B", "C", "D", "H"]:
+        if player_choice.upper() not in ['A', 'B', 'C', 'D', 'H']:
             display.invalid_option(0, 30)
             continue
 
