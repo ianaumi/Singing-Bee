@@ -41,7 +41,6 @@ def main():
     display.set_screen_size(80, 40)
 
     # plays the intro sound theme
-    sounds.play_background("sounds\\Game sounds\\intro_background.wav", 1)
     sounds.play_background("sounds\\Game sounds\\intro_background.wav",-1)
     display.loading_screen()
 

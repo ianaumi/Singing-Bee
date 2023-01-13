@@ -37,9 +37,6 @@ def run_start_round(player_name):
 
             # lets the user skip the sound
             display.print_position(3, 27, "press enter to continue")
-            util.get_input_position(1, 27)
-            # display.print_position(3,27,"press enter to continue")
-            # util.get_input_position(1, 37,"")
             display.press_any_key()
 
             # stops the sound
