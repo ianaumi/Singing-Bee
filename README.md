@@ -1,4 +1,4 @@
-Click here https://ianaumi.itch.io/singing-bee[Link text Here](https://link-url-here.org)<p align="center">
+<p align="center">
   <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustrations/logo.png" width="450" height="80">
 </p>
 
@@ -28,13 +28,12 @@ Let's keep in mind that this game is for school project and we allow anyone to p
 Instructions
 <br>
 + Player can choose any song from the song cart.
-+ Check the song list [here](tinyurl.com/DaBeeBook)
++ Check the song list [here](https://docs.google.com/spreadsheets/d/1nBcuHzsk2_rkpBdw6u6xZ7KzINuozumdy_TV7svBRxI/edit?usp=sharing)
 + Then the player should guess the missing word/s from the song lyrics.
 + A correct answer without using hint is worth 1000 points.
 + While a correct answer using hint is only 500 points
 + And if your answer is wrong with or without hint, you will get 0 points.
 + May you gather the most honeys in the game. Enjoy!
-
 
 ## Download
 ### Compatibility
@@ -45,6 +44,8 @@ You may play the game with windows 11 however, there will be a window size issue
 
 ### Download our game!
 Click [here](https://ianaumi.itch.io/singing-bee) to download our game!
+Keep in mind that your device will detect our game as a virus. That's unfortunate, let us know if 
+you have a suggestion on how we will make our game downloadable without the device detecting it as a virus!
 
 ## Credits
 <p>
