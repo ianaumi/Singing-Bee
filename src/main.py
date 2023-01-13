@@ -16,14 +16,14 @@ def game_loop():
     while True:
 
         # background sound for the game menu
-        sounds.play_background("sounds\\Game sounds\\game_menu_background.wav", -1)
-        # stores the playername for the game menu
+        sounds.play_background("sounds/game_sounds\\game_menu_background.wav", -1)
+        # stores the player name for the game menu
         run_game_menu(player_name)
         # stop the sound after player pressing play
         sounds.stop_sound()
 
         # background sound for song selection
-        sounds.play_background("sounds\\Game sounds\\song_selection_background.wav", -1)
+        sounds.play_background("sounds/game_sounds\\song_selection_background.wav", -1)
         run_song_selection()
 
         sounds.stop_sound()
@@ -41,7 +41,7 @@ def main():
     display.set_screen_size(80, 40)
 
     # plays the intro sound theme
-    sounds.play_background("sounds\\Game sounds\\intro_background.wav",-1)
+    sounds.play_background("sounds/game_sounds\\intro_background.wav", -1)
     display.loading_screen()
 
     # gets the player name

@@ -49,7 +49,7 @@ def press_any_key():
     # moves the cursor into the middle
     print("\n", " " * 37, end="")
     input()
-    sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
+    sounds.play_sound("sounds/game_sounds\\select_sound.wav")
 
 
 # prints something in a specific location
@@ -61,16 +61,15 @@ def print_position(line, column, text):
 def invalid_option(line, column):
 
     # plays the invalid sound
-    sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
+    sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
     print_position(line, column, "Invalid Option")
     sleep(1)
     clear_screen()
 
 # >>>>>>>>>>> GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<<<
 
+
 # created own style of loading text
-
-
 def loading_screen():
     global logo
 
@@ -84,9 +83,8 @@ def loading_screen():
         count += 1
     clear_screen()
 
-# informs the player to lower the volume to avoid accidentally lound sounds
 
-
+# informs the player to lower the volume to avoid accidentally loud sounds
 def advice_screen():
     header_text("# WARNING!")
     print_position(10, 10, f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
@@ -97,7 +95,7 @@ def advice_screen():
 # informs the user that we do not own any song the game will play
 def copyright_disclaimer_screen():
     header_text("# COPYRIGHT DISCLAIMER NOTICE !")
-    print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/soundsyou will hear.
+    print_position(5, 3, f"""{Fore.YELLOW}We do not claim the ownership of all of the music/sounds you will hear.
         All material is the copyright property of its respective owner(s).\n
                      Under Section 107 of the Copyright Act 1976,
          allowance is made for “fair use” for purposes such as criticism, 
@@ -140,7 +138,7 @@ def about_game_screen():
                    Fill in the missing lyrics and sing along
           to your most treasured tunes from the 1960s up to the 2020s!\n\n
  
-              Singing Beewas based on a Philippine TV show called 
+              Singing Bee was based on a Philippine TV show called 
                 "The Singing Bee". We combined this TV show with 
                "Who Wants to be a Millionaire". Both concepts of
                     the said shows results to this game.\n\n
@@ -157,7 +155,7 @@ def help_screen():
 
     # { COLOR }   { STYLE }   TEXT
     print_position(3, 0, f""" 
-    {Fore.YELLOW}•{Fore.WHITE} You can choose {Fore.YELLOW}any songs{Fore.WHITE} based on the songlist\n
+    {Fore.YELLOW}•{Fore.WHITE} You can choose {Fore.YELLOW}any songs{Fore.WHITE} based on the song list\n
     {Fore.YELLOW}•{Fore.WHITE} Check the song list here -> {Fore.YELLOW}tinyurl.com/DaBeeBook{Fore.WHITE}\n
     {Fore.YELLOW}•{Fore.WHITE} You should guess the {Fore.YELLOW}missing word/s{Fore.WHITE} on the lyrics of the song.\n
     {Fore.YELLOW}•{Fore.WHITE} Your choices will be: {Fore.YELLOW}A{Fore.WHITE},{Fore.YELLOW}B{Fore.WHITE},{Fore.YELLOW}C{Fore.WHITE},{Fore.YELLOW}D{Fore.WHITE} and {Fore.YELLOW}H{Fore.WHITE} for a {Fore.YELLOW}hint{Fore.WHITE} that may use in the round.\n
@@ -185,11 +183,11 @@ def quit_screen(player_name):
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
     """)
-    print_position(15,0,f"Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.".center(84))
-    print_position(1,0,"No matter where you are, the hive will be always a home for you.".center(82))
-    print_position(1,0,"Sing-you soon!".center(72))
+    print_position(15, 0, f"Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.".center(84))
+    print_position(1, 0, "No matter where you are, the hive will be always a home for you.".center(82))
+    print_position(1, 0, "Sing-you soon!".center(72))
 
-    sounds.play_sound("sounds\\Game sounds\\quit_sound.wav")
+    sounds.play_sound("sounds/game_sounds\\quit_sound.wav")
     sleep(1)
     clear_screen()
     exit()
@@ -254,28 +252,28 @@ def player_status(player_name, player_hints, player_points):
     print_position(0, 5, f"""{Fore.YELLOW}/{Fore.WHITE}Status""")
     print_position(0, 5, ("+" + "-" * 18 + "+"))
     print_position(0, 5, ("|" + (" " * 18) + "|"))
-    print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+ str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
-    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+ str(f"{player_hints}{Fore.WHITE}").ljust(16)) + "|")
-    print_position(0, 5, "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14))  + " |")
+    print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
+    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_hints}{Fore.WHITE}").ljust(16)) + "|")
+    print_position(0, 5, "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14)) + " |")
     print_position(0, 5, ("|" + (" " * 18) + "|"))
     print_position(0, 5, ("+" + "-" * 18 + "+"))
 
 
 # displays the total score of the player
-def total_score(player_name,player_points):
+def total_score(player_name, player_points):
     clear_screen()
 
     # plays the background music
-    sounds.play_background("sounds\\Game sounds\\total_score_sound.wav",-1)
+    sounds.play_background("sounds/game_sounds\\total_score_sound.wav", -1)
     print_position(15, 0, f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!".center(85))
     print_position(1, 0, f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!".center(85))
 
 
 # prints the result of the answer of the player
-def answer_result(text,points):
+def answer_result(text, points):
     print(text.center(80))
 
-    # prints out how many honey did the user got from the answer
+    # prints out how much honey did the user got from the answer
     print(f"+ {points} Honey".center(80))
     sleep(2)
     clear_screen()
