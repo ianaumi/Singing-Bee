@@ -33,7 +33,7 @@ def header_text(text):
 
 
 # sets the window size of the terminal
-def set_screen_size(column,line):
+def set_screen_size(column, line):
     system(f'mode con: cols={column} lines={line}')
 
 
@@ -53,8 +53,8 @@ def press_any_key():
 
 
 # prints something in a specific location
-def print_position(line,column,text):
-    print("\n" * line," " * column, text)
+def print_position(line, column, text):
+    print("\n" * line, " " * column, text)
 
 
 # informs the user that the input was invalid
@@ -66,11 +66,11 @@ def invalid_option(line, column):
     sleep(1)
     clear_screen()
 
-
-
 # >>>>>>>>>>> GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<<<
 
 # created own style of loading text
+
+
 def loading_screen():
     global logo
 
@@ -85,9 +85,11 @@ def loading_screen():
     clear_screen()
 
 # informs the player to lower the volume to avoid accidentally lound sounds
+
+
 def advice_screen():
     header_text("# WARNING!")
-    print_position(10,10,f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
+    print_position(10, 10, f"{Fore.YELLOW}We advise to lower your volume to prevent any ear injuries.")
     press_any_key()
     clear_screen()
 
@@ -112,7 +114,6 @@ def copyright_disclaimer_screen():
 
 
 # >>>>>>>>>>>>>>>>>>>>> END OF GAME INTRO SECTION <<<<<<<<<<<<<<<<<<<
-
 
 
 # >>>>>>>>>>>>>>>>>>>>> GAME MENU SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -180,7 +181,7 @@ def quit_screen(player_name):
     clear_screen()
 
     # final message for the player
-    print_position(15,30,f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
+    print_position(15, 30, f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
         No matter where you are, the hive will be always a home for you.\n
                               Sing-you soon!
     """)
@@ -190,7 +191,6 @@ def quit_screen(player_name):
     exit()
 
 # >>>>>>>>>>>>>>>>>>>> END OF GAME MENU SECTION <<<<<<<<<<<<<<
-
 
 
 # >>>>>>>>>>>>>>>>>> SONG SELECTION <<<<<<<<<<<<<<<<<<<<<
@@ -204,10 +204,12 @@ def choice_list(item, choice):
 
     # prints out the choices from the choice dictionary
     for n, items in choice.items():
-        print_position(1,13,f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
+        print_position(1, 13, f"[{Fore.YELLOW}{n}{Fore.WHITE}] {items}")
 
 # header for the year or song
-def category_header(text,song_choice):
+
+
+def category_header(text, song_choice):
     header_text(f"# {text} \n\n## SONG CART:{len(song_choice)}")
     print("\n" * 2)
 
@@ -241,19 +243,18 @@ def player_chosen_songs(song_choice):
 # >>>>>>>>>>>>>>>>>>>>>>> END OF SONG SELECTION <<<<<<<<<<<<<<<<<
 
 
-
 # >>>>>>>>>>>>>>>>>>>>>>>>> START OF ROUND <<<<<<<<<<<<<<<<<<<<<<
 
 # informs the player with the current status of hints and points
-def player_status(player_name,player_hints,player_points):
-    print_position(0,5,f"""{Fore.YELLOW}/{Fore.WHITE}Status""")
-    print_position(0,5,("+" + "-" * 18 + "+"))
-    print_position(0, 5,("|" + (" " * 18) + "|"))
+def player_status(player_name, player_hints, player_points):
+    print_position(0, 5, f"""{Fore.YELLOW}/{Fore.WHITE}Status""")
+    print_position(0, 5, ("+" + "-" * 18 + "+"))
+    print_position(0, 5, ("|" + (" " * 18) + "|"))
     print_position(0, 5, "| " + (f"Player:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_name}{Fore.WHITE}").ljust(15)) + "|")
-    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_hints}{Fore.WHITE}").ljust(16)   ) + "|")
-    print_position(0, 5, "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14)) + " |")
-    print_position(0, 5,("|" + (" " * 18) + "|"))
-    print_position(0,5,("+" + "-" * 18 + "+"))
+    print_position(0, 5, "| " + (f"Hints:{Style.NORMAL}{Fore.YELLOW}"+str(f"{player_hints}{Fore.WHITE}").ljust(16)) + "|")
+    print_position(0, 5, "| " + (f"Points:{Style.NORMAL}{Fore.YELLOW}" + str(f"{player_points}{Fore.WHITE}").ljust(14))  + " |")
+    print_position(0, 5, ("|" + (" " * 18) + "|"))
+    print_position(0, 5, ("+" + "-" * 18 + "+"))
 
 
 # displays the total score of the player
@@ -262,11 +263,11 @@ def total_score(player_name,player_points):
 
     # plays the background music
     sounds.play_background("sounds\\Game sounds\\total_score_sound.wav",-1)
-    print_position(15,30,f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!\n\n" + " " * 23 + f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!\n\n")
+    print_position(15, 30, f"CONGRATS, {Fore.YELLOW}{player_name}{Fore.WHITE}!\n\n" + " " * 23 + f"You managed to get {Fore.YELLOW}{player_points}{Fore.WHITE} Honeys!\n\n")
 
 
 # prints the result of the answer of the player
-def answer_result(text,points):
+def answer_result(text, points):
     print_position(0, 30, text)
 
     # prints out how many honey did the user got from the answer

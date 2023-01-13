@@ -14,6 +14,7 @@ song_choice = []
 # stores the keys player can press and use it to call the key from the song list json file
 choice = {}
 
+
 def run_song_selection():
     while True:
         # >>>>>>>>>>>>YEAR SELECT<<<<<<<<<<<
@@ -33,7 +34,7 @@ def run_song_selection():
             # checks if player didn't chose any songs
             if util.list_is_empty(song_choice):
                 sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
-                display.print_position(0,11,"Please fill your cart first.")
+                display.print_position(0, 11, "Please fill your cart first.")
                 display.sleep(1)
                 continue
 

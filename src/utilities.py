@@ -1,6 +1,6 @@
 import json
 from colorama import Fore, Style
-from displays import clear_screen,print_position,logo,quit_screen,invalid_option
+from displays import clear_screen, print_position, logo, quit_screen, invalid_option
 import sounds
 '''
 Utilities file is for some utility function needed in other files
@@ -35,7 +35,6 @@ def get_input_position(line, column):
     return player_choice
 
 
-#FIXME LIMIT THE NAME CHARACTERS TO 3 MIN 8 MAX
 def get_player_name():
     while True:
         clear_screen()
@@ -44,13 +43,13 @@ def get_player_name():
         print_position(10, 20, logo)
 
         # asks the player's name
-        print_position(2,24,f"{Fore.YELLOW}Welcome brood! your name is?")
+        print_position(2, 24, f"{Fore.YELLOW}Welcome brood! your name is?")
         print_position(0, 24, f"{Fore.YELLOW}3-8 name length only please~")
         player_name = get_input_position(1, 27)
 
         # checks if it's a valid name length
         if len(player_name) > 8 or len(player_name) < 3:
-            invalid_option(0,27)
+            invalid_option(0, 27)
             continue
         else:
             print_position(0, 26, f"{Fore.YELLOW}nice name!")
@@ -60,7 +59,7 @@ def get_player_name():
     return player_name
 
 
-    # plays select sound after hitting enter
+# plays select sound after hitting enter
 
 
 # asks user to play again and returns a boolean
