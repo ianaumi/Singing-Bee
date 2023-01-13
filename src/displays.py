@@ -179,10 +179,6 @@ def quit_screen(player_name):
     clear_screen()
 
     # final message for the player
-    print_position(15, 30, f"""Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.\n
-        No matter where you are, the hive will be always a home for you.\n
-                              Sing-you soon!
-    """)
     print_position(15, 0, f"Goodbye, {Fore.YELLOW}{player_name}{Fore.WHITE}.".center(84))
     print_position(1, 0, "No matter where you are, the hive will be always a home for you.".center(82))
     print_position(1, 0, "Sing-you soon!".center(72))
