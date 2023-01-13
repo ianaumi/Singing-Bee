@@ -84,7 +84,7 @@ set player_choice = 0
 set player_hint_count = 3
 set player_used_hint = False
 
-print player_status (player_name, player_hint_count, player_points)
+print player_status(player_name, player_hint_count, player_points)
 
 print(song_info("Lyrics"))
 
@@ -96,49 +96,48 @@ while True:
         print(song_info("choice"))
     endif
 
-    get player_choice = util.get_input_position
-
+    get player_choice
 
     if player_choice not in ['A', 'B', 'C', 'D', 'H']:
-        display invaid_option
+        print "Invaid Option"
         continue
     endif
     
     if player_choice.upper() = 'H'
 
         if player_hint_count <= 0:
-            display hint_text_info("You already used hint")
+            print "You already used hint"
             continue
         endif
 
         if player_used_hint:
-            display hint_text_info("You already used hint")
+            print "You already used hint"
             continue
         endif
 
         if not player_used_hint and player_hint_count > 0:
-            get player_hint_count = player_hint_count - 1
-            get player_used_hint = True
-            display hint_text_info("You used hint")
+            set player_hint_count = player_hint_count - 1
+            set player_used_hint = True
+            print "You used hint"
             continue
         endif
     endif
 
     if player_used_hint:
         
-        if player_choice.upper() not in song_info("hint"):
-            display answer_results("Wrong answer.")
+        if player_choice not in song_info("hint"):
+            print "Wrong answer."
         endif
     endif
 
-    if player_choice.upper() != song_info("answer"):
-        display answer_result("Wrong answer.")
+    if player_choice not in song_info("answer"):
+        print "Wrong answer."
 
-    elif player_used_hint and player_choice.upper() = song_info("answer"):
+    elif player_used_hint and player_choice = song_info("answer"):
         get player_points = player_points + 500
 
     else:
-        display answer_results("Correct answer!")
+        print "Correct answer!"
         get player_points = player_points + 1000
     endif
 
@@ -150,7 +149,7 @@ while True:
 
     if util.list_is_empty(song_choice): 
 
-        display total_score()
+        print total_score()
 
         get player_choice = util.ask_play_again(player_name)
     endif
