@@ -61,15 +61,6 @@ def main():
     # will proceed to game menu
     game_loop()
 
-    # >>>>>>>>>>>>>>>>> TEST BLOCK <<<<<<<<<<<<<<<<<<<
-    # while True:
-    #     print(songlist["2000s"]["With a Smile - Eraserheads"]["lyrics"])
-    #     # middle line
-    #     print("-"*40)
-    #     choice = input()
-    #     if choice.upper() == 'A':
-    #         exit()
-
 
 if __name__ == "__main__":
     main()
