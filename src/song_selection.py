@@ -51,7 +51,6 @@ def run_song_selection():
 
             else:
                 # reverses the choices so system can play the first song player chose
-                year_choice.reverse()
                 song_choice.reverse()
                 display.clear_screen()
                 display.loading_screen()

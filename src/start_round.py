@@ -16,6 +16,8 @@ def song_info(value):
 
 def run_start_round(player_name):
     # always resets the scores and hints every start round
+    song_choice.reverse()
+    year_choice.reverse()
     player_points = 0
     player_hint_count = 3
     player_skipped_song = False
