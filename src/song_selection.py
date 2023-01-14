@@ -14,6 +14,7 @@ song_choice = []
 # stores the keys player can press and use it to call the key from the song list json file
 choice = {}
 
+
 def run_song_selection():
     while True:
         # >>>>>>>>>>>>YEAR SELECT<<<<<<<<<<<
@@ -26,22 +27,22 @@ def run_song_selection():
         display.select_year_from(song_list, choice)
 
         # checks if player is done choosing
-        player_choice = util.get_input_position(2, 12)
+        player_choice = util.get_input_position(2, 12, ">>")
         if player_choice.upper() == 'D':
-            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
+            sounds.play_sound("sounds/game_sounds\\select_sound.wav")
 
-            # checks if player didn't chose any songs
+            # checks if player didn't choose any songs
             if util.list_is_empty(song_choice):
-                sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
-                display.print_position(0,11,"Please fill your cart first.")
+                sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
+                display.print_position(0, 11, "Please fill your cart first.")
                 display.sleep(1)
                 continue
 
             display.clear_screen()
             # prints all the songs player chose
             display.player_chosen_songs(song_choice)
-            player_choice = util.get_input_position(1, 24)
-            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
+            player_choice = util.get_input_position(1, 40, "")
+            sounds.play_sound("sounds/game_sounds\\select_sound.wav")
 
             # checks if player wants to go back to song selection
             if player_choice.upper() == 'B':
@@ -58,7 +59,7 @@ def run_song_selection():
 
         # checks if player's choice is valid
         if player_choice in choice:
-            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
+            sounds.play_sound("sounds/game_sounds\\select_sound.wav")
             # inserts the year choice of user from the year category
             year_choice.insert(0, choice[player_choice])
 
@@ -75,11 +76,11 @@ def run_song_selection():
         # prints out main header for the song selection
         display.category_header(f"SONGS FROM {year_choice[0]}", song_choice)
         display.select_song_from(song_list, year_choice[0], choice)
-        player_choice = util.get_input_position(2, 12)
+        player_choice = util.get_input_position(2, 12, ">>")
 
         # checks if player wants to go back
         if player_choice.upper() == 'B':
-            sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
+            sounds.play_sound("sounds/game_sounds\\select_sound.wav")
 
             # removes the last chosen year
             year_choice.pop(0)
@@ -91,13 +92,13 @@ def run_song_selection():
 
             # checks if player chose the song already chose
             if choice[player_choice] in song_choice:
-                sounds.play_sound("sounds\\Game sounds\\invalid_sound.wav")
+                sounds.play_sound("sounds/game_sounds\\invalid_sound.wav")
                 display.print_position(0, 11, "You already chose that song")
                 display.sleep(1)
                 continue
 
             else:
-                sounds.play_sound("sounds\\Game sounds\\select_sound.wav")
+                sounds.play_sound("sounds/game_sounds\\select_sound.wav")
                 # inserts the song choice of user from the song category
                 song_choice.insert(0, choice[player_choice])
                 continue
