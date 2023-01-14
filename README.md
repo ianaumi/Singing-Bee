@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustraions/logo.png" width="450" height="80">
+  <img src="https://github.com/ianaumi/TheSingingBee/blob/development/Illustrations/logo.png" width="450" height="80">
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="#about-the-game">About The Game</a> •
+  <a href="#about-the-game">About the game</a> •
   <a href="#how-to-play">How to play</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
@@ -19,24 +19,43 @@
 
 
 ## About The Game 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel tristique sem, non auctor elit. Nullam commodo velit id velit ornare ullamcorper. Integer eros odio, ultricies at rutrum id, feugiat sed ligula. Sed efficitur sit amet nunc nec tempor. Sed ultricies pellentesque tortor, eu tincidunt lectus efficitur at. Fusce turpis diam, mattis quis massa at, pellentesque euismod felis. Proin sollicitudin tortor pharetra nisl congue vulputate. Quisque eget pulvinar lacus. Maecenas sed lectus et erat placerat lacinia et vel eros. </p>
-<br>
+<p>Singing Bee is a console game that tests your knowledge of the most iconic songs. Fill in the missing lyrics and sing along 
+to your most treasured tunes from the 1960s up to the 2020s! Singing Beewas based on a Philippine TV show called 
+"The Singing Bee". We combined this TV show with "Who Wants to be a Millionaire". Both concepts of the said shows results to this game.
+Let's keep in mind that we, first year technology students, developed this game for school project and we allow anyone to play it. However, we don’t have any intention to make profit out of it.</p>
 
 ## How to play
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus dolor id metus semper, id malesuada nibh placerat. Duis eget est convallis, maximus diam at, suscipit velit. Nunc eleifend nisl sed leo cursus finibus sit amet at elit. Nam convallis sit amet dui ultricies pellentesque. Nunc sagittis euismod sapien, non eleifend justo dignissim et.</p><br>
-
-+ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-+ Donec vehicula lorem a ex bibendum aliquam.
-+ In viverra est eu dictum consectetur.
+Instructions
 <br>
++ Player can choose any song from the song cart.
++ Check the song list [here](https://docs.google.com/spreadsheets/d/1nBcuHzsk2_rkpBdw6u6xZ7KzINuozumdy_TV7svBRxI/edit?usp=sharing)
++ Then the player should guess the missing word/s from the song lyrics.
++ A correct answer without using hint is worth 1000 points.
++ While a correct answer using hint is only 500 points
++ And if your answer is wrong with or without hint, you will get 0 points.
++ May you gather the most honeys in the game. Enjoy!
 
 ## Download
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor leo vel eros sollicitudin, quis egestas lorem pulvinar. Sed turpis neque, posuere sed mattis sed, ullamcorper in nibh. Nam laoreet feugiat risus, quis sollicitudin purus viverra vitae.[Named Link](http://www.google.fr/ "Named Link")
-<br>
+### Compatibility
+
+Windows 10 below
+Our game currently doesnt support windows 11 with all features of the game. 
+You may play the game with windows 11 however, there will be a window size issue.(try running it as an admin)
+
+### Download our game!
+Click [here](https://ianaumi.itch.io/singing-bee) to download our game!
+Keep in mind that your device will detect our game as a virus. That's unfortunate, let us know if 
+you have a suggestion on how we will make our game downloadable without the device detecting it as a virus!
 
 ## Credits
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus dolor id metus semper, id malesuada nibh placerat. Duis eget est convallis, maximus diam at, suscipit velit. Nunc eleifend nisl sed leo cursus finibus sit amet at elit. Nam convallis sit amet dui ultricies pellentesque. Nunc sagittis euismod sapien, non eleifend justo dignissim et.</p><br>
-<br>
+<p>
+Copyright disclaimer notice
+
+We do not claim the ownership of all of the music/sounds you will hear. All material is the copyright property of its respective owner(s).\n
+Under Section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism,
+comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute 
+that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favour of fair use.
+WE DO NOT OWN THE RIGHTS OF ANY SONG. No Copyright infringement intended here.</p>
 
 ## License
 <p>MIT License
