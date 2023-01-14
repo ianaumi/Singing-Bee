@@ -40,7 +40,7 @@ Instructions
 
 Windows 10 below
 Our game currently doesnt support windows 11 with all features of the game. 
-You may play the game with windows 11 however, there will be a window size issue.
+You may play the game with windows 11 however, there will be a window size issue.(try running it as an admin)
 
 ### Download our game!
 Click [here](https://ianaumi.itch.io/singing-bee) to download our game!
