@@ -1,9 +1,3 @@
-
-
-# use hashtags as guide
-# remember to do research about how to make pseudocode or whats tackled in the module
-
-
 start
 
 set song_list = songlist.json
@@ -12,20 +6,54 @@ set song_choice = []
 set player_choice = None
 set player_name = None
 
+
+def song_info(value):
+    return song_List[year_choice[0]][song_choice[0]][value]
+
+
 def list_is_empty(chosen_songs))
     if not chosen_songs:
         return True  
     else 
         return False 
 
-# game menu
-adsasdsa
+def game_menu():
+    while True:
+        print "[P] play 
+        print "[A] play 
+        print "[H] play 
+        print "[Q] play 
+        get player_choice
 
+        if player_choice not in ['P','A','H','Q']
+            print("Invalid option")
+        endif
+        
+        if player_choice = 'P'
+            break
+        endif
 
+        if player_choice = 'A'
+            print "About the game"
+            print "press any key to go back"
+            get player_choice
+        endif 
 
-# song selection
+        if player_choice = 'H'
+            print "Instructions"
+            print "press any key to go back"
+            get player_choice
+        endif
+
+        if player_choice = 'Q'
+            print("good bye!")
+            exit()
+        endif
+    endwhile
+    return
+
 song_selection():
-    while true:
+    while True:
         print "choose year"
         for year in song_list:
             print year
@@ -68,93 +96,89 @@ song_selection():
         else:
             song_choice insert player_choice
         endif
+    return 
         
 
+def start_round:
+    set player_choice = 0
+    set player_hint_count = 3
+    set player_used_hint = False
 
-
-
-    
-
-
-def song_info(value):
-    return song_List[year_choice[0]][song_choice[0]][value]
-
-# start round
-set player_choice = 0
-set player_hint_count = 3
-set player_used_hint = False
-
-print get player_status = player_name, player_hint_count, player_points)
-
-print(song_info("Lyrics"))
-
-while True:
-    
-    if player_used_hint:
-        print song_info("hint")
-    else:
-        print song_info("choice")
-    endif
-
-    get player_choice
-
-    if player_choice not in ['A', 'B', 'C', 'D', 'H']:
-        print "Invaid Option"
-        continue
-    endif
-    
-    if player_choice = 'H'
-
-        if player_hint_count <= 0:
-            print "You already used hint"
+    print player_name, player_hint_count, player_points
+    print song_info("Lyrics")
+    while True:
+        if player_used_hint:
+            print song_info("hint")
+        else:
+            print song_info("choice")
+        endif
+        
+        get player_choice
+        if player_choice not in ['A', 'B', 'C', 'D', 'H']:
+            print "Invaid Option"
             continue
+        endif
+
+        if player_choice = 'H':
+            if player_hint_count <= 0:
+                print "You already used hint"
+                continue
+            endif
+            if player_used_hint:
+                print "You already used hint"
+                continue
+            endif
+            if not player_used_hint and player_hint_count > 0:
+                set player_hint_count = player_hint_count - 1
+                set player_used_hint = True
+                print "You used hint"
+                continue
+            endif
         endif
 
         if player_used_hint:
-            print "You already used hint"
-            continue
+            if player_choice not in song_info("hint"):
+                print "Invalid option"
+            endif
         endif
 
-        if not player_used_hint and player_hint_count > 0:
-            set player_hint_count = player_hint_count - 1
-            set player_used_hint = True
-            print "You used hint"
-            continue
-        endif
-    endif
-
-    if player_used_hint:
-        
-        if player_choice not in song_info("hint"):
+        if player_choice not in song_info("answer"):
             print "Wrong answer."
+
+        elif player_used_hint and player_choice = song_info("answer"):
+            player_points = player_points + 500
+
+        else:
+            print "Correct answer!"
+            player_points = player_points + 1000
         endif
-    endif
 
-    if player_choice not in song_info("answer"):
-        print "Wrong answer."
+        set player_used_hint = False
+        song_choice remove index 0
+        year_choice remove index 0
 
-    elif player_used_hint and player_choice = song_info("answer"):
-        get player_points = player_points + 500
+        if util.list_is_empty(song_choice): 
+            print player_points
+            print"play again?"
+            get player_choice
 
-    else:
-        print "Correct answer!"
-        get player_points = player_points + 1000
-    endif
+            if player_choice:
+                break
+            else
+                exit()
+        endif
 
-    set player_used_hint = False
+        if player_choice:
+            break
+        endif
 
-    song_choice remove index 0
-    year_choice remove index 0
+    endwhile
 
-
-    if util.list_is_empty(song_choice): 
-
-        print get total_score = player_name, player_points
-
-        get player_choice = util.ask_play_again(player_name)
-    endif
-
-    if player_choice:
-        break
-    endif
-endwhile
+def main():
+    while True:
+        game_menu()
+        song_selection
+        start_round
+    endwhile
+main()
+end
