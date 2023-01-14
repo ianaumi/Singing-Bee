@@ -22,7 +22,7 @@
 <p>Singing Bee is a console game that tests your knowledge of the most iconic songs. Fill in the missing lyrics and sing along 
 to your most treasured tunes from the 1960s up to the 2020s! Singing Beewas based on a Philippine TV show called 
 "The Singing Bee". We combined this TV show with "Who Wants to be a Millionaire". Both concepts of the said shows results to this game.
-Let's keep in mind that this game is for school project and we allow anyone to play it. However, we don’t have any intention to make profit out of it.</p>
+Let's keep in mind that we, first year technology students, developed this game for school project and we allow anyone to play it. However, we don’t have any intention to make profit out of it.</p>
 
 ## How to play
 Instructions
